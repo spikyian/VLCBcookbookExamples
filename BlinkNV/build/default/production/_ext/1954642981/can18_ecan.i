@@ -20215,57 +20215,7 @@ void *memccpy (void *restrict, const void *restrict, int, size_t);
 
 
 # 1 "../../VLCBlib_PIC\\statusLeds.h" 1
-# 42 "../../VLCBlib_PIC\\statusLeds.h"
-# 1 "../../VLCBlib_PIC/vlcb.h" 1
-# 42 "../../VLCBlib_PIC\\statusLeds.h" 2
-
-# 1 "../../VLCBlib_PIC/ticktime.h" 1
-# 211 "../../VLCBlib_PIC/ticktime.h"
-typedef union _TickValue {
-
-    uint32_t val;
-
-    struct TickBytes
-    {
-        uint8_t b0;
-        uint8_t b1;
-        uint8_t b2;
-        uint8_t b3;
-    } byte;
-    uint8_t v[4];
-
-    struct TickWords
-    {
-        uint16_t w0;
-        uint16_t w1;
-    } word;
-} TickValue;
-# 238 "../../VLCBlib_PIC/ticktime.h"
-void initTicker(uint8_t priority);
-
-
-
-
-
-uint32_t tickGet(void);
-
-
-
-
-
-
-
-extern volatile uint8_t timerExtension1;
-
-
-
-
-extern volatile uint8_t timerExtension2;
-# 43 "../../VLCBlib_PIC\\statusLeds.h" 2
-
-# 1 ".\\module.h" 1
-# 44 "../../VLCBlib_PIC\\statusLeds.h" 2
-
+# 43 "../../VLCBlib_PIC\\statusLeds.h"
 # 1 "../../VLCBlib_PIC/statusDisplay.h" 1
 # 55 "../../VLCBlib_PIC/statusDisplay.h"
 typedef enum StatusDisplay {
@@ -20283,8 +20233,8 @@ typedef enum StatusDisplay {
     STATUS_MEMORY_FAULT,
     STATUS_FATAL_ERROR
 } StatusDisplay;
-# 45 "../../VLCBlib_PIC\\statusLeds.h" 2
-# 55 "../../VLCBlib_PIC\\statusLeds.h"
+# 43 "../../VLCBlib_PIC\\statusLeds.h" 2
+# 52 "../../VLCBlib_PIC\\statusLeds.h"
 typedef enum {
     LED_OFF,
     LED_ON,
@@ -20317,11 +20267,8 @@ typedef enum VlcbManufacturer
   MANU_SPROG = 44,
   MANU_ROCRAIL = 70,
   MANU_SPECTRUM = 80,
-  MANU_MERG_VLCB = 250,
-  MANU_VLCB = 250,
   MANU_SYSPIXIE = 249,
   MANU_RME = 248,
-
 } VlcbManufacturer;
 
 typedef enum VlcbMergModuleTypes
@@ -20420,8 +20367,9 @@ typedef enum VlcbMergModuleTypes
   MTYP_CANPIXEL = 84,
   MTYP_CANCABPE = 85,
   MTYP_CANSMARTTD = 86,
+  MTYP_CANARGB = 87,
+  MTYP_CANCDU_U = 88,
   MTYP_VLCB = 0xFC,
-
 
 
 
@@ -20447,7 +20395,6 @@ typedef enum VlcbSprogModuleTypes
   MTYP_CANSERVOIO = 50,
   MTYP_CANISB = 100,
   MTYP_CANSOLIO = 101,
-
 } VlcbSprogModuleTypes;
 
 typedef enum VlcbRocRailModuleTypes
@@ -20472,7 +20419,6 @@ typedef enum VlcbSpectrumModuleTypes
 
   MTYP_AMCTRLR = 1,
   MTYP_DUALCAB = 2,
-
 } VlcbSpectrumModuleTypes;
 
 typedef enum VlcbSysPixieModuleTypes
@@ -20481,7 +20427,6 @@ typedef enum VlcbSysPixieModuleTypes
 
 
   MTYP_CANPMSense = 1,
-
 } VlcbSysPixieModuleTypes;
 
 typedef enum VlcbOpCodes
@@ -20878,6 +20823,8 @@ typedef enum VlcbModeParams
   MODE_HEARTBEAT_OFF = 0x0D,
 
   MODE_BOOT = 0x0E,
+  MODE_FCUCOMPAT_ON = 0x10,
+  MODE_FCUCOMPAT_OFF = 0x11,
 } VlcbModeParams;
 
 typedef enum VlcbBusTypes
@@ -20951,13 +20898,13 @@ typedef enum VlcbArmProcessors
   ARM1176JZF_S = 1,
   ARMCortex_A7 = 2,
   ARMCortex_A53 = 3,
-
-
-
 } VlcbArmProcessors;
 
 typedef enum VlcbCanHardware
 {
+
+
+
   CAN_HW_NOT_SPECIFIED = 0x00,
   CAN_HW_PIC_ECAN = 0x01,
   CAN_HW_PIC_CAN_2_0 = 0x02,
@@ -20965,9 +20912,40 @@ typedef enum VlcbCanHardware
   CAN_HW_MCP2515 = 0x04,
   CAN_HW_MCP2518 = 0x05,
   CAN_HW_ESP32_TWAI = 0x06,
-  CAN_HW_SAM3X8E = 0x06,
-  CAN_HW_PICO_PIO = 0x07,
+  CAN_HW_SAM3X8E = 0x07,
+  CAN_HW_PICO_PIO = 0x08,
 } VlcbCanHardware;
+
+typedef enum VlcbProducerEvUsage
+{
+
+
+
+  PRODUCER_EV_NOT_SPECIFIED = 0x00,
+  PRODUCER_EV_HAPPENING = 0x01,
+  PRODUCER_EV_SLOTS = 0x02,
+} VlcbProducerEvUsage;
+
+typedef enum VlcbConsumerEvUsage
+{
+
+
+
+  CONSUMER_EV_NOT_SPECIFIED = 0x00,
+  CONSUMER_EV_ACTIONS = 0x01,
+  CONSUMER_EV_SLOTS = 0x02,
+} VlcbConsumerEvUsage;
+
+typedef enum VlcbBootloaderType
+{
+
+
+
+  BL_TYPE_Unknown = 0,
+  BL_TYPE_MikeBolton = 1,
+  BL_TYPE_KonradOrlowski = 2,
+  BL_TYPE_IanHogg = 3,
+} VlcbBootloaderType;
 # 39 "../../VLCBlib_PIC/vlcb.h" 2
 
 # 1 "../../VLCBlib_PIC/nvm.h" 1
@@ -21002,7 +20980,12 @@ typedef uint8_t eeprom_data_t;
 
 
 typedef uint16_t eeprom_address_t;
-# 147 "../../VLCBlib_PIC/nvm.h"
+# 163 "../../VLCBlib_PIC/nvm.h"
+extern void flushNVM(void);
+
+
+
+
 extern void flushFlashBlock(void);
 
 
@@ -21017,8 +21000,26 @@ extern void initRomOps(void);
 
 
 extern int16_t readNVM(NVMtype type, uint24_t index);
-# 169 "../../VLCBlib_PIC/nvm.h"
+# 192 "../../VLCBlib_PIC/nvm.h"
 extern uint8_t writeNVM(NVMtype type, uint24_t index, uint8_t value);
+
+
+
+
+
+
+extern eeprom_data_t EEPROM_Read(eeprom_address_t index);
+
+
+
+
+
+
+
+extern uint8_t EEPROM_Write(eeprom_address_t index, eeprom_data_t value);
+# 216 "../../VLCBlib_PIC/nvm.h"
+extern uint8_t EEPROM_WriteNoVerify(eeprom_address_t index, eeprom_data_t value);
+
 
 
 
@@ -21026,7 +21027,7 @@ extern uint8_t writeNVM(NVMtype type, uint24_t index, uint8_t value);
 
 extern ValidTime APP_isSuitableTimeToWriteFlash(void);
 # 40 "../../VLCBlib_PIC/vlcb.h" 2
-# 91 "../../VLCBlib_PIC/vlcb.h"
+# 103 "../../VLCBlib_PIC/vlcb.h"
 typedef enum Priority {
     pLOW=0,
     pNORMAL=1,
@@ -21081,7 +21082,7 @@ typedef enum {
     EVENT_OFF=0,
     EVENT_ON=1
 } EventState;
-# 156 "../../VLCBlib_PIC/vlcb.h"
+# 168 "../../VLCBlib_PIC/vlcb.h"
 typedef union DiagnosticVal {
     uint16_t asUint;
     int16_t asInt;
@@ -21113,8 +21114,9 @@ typedef enum Mode_state {
 
 
 
+
 extern const Priority priorities[256];
-# 198 "../../VLCBlib_PIC/vlcb.h"
+# 211 "../../VLCBlib_PIC/vlcb.h"
 extern Processed checkLen(Message * m, uint8_t needed, uint8_t service);
 
 
@@ -21157,17 +21159,17 @@ void sendMessage2(VlcbOpCodes opc, uint8_t data1, uint8_t data2);
 
 
 void sendMessage3(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3);
-# 248 "../../VLCBlib_PIC/vlcb.h"
+# 261 "../../VLCBlib_PIC/vlcb.h"
 void sendMessage4(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4);
-# 258 "../../VLCBlib_PIC/vlcb.h"
+# 271 "../../VLCBlib_PIC/vlcb.h"
 void sendMessage5(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5);
-# 269 "../../VLCBlib_PIC/vlcb.h"
+# 282 "../../VLCBlib_PIC/vlcb.h"
 void sendMessage6(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6);
-# 281 "../../VLCBlib_PIC/vlcb.h"
-void sendMessage7(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
 # 294 "../../VLCBlib_PIC/vlcb.h"
-void sendMessage(VlcbOpCodes opc, uint8_t len, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
+void sendMessage7(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
 # 307 "../../VLCBlib_PIC/vlcb.h"
+void sendMessage(VlcbOpCodes opc, uint8_t len, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
+# 320 "../../VLCBlib_PIC/vlcb.h"
 typedef struct Service {
     uint8_t serviceNo;
     uint8_t version;
@@ -21227,9 +21229,9 @@ extern uint8_t findServiceIndex(uint8_t id);
 
 
 extern void factoryReset(void);
-# 397 "../../VLCBlib_PIC/vlcb.h"
+# 410 "../../VLCBlib_PIC/vlcb.h"
 extern void APP_highIsr(void);
-# 407 "../../VLCBlib_PIC/vlcb.h"
+# 420 "../../VLCBlib_PIC/vlcb.h"
 extern void APP_lowIsr(void);
 
 
@@ -21252,26 +21254,95 @@ typedef enum SendResult {
 
 
 
+typedef enum TxDrainResult {
+    DRAIN_OK,
+    OVERALL_TIMEOUT,
+    MESSAGE_TIMEOUT,
+    BUS_OFF_ERROR
+} TxDrainResult;
+
+
+
 
 typedef struct Transport {
     SendResult (* sendMessage)(Message * m);
     MessageReceived (* receiveMessage)(Message * m);
+    TxDrainResult (*waitForTxQueueToDrain)(void);
 } Transport;
-# 442 "../../VLCBlib_PIC/vlcb.h"
+# 465 "../../VLCBlib_PIC/vlcb.h"
 extern const Transport * transport;
-# 455 "../../VLCBlib_PIC/vlcb.h"
+# 478 "../../VLCBlib_PIC/vlcb.h"
 extern ValidTime APP_isSuitableTimeToWriteFlash(void);
+
+
+
+
+
+
+
+extern void APP_earlyInit(void);
 # 57 "../../VLCBlib_PIC/can18_ecan.c" 2
 
 
 # 1 "../../VLCBlib_PIC/can.h" 1
+# 44 "../../VLCBlib_PIC/can.h"
+# 1 "../../VLCBlib_PIC/ticktime.h" 1
+# 211 "../../VLCBlib_PIC/ticktime.h"
+typedef union _TickValue {
+
+    uint32_t val;
+
+    struct TickBytes
+    {
+        uint8_t b0;
+        uint8_t b1;
+        uint8_t b2;
+        uint8_t b3;
+    } byte;
+    uint8_t v[4];
+
+    struct TickWords
+    {
+        uint16_t w0;
+        uint16_t w1;
+    } word;
+} TickValue;
+
+
+
+
+
+
+extern TickValue tickNow;
+# 246 "../../VLCBlib_PIC/ticktime.h"
+void initTicker(uint8_t priority);
+
+
+
+
+
+uint32_t tickGet(void);
+
+
+
+
+
+
+
+extern volatile uint8_t timerExtension1;
+
+
+
+
+extern volatile uint8_t timerExtension2;
+# 44 "../../VLCBlib_PIC/can.h" 2
 # 85 "../../VLCBlib_PIC/can.h"
 extern const Service canService;
 
 
 
 extern const Transport canTransport;
-# 124 "../../VLCBlib_PIC/can.h"
+# 127 "../../VLCBlib_PIC/can.h"
 typedef enum CanidResult {
     CANID_FAIL,
     CANID_OK
@@ -21297,7 +21368,7 @@ extern uint8_t mode_flags;
 
 
 
-extern DiagnosticVal mnsDiagnostics[6];
+extern DiagnosticVal mnsDiagnostics[6 +1];
 extern void updateModuleErrorStatus(void);
 
 
@@ -21355,28 +21426,28 @@ Message * pop(MessageQueue * q);
 
 extern Message * getNextWriteMessage(MessageQueue * q);
 # 64 "../../VLCBlib_PIC/can18_ecan.c" 2
-# 85 "../../VLCBlib_PIC/can18_ecan.c"
+# 90 "../../VLCBlib_PIC/can18_ecan.c"
 static void canFactoryReset(void);
 static void canPowerUp(void);
 static void canPoll(void);
-static Processed canProcessMessage(Message * m);
+static Processed canProcessMessage(Message * m) __attribute__((reentrant));
 static void canIsr(void);
 static uint8_t canEsdData(uint8_t id);
 
-static void canTxError(void);
-static void checkTxFifo(void);
-static void checkCANTimeout(void);
+static void canTxError(void) __attribute__((reentrant));
+static void checkTxFifo(void) __attribute__((reentrant));
+static void checkCANTimeout(void) __attribute__((reentrant));
 
 
 static DiagnosticVal * canGetDiagnostic(uint8_t index);
 
 
 
-static DiagnosticVal canDiagnostics[16];
-# 110 "../../VLCBlib_PIC/can18_ecan.c"
+static DiagnosticVal canDiagnostics[18 +1];
+# 115 "../../VLCBlib_PIC/can18_ecan.c"
 const Service canService = {
     SERVICE_ID_CAN,
-    1,
+    2,
     canFactoryReset,
     canPowerUp,
     canProcessMessage,
@@ -21394,6 +21465,7 @@ const Service canService = {
 
 static SendResult canSendMessage(Message * mp);
 static MessageReceived canReceiveMessage(Message * m);
+static TxDrainResult canWaitForTxQueueToDrain(void);
 
 
 
@@ -21403,7 +21475,8 @@ static MessageReceived canReceiveMessage(Message * m);
 
 const Transport canTransport = {
     canSendMessage,
-    canReceiveMessage
+    canReceiveMessage,
+    canWaitForTxQueueToDrain
 };
 
 
@@ -21442,7 +21515,11 @@ static uint8_t * getBufferPointer(uint8_t b);
 static void canInterruptHandler(void);
 static void processEnumeration(void);
 static MessageReceived handleSelfEnumeration(uint8_t * p);
-static void canFillRxFifo(void);
+static void canFillRxFifo(void) __attribute__((reentrant));
+
+static uint8_t getNumTxBuffersInUse(void);
+static uint8_t getNumRxBuffersInUse(void);
+
 
 
 
@@ -21450,18 +21527,18 @@ static void canFillRxFifo(void);
 
 
 static const uint8_t canPri[] = {
-    0b01110000,
-    0b01100000,
-    0b01010000,
-    0b01000000,
+    0b10110000,
+    0b10100000,
+    0b10010000,
+    0b10000000,
     0b00000000
 };
-# 200 "../../VLCBlib_PIC/can18_ecan.c"
+# 211 "../../VLCBlib_PIC/can18_ecan.c"
 static void canFactoryReset(void) {
     canId = 0;
     writeNVM(EEPROM_NVM_TYPE, 0x3FE, canId);
 }
-# 213 "../../VLCBlib_PIC/can18_ecan.c"
+# 224 "../../VLCBlib_PIC/can18_ecan.c"
 static void canPowerUp(void) {
     int temp;
 
@@ -21487,9 +21564,10 @@ static void canPowerUp(void) {
     }
 
 
-    for (temp=0; temp<16; temp++) {
-        canDiagnostics[temp].asInt = 0;
+    for (temp=1; temp <= 18; temp++) {
+        canDiagnostics[temp].asUint = 0;
     }
+    canDiagnostics[0x00].asUint = 18;
 
 
     canTransmitFailed=0;
@@ -21502,7 +21580,7 @@ static void canPowerUp(void) {
 
     ECANCON = 0b10110000;
     BSEL0 = 0;
-# 276 "../../VLCBlib_PIC/can18_ecan.c"
+# 288 "../../VLCBlib_PIC/can18_ecan.c"
       BRGCON1 = 0b00001111;
 
 
@@ -21587,7 +21665,7 @@ static void canPowerUp(void) {
     PIE5bits.TXBnIE = 1;
     PIE5bits.ERRIE = 1;
 }
-# 368 "../../VLCBlib_PIC/can18_ecan.c"
+# 380 "../../VLCBlib_PIC/can18_ecan.c"
 static Processed canProcessMessage(Message * m) {
 
     if (m->len < 3) return NOT_PROCESSED;
@@ -21602,7 +21680,7 @@ static Processed canProcessMessage(Message * m) {
         case OPC_CANID:
             if (m->len < 4) {
 
-                sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_NVRD, SERVICE_ID_MNS, CMDERR_INV_CMD);
+                sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_CANID, SERVICE_ID_MNS, CMDERR_INV_CMD);
 
                 return PROCESSED;
             }
@@ -21639,22 +21717,66 @@ static void canIsr(void) {
 
 uint8_t canEsdData(uint8_t id) {
     switch(id) {
-        case 0:
+        case 1:
             return CAN_HW_PIC_ECAN;
         default:
             return 0;
     }
 }
-# 433 "../../VLCBlib_PIC/can18_ecan.c"
+# 445 "../../VLCBlib_PIC/can18_ecan.c"
 static DiagnosticVal * canGetDiagnostic(uint8_t index) {
-    if ((index<1) || (index>16)) {
+    if (index > 18) {
         return ((void*)0);
     }
-    return &(canDiagnostics[index-1]);
+    switch (index) {
+        case 0x03:
+            canDiagnostics[0x03].asUint = COMSTAT;
+            break;
+        case 0x04:
+            canDiagnostics[0x04].asUint = getNumTxBuffersInUse();
+            break;
+        case 0x07:
+            canDiagnostics[0x07].asUint = getNumRxBuffersInUse();
+            break;
+    }
+    return &(canDiagnostics[index]);
 }
-# 448 "../../VLCBlib_PIC/can18_ecan.c"
+
+
+
+
+
+
+static uint8_t getNumTxBuffersInUse(void) {
+    return quantity(&txQueue);
+}
+
+
+
+
+
+
+static uint8_t getNumRxBuffersInUse(void) {
+    uint8_t no;
+    uint8_t i;
+    uint8_t * ptr;
+
+    no = quantity(&rxQueue);
+    for (i=0; i<8; i++) {
+        ptr = getBufferPointer(i);
+        if (ptr[0] & 0x80) {
+            no++;
+        }
+    }
+    return no;
+}
+# 500 "../../VLCBlib_PIC/can18_ecan.c"
 static SendResult canSendMessage(Message * mp) {
 
+
+
+
+    uint8_t no;
 
 
 
@@ -21685,33 +21807,59 @@ static SendResult canSendMessage(Message * mp) {
 
             TXB0CONbits.TXREQ = 1;
 
-            canDiagnostics[0x05].asUint++;
-# 509 "../../VLCBlib_PIC/can18_ecan.c"
+            canDiagnostics[0x06].asUint++;
+# 565 "../../VLCBlib_PIC/can18_ecan.c"
             return SEND_OK;
         }
     }
 
     if (push(&txQueue, mp) == QUEUE_FAIL) {
 
-        canDiagnostics[0x04].asUint++;
+        canDiagnostics[0x05].asUint++;
         updateModuleErrorStatus();
 
         PIE5bits.TXBnIE = 1;
         return SEND_FAILED;
     }
+
+    no = getNumTxBuffersInUse();
+    if (canDiagnostics[0x11].asUint < no) {
+        canDiagnostics[0x11].asUint = no;
+    }
+
     PIE5bits.TXBnIE = 1;
     return SEND_OK;
 }
-# 534 "../../VLCBlib_PIC/can18_ecan.c"
+# 595 "../../VLCBlib_PIC/can18_ecan.c"
+static TxDrainResult canWaitForTxQueueToDrain(void) {
+    TickValue start;
+    start.val = tickGet();
+
+    while ((TXB0CONbits.TXREQ != 0) || (quantity(&txQueue) > 0)) {
+                     ;
+        if ((tickGet() - start.val) > 500 * (62500/1000)) return OVERALL_TIMEOUT;
+    }
+    return DRAIN_OK;
+}
+# 615 "../../VLCBlib_PIC/can18_ecan.c"
 static MessageReceived canReceiveMessage(Message * m){
     Message * mp;
     uint8_t * p;
     MessageReceived messageAvailable;
     uint8_t incomingCanId;
 
+    uint8_t no;
+
+
     PIE5bits.FIFOWMIE = 0;
     processEnumeration();
 
+
+
+    no = getNumRxBuffersInUse();
+    if (canDiagnostics[0x12].asUint < no) {
+        canDiagnostics[0x12].asUint = no;
+    }
 
     mp = pop(&rxQueue);
     if (mp != ((void*)0)) {
@@ -21733,7 +21881,7 @@ static MessageReceived canReceiveMessage(Message * m){
             if (handleSelfEnumeration(p) == RECEIVED) {
 
 
-                canDiagnostics[0x08].asUint++;
+                canDiagnostics[0x09].asUint++;
 
 
 
@@ -21754,6 +21902,7 @@ static MessageReceived canReceiveMessage(Message * m){
             }
 
             if (PIR5bits.IRXIF) {
+                canDiagnostics[0x01].asUint++;
                 PIR5bits.IRXIF = 0;
             }
 
@@ -21826,8 +21975,8 @@ static void checkTxFifo( void ) {
             canTransmitFailed = 0;
             TXB0CONbits.TXREQ = 1;
             PIE5bits.TXBnIE = 1;
-            canDiagnostics[0x05].asUint++;
-# 682 "../../VLCBlib_PIC/can18_ecan.c"
+            canDiagnostics[0x06].asUint++;
+# 775 "../../VLCBlib_PIC/can18_ecan.c"
         } else {
 
             canTransmitTimeout.val = 0;
@@ -21854,7 +22003,7 @@ static void checkCANTimeout(void) {
             TXB0CONbits.TXREQ = 0;
             checkTxFifo();
 
-            canDiagnostics[0x01].asUint++;
+            canDiagnostics[0x02].asUint++;
             updateModuleErrorStatus();
 
         }
@@ -21872,7 +22021,7 @@ static void canTxError(void) {
         canTransmitTimeout.val = 0;
         TXB0CONbits.TXREQ = 0;
 
-        canDiagnostics[0x0B].asUint++;
+        canDiagnostics[0x0C].asUint++;
         updateModuleErrorStatus();
 
     }
@@ -21881,7 +22030,7 @@ static void canTxError(void) {
         canTransmitTimeout.val = 0;
         TXB0CONbits.TXREQ = 0;
 
-        canDiagnostics[0x01].asUint++;
+        canDiagnostics[0x02].asUint++;
         updateModuleErrorStatus();
 
     }
@@ -21917,7 +22066,7 @@ static MessageReceived handleSelfEnumeration(uint8_t * p) {
 
 
             enumerationState = ENUMERATION_REQUIRED;
-            canDiagnostics[0x0D].asUint++;
+            canDiagnostics[0x0E].asUint++;
             enumerationStartTime.val = tickGet();
         }
     }
@@ -21931,7 +22080,6 @@ static MessageReceived handleSelfEnumeration(uint8_t * p) {
 
 static void canFillRxFifo(void) {
     uint8_t *ptr;
-    uint8_t hiIndex;
     Message * m;
 
     while (COMSTATbits.NOT_FIFOEMPTY) {
@@ -21946,7 +22094,7 @@ static void canFillRxFifo(void) {
             m = getNextWriteMessage(&rxQueue);
             if (m == ((void*)0)) {
 
-                canDiagnostics[0x07].asUint++;
+                canDiagnostics[0x08].asUint++;
                 updateModuleErrorStatus();
 
 
@@ -21969,6 +22117,9 @@ static void canFillRxFifo(void) {
         }
 
         if (PIR5bits.IRXIF) {
+
+            canDiagnostics[0x01].asUint++;
+
             PIR5bits.IRXIF = 0;
         }
 
@@ -21996,7 +22147,7 @@ static void processEnumeration(void) {
                 enumerationState = ENUMERATION_IN_PROGRESS;
                 enumerationStartTime.val = tickGet();
 
-                canDiagnostics[0x0C].asUint++;
+                canDiagnostics[0x0D].asUint++;
 
                 TXB1CONbits.TXREQ = 1;
             }
@@ -22006,10 +22157,10 @@ static void processEnumeration(void) {
 
 
 
-                for (i=0; (enumerationResults[i] == 0xFF) && (i < (0x7F/8)+1); i++) {
+                for (i=0; (i < (0x7F/8)+1) && (enumerationResults[i] == 0xFF); i++) {
                     ;
                 }
-                if ((enumResult = enumerationResults[i]) != 0xFF) {
+                if ((i < (0x7F/8)+1) && (enumResult = enumerationResults[i]) != 0xFF) {
                     for (newCanId = i*8; (enumResult & 0x01); newCanId++) {
                         enumResult >>= 1;
                     }
@@ -22018,13 +22169,13 @@ static void processEnumeration(void) {
                         setNewCanId(canId);
                     } else {
 
-                        canDiagnostics[0x0F].asUint++;
+                        canDiagnostics[0x10].asUint++;
                         updateModuleErrorStatus();
 
                     }
                 } else {
 
-                    canDiagnostics[0x0F].asUint++;
+                    canDiagnostics[0x10].asUint++;
                     updateModuleErrorStatus();
 
 
@@ -22059,7 +22210,7 @@ static CanidResult setNewCanId(uint8_t newCanId) {
 
         writeNVM(EEPROM_NVM_TYPE, 0x3FE, newCanId );
 
-        canDiagnostics[0x0E].asUint++;
+        canDiagnostics[0x0F].asUint++;
 
         return CANID_OK;
     } else {

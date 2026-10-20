@@ -30,7 +30,7 @@
     WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE
  */
 /**
- *	The Main CANMIO program supporting configurable I/O.
+ *	The Blink example with a NV for the blink rate and an event to turn it on and off.
  *
  * @author Ian Hogg 
  * @date Apr 2024
@@ -97,6 +97,13 @@ void APP_testMode(void) {
 }
 
 /**
+ * Called before anything else at power up, to put the module's own
+ * outputs into a safe state as early as possible. Nothing to do for Blink.
+ */
+void APP_earlyInit(void) {
+}
+
+/**
  * Called upon power up.
  */
 void setup(void) {
@@ -129,7 +136,7 @@ void loop(void) {
     if (blinkOn) {
         if (tickTimeSince(blinkTime) > HUNDRED_MILI_SECOND * getNV(NV_LOOP_TIMER)) {
             // Toggle blinkState variable
-            blinkState = ~ blinkState;
+            blinkState = ! blinkState;
             // Update the channel output
             digitalWrite(LED_CHANNEL, blinkState);
             // Update the timer so we called back at the right time 
@@ -220,4 +227,11 @@ Processed APP_processConsumedEvent(uint8_t tableIndex, Message * m) {
     // enable or disable the blinking LED.
     blinkOn = !(m->opc & EVENT_ON_MASK);
     return PROCESSED;
+}
+
+/*
+ * Every event taught to this module is a consumed event.
+ */
+uint8_t APP_isConsumedEvent(uint8_t tableIndex) {
+    return 1;
 }

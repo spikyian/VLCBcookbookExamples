@@ -67,7 +67,7 @@
 #define PARAM_MAJOR_VERSION     1
 #define PARAM_MINOR_VERSION     'a'
 #define PARAM_BUILD_VERSION     1
-#define PARAM_NUM_NV            0
+#define PARAM_NUM_NV            NV_NUM
 #define PARAM_NUM_EVENTS        0
 #define PARAM_NUM_EV_EVENT      0
 // Module name - must be 7 characters

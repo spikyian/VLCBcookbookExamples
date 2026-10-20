@@ -59,6 +59,13 @@ void APP_testMode(void) {
 }
 
 /**
+ * Called before anything else at power up, to put the module's own
+ * outputs into a safe state as early as possible. Nothing to do for Blink.
+ */
+void APP_earlyInit(void) {
+}
+
+/**
  * Called upon power up.
  */
 void setup(void) {

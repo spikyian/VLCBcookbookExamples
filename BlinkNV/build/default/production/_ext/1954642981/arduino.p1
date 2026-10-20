@@ -5,8 +5,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S1536 . pin port no an ]
 "110 ../../VLCBlib_PIC/arduino.c
 [; ;../../VLCBlib_PIC/arduino.c: 110: void pinMode(uint8_t channel, PinMode mode) {
-[c E12926 0 1 2 .. ]
-[n E12926 PinMode OUTPUT INPUT ANALOGUE  ]
+[c E12963 0 1 2 .. ]
+[n E12963 PinMode OUTPUT INPUT ANALOGUE  ]
 "26974 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 26974: extern volatile unsigned char ANCON0 __attribute__((address(0xF5D)));
 [v _ANCON0 `Vuc ~T0 @X0 0 e@3933 ]
@@ -1519,11 +1519,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 ]
 "110
 [; ;../../VLCBlib_PIC/arduino.c: 110: void pinMode(uint8_t channel, PinMode mode) {
-[v _pinMode `(v ~T0 @X0 1 ef2`uc`E12926 ]
+[v _pinMode `(v ~T0 @X0 1 ef2`uc`E12963 ]
 {
 [e :U _pinMode ]
 [v _channel `uc ~T0 @X0 1 r1 ]
-[v _mode `E12926 ~T0 @X0 1 r2 ]
+[v _mode `E12963 ~T0 @X0 1 r2 ]
 [f ]
 "111
 [; ;../../VLCBlib_PIC/arduino.c: 111:     if (channel < 16) {
@@ -1597,9 +1597,9 @@ Version 4.0 HI-TECH Software Intermediate Code
 }
 [e $U 1539  ]
 [e :U 1540 ]
-[e [\ -> _mode `ui , $ -> . `E12926 1 `ui 1541
- , $ -> . `E12926 0 `ui 1542
- , $ -> . `E12926 2 `ui 1546
+[e [\ -> _mode `ui , $ -> . `E12963 1 `ui 1541
+ , $ -> . `E12963 0 `ui 1542
+ , $ -> . `E12963 2 `ui 1546
  1539 ]
 [e :U 1539 ]
 "161
@@ -1626,49 +1626,49 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;../../VLCBlib_PIC/arduino.c: 167:                     case INPUT:
 [e :U 1556 ]
 "168
-[; ;../../VLCBlib_PIC/arduino.c: 168:                         TRISA |= (1 << configs[channel].no);
-[e =| _TRISA -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"169
-[; ;../../VLCBlib_PIC/arduino.c: 169:                         break;
-[e $U 1553  ]
-"170
-[; ;../../VLCBlib_PIC/arduino.c: 170:                     case ANALOGUE:
+[; ;../../VLCBlib_PIC/arduino.c: 168:                     case ANALOGUE:
 [e :U 1557 ]
-"171
-[; ;../../VLCBlib_PIC/arduino.c: 171:                         break;
+"169
+[; ;../../VLCBlib_PIC/arduino.c: 169:                         TRISA |= (1 << configs[channel].no);
+[e =| _TRISA -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
+"170
+[; ;../../VLCBlib_PIC/arduino.c: 170:                         break;
 [e $U 1553  ]
-"172
-[; ;../../VLCBlib_PIC/arduino.c: 172:                 }
+"171
+[; ;../../VLCBlib_PIC/arduino.c: 171:                 }
 }
 [e $U 1553  ]
 [e :U 1554 ]
-[e [\ -> _mode `ui , $ -> . `E12926 0 `ui 1555
- , $ -> . `E12926 1 `ui 1556
- , $ -> . `E12926 2 `ui 1557
+[e [\ -> _mode `ui , $ -> . `E12963 0 `ui 1555
+ , $ -> . `E12963 1 `ui 1556
+ , $ -> . `E12963 2 `ui 1557
  1553 ]
 [e :U 1553 ]
-"173
-[; ;../../VLCBlib_PIC/arduino.c: 173:                 break;
+"172
+[; ;../../VLCBlib_PIC/arduino.c: 172:                 break;
 [e $U 1550  ]
-"174
-[; ;../../VLCBlib_PIC/arduino.c: 174:             case 'B':
+"173
+[; ;../../VLCBlib_PIC/arduino.c: 173:             case 'B':
 [e :U 1558 ]
-"175
-[; ;../../VLCBlib_PIC/arduino.c: 175:                 switch (mode) {
+"174
+[; ;../../VLCBlib_PIC/arduino.c: 174:                 switch (mode) {
 [e $U 1560  ]
 {
-"176
-[; ;../../VLCBlib_PIC/arduino.c: 176:                     case OUTPUT:
+"175
+[; ;../../VLCBlib_PIC/arduino.c: 175:                     case OUTPUT:
 [e :U 1561 ]
-"177
-[; ;../../VLCBlib_PIC/arduino.c: 177:                         TRISB &= ~(1 << configs[channel].no);
+"176
+[; ;../../VLCBlib_PIC/arduino.c: 176:                         TRISB &= ~(1 << configs[channel].no);
 [e =& _TRISB -> ~ << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"178
-[; ;../../VLCBlib_PIC/arduino.c: 178:                         break;
+"177
+[; ;../../VLCBlib_PIC/arduino.c: 177:                         break;
 [e $U 1559  ]
-"179
-[; ;../../VLCBlib_PIC/arduino.c: 179:                     case INPUT:
+"178
+[; ;../../VLCBlib_PIC/arduino.c: 178:                     case INPUT:
 [e :U 1562 ]
+"179
+[; ;../../VLCBlib_PIC/arduino.c: 179:                     case ANALOGUE:
+[e :U 1563 ]
 "180
 [; ;../../VLCBlib_PIC/arduino.c: 180:                         TRISB |= (1 << configs[channel].no);
 [e =| _TRISB -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
@@ -1676,76 +1676,67 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;../../VLCBlib_PIC/arduino.c: 181:                         break;
 [e $U 1559  ]
 "182
-[; ;../../VLCBlib_PIC/arduino.c: 182:                     case ANALOGUE:
-[e :U 1563 ]
-"183
-[; ;../../VLCBlib_PIC/arduino.c: 183:                         break;
-[e $U 1559  ]
-"184
-[; ;../../VLCBlib_PIC/arduino.c: 184:                 }
+[; ;../../VLCBlib_PIC/arduino.c: 182:                 }
 }
 [e $U 1559  ]
 [e :U 1560 ]
-[e [\ -> _mode `ui , $ -> . `E12926 0 `ui 1561
- , $ -> . `E12926 1 `ui 1562
- , $ -> . `E12926 2 `ui 1563
+[e [\ -> _mode `ui , $ -> . `E12963 0 `ui 1561
+ , $ -> . `E12963 1 `ui 1562
+ , $ -> . `E12963 2 `ui 1563
  1559 ]
 [e :U 1559 ]
-"185
-[; ;../../VLCBlib_PIC/arduino.c: 185:                 break;
+"183
+[; ;../../VLCBlib_PIC/arduino.c: 183:                 break;
 [e $U 1550  ]
-"186
-[; ;../../VLCBlib_PIC/arduino.c: 186:             case 'C':
+"184
+[; ;../../VLCBlib_PIC/arduino.c: 184:             case 'C':
 [e :U 1564 ]
-"187
-[; ;../../VLCBlib_PIC/arduino.c: 187:                 switch (mode) {
+"185
+[; ;../../VLCBlib_PIC/arduino.c: 185:                 switch (mode) {
 [e $U 1566  ]
 {
-"188
-[; ;../../VLCBlib_PIC/arduino.c: 188:                     case OUTPUT:
+"186
+[; ;../../VLCBlib_PIC/arduino.c: 186:                     case OUTPUT:
 [e :U 1567 ]
-"189
-[; ;../../VLCBlib_PIC/arduino.c: 189:                         TRISC &= ~(1 << configs[channel].no);
+"187
+[; ;../../VLCBlib_PIC/arduino.c: 187:                         TRISC &= ~(1 << configs[channel].no);
 [e =& _TRISC -> ~ << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"190
-[; ;../../VLCBlib_PIC/arduino.c: 190:                         break;
+"188
+[; ;../../VLCBlib_PIC/arduino.c: 188:                         break;
 [e $U 1565  ]
-"191
-[; ;../../VLCBlib_PIC/arduino.c: 191:                     case INPUT:
+"189
+[; ;../../VLCBlib_PIC/arduino.c: 189:                     case INPUT:
 [e :U 1568 ]
-"192
-[; ;../../VLCBlib_PIC/arduino.c: 192:                         TRISC |= (1 << configs[channel].no);
-[e =| _TRISC -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"193
-[; ;../../VLCBlib_PIC/arduino.c: 193:                         break;
-[e $U 1565  ]
-"194
-[; ;../../VLCBlib_PIC/arduino.c: 194:                     case ANALOGUE:
+"190
+[; ;../../VLCBlib_PIC/arduino.c: 190:                     case ANALOGUE:
 [e :U 1569 ]
-"195
-[; ;../../VLCBlib_PIC/arduino.c: 195:                         break;
+"191
+[; ;../../VLCBlib_PIC/arduino.c: 191:                         TRISC |= (1 << configs[channel].no);
+[e =| _TRISC -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
+"192
+[; ;../../VLCBlib_PIC/arduino.c: 192:                         break;
 [e $U 1565  ]
-"196
-[; ;../../VLCBlib_PIC/arduino.c: 196:                 }
+"193
+[; ;../../VLCBlib_PIC/arduino.c: 193:                 }
 }
 [e $U 1565  ]
 [e :U 1566 ]
-[e [\ -> _mode `ui , $ -> . `E12926 0 `ui 1567
- , $ -> . `E12926 1 `ui 1568
- , $ -> . `E12926 2 `ui 1569
+[e [\ -> _mode `ui , $ -> . `E12963 0 `ui 1567
+ , $ -> . `E12963 1 `ui 1568
+ , $ -> . `E12963 2 `ui 1569
  1565 ]
 [e :U 1565 ]
-"197
-[; ;../../VLCBlib_PIC/arduino.c: 197:                 break;
+"194
+[; ;../../VLCBlib_PIC/arduino.c: 194:                 break;
 [e $U 1550  ]
-"198
-[; ;../../VLCBlib_PIC/arduino.c: 198:             default:
+"195
+[; ;../../VLCBlib_PIC/arduino.c: 195:             default:
 [e :U 1570 ]
-"199
-[; ;../../VLCBlib_PIC/arduino.c: 199:                 break;
+"196
+[; ;../../VLCBlib_PIC/arduino.c: 196:                 break;
 [e $U 1550  ]
-"200
-[; ;../../VLCBlib_PIC/arduino.c: 200:         }
+"197
+[; ;../../VLCBlib_PIC/arduino.c: 197:         }
 }
 [e $U 1550  ]
 [e :U 1551 ]
@@ -1754,116 +1745,116 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> 67 `ui `i 1564
  1570 ]
 [e :U 1550 ]
-"201
-[; ;../../VLCBlib_PIC/arduino.c: 201:     }
+"198
+[; ;../../VLCBlib_PIC/arduino.c: 198:     }
 }
 [e :U 1538 ]
-"202
-[; ;../../VLCBlib_PIC/arduino.c: 202: }
+"199
+[; ;../../VLCBlib_PIC/arduino.c: 199: }
 [e :UE 1537 ]
 }
-"210
-[; ;../../VLCBlib_PIC/arduino.c: 210: void digitalWrite(uint8_t channel, uint8_t value) {
+"207
+[; ;../../VLCBlib_PIC/arduino.c: 207: void digitalWrite(uint8_t channel, uint8_t value) {
 [v _digitalWrite `(v ~T0 @X0 1 ef2`uc`uc ]
 {
 [e :U _digitalWrite ]
 [v _channel `uc ~T0 @X0 1 r1 ]
 [v _value `uc ~T0 @X0 1 r2 ]
 [f ]
-"211
-[; ;../../VLCBlib_PIC/arduino.c: 211:     if (channel < 16) {
+"208
+[; ;../../VLCBlib_PIC/arduino.c: 208:     if (channel < 16) {
 [e $ ! < -> _channel `i -> 16 `i 1572  ]
 {
-"213
-[; ;../../VLCBlib_PIC/arduino.c: 213:        switch(configs[channel].port) {
+"210
+[; ;../../VLCBlib_PIC/arduino.c: 210:        switch(configs[channel].port) {
 [e $U 1574  ]
 {
-"214
-[; ;../../VLCBlib_PIC/arduino.c: 214:             case 'A':
+"211
+[; ;../../VLCBlib_PIC/arduino.c: 211:             case 'A':
 [e :U 1575 ]
-"215
-[; ;../../VLCBlib_PIC/arduino.c: 215:                 if (value) {
+"212
+[; ;../../VLCBlib_PIC/arduino.c: 212:                 if (value) {
 [e $ ! != -> _value `i -> 0 `i 1576  ]
 {
-"216
-[; ;../../VLCBlib_PIC/arduino.c: 216:                     LATA |= (1 << configs[channel].no);
+"213
+[; ;../../VLCBlib_PIC/arduino.c: 213:                     LATA |= (1 << configs[channel].no);
 [e =| _LATA -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"217
-[; ;../../VLCBlib_PIC/arduino.c: 217:                 } else {
+"214
+[; ;../../VLCBlib_PIC/arduino.c: 214:                 } else {
 }
 [e $U 1577  ]
 [e :U 1576 ]
 {
-"218
-[; ;../../VLCBlib_PIC/arduino.c: 218:                     LATA &= ~(1 << configs[channel].no);
+"215
+[; ;../../VLCBlib_PIC/arduino.c: 215:                     LATA &= ~(1 << configs[channel].no);
 [e =& _LATA -> ~ << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"219
-[; ;../../VLCBlib_PIC/arduino.c: 219:                 }
+"216
+[; ;../../VLCBlib_PIC/arduino.c: 216:                 }
 }
 [e :U 1577 ]
-"220
-[; ;../../VLCBlib_PIC/arduino.c: 220:                 break;
+"217
+[; ;../../VLCBlib_PIC/arduino.c: 217:                 break;
 [e $U 1573  ]
-"221
-[; ;../../VLCBlib_PIC/arduino.c: 221:             case 'B':
+"218
+[; ;../../VLCBlib_PIC/arduino.c: 218:             case 'B':
 [e :U 1578 ]
-"222
-[; ;../../VLCBlib_PIC/arduino.c: 222:                 if (value) {
+"219
+[; ;../../VLCBlib_PIC/arduino.c: 219:                 if (value) {
 [e $ ! != -> _value `i -> 0 `i 1579  ]
 {
-"223
-[; ;../../VLCBlib_PIC/arduino.c: 223:                     LATB |= (1 << configs[channel].no);
+"220
+[; ;../../VLCBlib_PIC/arduino.c: 220:                     LATB |= (1 << configs[channel].no);
 [e =| _LATB -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"224
-[; ;../../VLCBlib_PIC/arduino.c: 224:                 } else {
+"221
+[; ;../../VLCBlib_PIC/arduino.c: 221:                 } else {
 }
 [e $U 1580  ]
 [e :U 1579 ]
 {
-"225
-[; ;../../VLCBlib_PIC/arduino.c: 225:                     LATB &= ~(1 << configs[channel].no);
+"222
+[; ;../../VLCBlib_PIC/arduino.c: 222:                     LATB &= ~(1 << configs[channel].no);
 [e =& _LATB -> ~ << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"226
-[; ;../../VLCBlib_PIC/arduino.c: 226:                 }
+"223
+[; ;../../VLCBlib_PIC/arduino.c: 223:                 }
 }
 [e :U 1580 ]
-"227
-[; ;../../VLCBlib_PIC/arduino.c: 227:                 break;
+"224
+[; ;../../VLCBlib_PIC/arduino.c: 224:                 break;
 [e $U 1573  ]
-"228
-[; ;../../VLCBlib_PIC/arduino.c: 228:             case 'C':
+"225
+[; ;../../VLCBlib_PIC/arduino.c: 225:             case 'C':
 [e :U 1581 ]
-"229
-[; ;../../VLCBlib_PIC/arduino.c: 229:                 if (value) {
+"226
+[; ;../../VLCBlib_PIC/arduino.c: 226:                 if (value) {
 [e $ ! != -> _value `i -> 0 `i 1582  ]
 {
-"230
-[; ;../../VLCBlib_PIC/arduino.c: 230:                     LATC |= (1 << configs[channel].no);
+"227
+[; ;../../VLCBlib_PIC/arduino.c: 227:                     LATC |= (1 << configs[channel].no);
 [e =| _LATC -> << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"231
-[; ;../../VLCBlib_PIC/arduino.c: 231:                 } else {
+"228
+[; ;../../VLCBlib_PIC/arduino.c: 228:                 } else {
 }
 [e $U 1583  ]
 [e :U 1582 ]
 {
-"232
-[; ;../../VLCBlib_PIC/arduino.c: 232:                     LATC &= ~(1 << configs[channel].no);
+"229
+[; ;../../VLCBlib_PIC/arduino.c: 229:                     LATC &= ~(1 << configs[channel].no);
 [e =& _LATC -> ~ << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `Vuc ]
-"233
-[; ;../../VLCBlib_PIC/arduino.c: 233:                 }
+"230
+[; ;../../VLCBlib_PIC/arduino.c: 230:                 }
 }
 [e :U 1583 ]
-"234
-[; ;../../VLCBlib_PIC/arduino.c: 234:                 break;
+"231
+[; ;../../VLCBlib_PIC/arduino.c: 231:                 break;
 [e $U 1573  ]
-"235
-[; ;../../VLCBlib_PIC/arduino.c: 235:             default:
+"232
+[; ;../../VLCBlib_PIC/arduino.c: 232:             default:
 [e :U 1584 ]
-"236
-[; ;../../VLCBlib_PIC/arduino.c: 236:                 break;
+"233
+[; ;../../VLCBlib_PIC/arduino.c: 233:                 break;
 [e $U 1573  ]
-"237
-[; ;../../VLCBlib_PIC/arduino.c: 237:         }
+"234
+[; ;../../VLCBlib_PIC/arduino.c: 234:         }
 }
 [e $U 1573  ]
 [e :U 1574 ]
@@ -1872,58 +1863,58 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> 67 `ui `i 1581
  1584 ]
 [e :U 1573 ]
-"238
-[; ;../../VLCBlib_PIC/arduino.c: 238:     }
+"235
+[; ;../../VLCBlib_PIC/arduino.c: 235:     }
 }
 [e :U 1572 ]
-"239
-[; ;../../VLCBlib_PIC/arduino.c: 239: }
+"236
+[; ;../../VLCBlib_PIC/arduino.c: 236: }
 [e :UE 1571 ]
 }
-"247
-[; ;../../VLCBlib_PIC/arduino.c: 247: uint8_t digitalRead(uint8_t channel) {
+"244
+[; ;../../VLCBlib_PIC/arduino.c: 244: uint8_t digitalRead(uint8_t channel) {
 [v _digitalRead `(uc ~T0 @X0 1 ef1`uc ]
 {
 [e :U _digitalRead ]
 [v _channel `uc ~T0 @X0 1 r1 ]
 [f ]
-"248
-[; ;../../VLCBlib_PIC/arduino.c: 248:     if (channel < 16) {
+"245
+[; ;../../VLCBlib_PIC/arduino.c: 245:     if (channel < 16) {
 [e $ ! < -> _channel `i -> 16 `i 1586  ]
 {
-"250
-[; ;../../VLCBlib_PIC/arduino.c: 250:         switch(configs[channel].port) {
+"247
+[; ;../../VLCBlib_PIC/arduino.c: 247:         switch(configs[channel].port) {
 [e $U 1588  ]
 {
-"251
-[; ;../../VLCBlib_PIC/arduino.c: 251:             case 'A':
+"248
+[; ;../../VLCBlib_PIC/arduino.c: 248:             case 'A':
 [e :U 1589 ]
-"252
-[; ;../../VLCBlib_PIC/arduino.c: 252:                 return PORTA & (1 << configs[channel].no);
+"249
+[; ;../../VLCBlib_PIC/arduino.c: 249:                 return PORTA & (1 << configs[channel].no);
 [e ) -> & -> _PORTA `i << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `uc ]
 [e $UE 1585  ]
-"253
-[; ;../../VLCBlib_PIC/arduino.c: 253:             case 'B':
+"250
+[; ;../../VLCBlib_PIC/arduino.c: 250:             case 'B':
 [e :U 1590 ]
-"254
-[; ;../../VLCBlib_PIC/arduino.c: 254:                 return PORTB & (1 << configs[channel].no);
+"251
+[; ;../../VLCBlib_PIC/arduino.c: 251:                 return PORTB & (1 << configs[channel].no);
 [e ) -> & -> _PORTB `i << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `uc ]
 [e $UE 1585  ]
-"255
-[; ;../../VLCBlib_PIC/arduino.c: 255:             case 'C':
+"252
+[; ;../../VLCBlib_PIC/arduino.c: 252:             case 'C':
 [e :U 1591 ]
-"256
-[; ;../../VLCBlib_PIC/arduino.c: 256:                 return PORTC & (1 << configs[channel].no);
+"253
+[; ;../../VLCBlib_PIC/arduino.c: 253:                 return PORTC & (1 << configs[channel].no);
 [e ) -> & -> _PORTC `i << -> 1 `i -> . *U + &U _configs * -> _channel `ux -> -> # *U &U _configs `ui `ux 2 `i `uc ]
 [e $UE 1585  ]
-"257
-[; ;../../VLCBlib_PIC/arduino.c: 257:             default:
+"254
+[; ;../../VLCBlib_PIC/arduino.c: 254:             default:
 [e :U 1592 ]
-"258
-[; ;../../VLCBlib_PIC/arduino.c: 258:                 break;
+"255
+[; ;../../VLCBlib_PIC/arduino.c: 255:                 break;
 [e $U 1587  ]
-"259
-[; ;../../VLCBlib_PIC/arduino.c: 259:         }
+"256
+[; ;../../VLCBlib_PIC/arduino.c: 256:         }
 }
 [e $U 1587  ]
 [e :U 1588 ]
@@ -1932,15 +1923,15 @@ Version 4.0 HI-TECH Software Intermediate Code
  , $ -> -> 67 `ui `i 1591
  1592 ]
 [e :U 1587 ]
-"260
-[; ;../../VLCBlib_PIC/arduino.c: 260:     }
+"257
+[; ;../../VLCBlib_PIC/arduino.c: 257:     }
 }
 [e :U 1586 ]
-"261
-[; ;../../VLCBlib_PIC/arduino.c: 261:     return 0;
+"258
+[; ;../../VLCBlib_PIC/arduino.c: 258:     return 0;
 [e ) -> -> 0 `i `uc ]
 [e $UE 1585  ]
-"262
-[; ;../../VLCBlib_PIC/arduino.c: 262: }
+"259
+[; ;../../VLCBlib_PIC/arduino.c: 259: }
 [e :UE 1585 ]
 }

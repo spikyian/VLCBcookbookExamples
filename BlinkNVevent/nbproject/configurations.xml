@@ -28,6 +28,7 @@
         <itemPath>../../VLCBlib_PIC/ticktime.h</itemPath>
         <itemPath>../../VLCBlib_PIC/timedResponse.h</itemPath>
         <itemPath>../../VLCBlib_PIC/vlcb.h</itemPath>
+        <itemPath>../../VLCBlib_PIC/event_teach_large.h</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"
@@ -60,6 +61,7 @@
         <itemPath>../../VLCBlib_PIC/ticktime.c</itemPath>
         <itemPath>../../VLCBlib_PIC/timedResponse.c</itemPath>
         <itemPath>../../VLCBlib_PIC/vlcb.c</itemPath>
+        <itemPath>../../VLCBlib_PIC/event_teach_large.c</itemPath>
       </logicalFolder>
     </logicalFolder>
   </logicalFolder>
@@ -111,6 +113,10 @@
         <makeCustomizationEnableLongLines>false</makeCustomizationEnableLongLines>
         <makeCustomizationNormalizeHexFile>false</makeCustomizationNormalizeHexFile>
       </makeCustomizationType>
+      <item path="../../VLCBlib_PIC/event_teach_simple.c"
+            ex="true"
+            overriding="false">
+      </item>
       <HI-TECH-COMP>
         <property key="additional-warnings" value="true"/>
         <property key="asmlist" value="true"/>

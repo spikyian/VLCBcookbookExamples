@@ -1,8 +1,8 @@
 Version 4.0 HI-TECH Software Intermediate Code
-"60 ../../VLCBlib_PIC/statusLeds2.c
-[; ;../../VLCBlib_PIC/statusLeds2.c: 60: LedState ledState[2];
-[c E12896 0 1 2 3 4 5 6 7 8 9 .. ]
-[n E12896 . LED_OFF LED_ON LED_FLASH_50_2HZ LED_FLASH_50_1HZ LED_FLASH_50_HALF_HZ LED_SINGLE_FLICKER_OFF LED_SINGLE_FLICKER_ON LED_LONG_FLICKER_OFF LED_LONG_FLICKER_ON LED_OFF_1S  ]
+"63 ../../VLCBlib_PIC/statusLeds2.c
+[; ;../../VLCBlib_PIC/statusLeds2.c: 63: LedState ledState[2];
+[c E12224 0 1 2 3 4 5 6 7 8 9 .. ]
+[n E12224 . LED_OFF LED_ON LED_FLASH_50_2HZ LED_FLASH_50_1HZ LED_FLASH_50_HALF_HZ LED_SINGLE_FLICKER_OFF LED_SINGLE_FLICKER_ON LED_LONG_FLICKER_OFF LED_LONG_FLICKER_ON LED_OFF_1S  ]
 "216 ../../VLCBlib_PIC/ticktime.h
 [; ;../../VLCBlib_PIC/ticktime.h: 216:     {
 [s S1534 `uc 1 `uc 1 `uc 1 `uc 1 ]
@@ -43,9 +43,12 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30662
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 30662: extern volatile TRISAbits_t TRISAbits __attribute__((address(0xF92)));
 [v _TRISAbits `VS1167 ~T0 @X0 0 e@3986 ]
-"244 ../../VLCBlib_PIC/ticktime.h
-[; ;../../VLCBlib_PIC/ticktime.h: 244: uint32_t tickGet(void);
+"252 ../../VLCBlib_PIC/ticktime.h
+[; ;../../VLCBlib_PIC/ticktime.h: 252: uint32_t tickGet(void);
 [v _tickGet `(ul ~T0 @X0 0 ef ]
+"236
+[; ;../../VLCBlib_PIC/ticktime.h: 236: extern TickValue tickNow;
+[v _tickNow `S1533 ~T0 @X0 0 e ]
 "30333 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 30333:     struct {
 [s S1158 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
@@ -61,17 +64,17 @@ Version 4.0 HI-TECH Software Intermediate Code
 "30354
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 30354: extern volatile LATBbits_t LATBbits __attribute__((address(0xF8A)));
 [v _LATBbits `VS1157 ~T0 @X0 0 e@3978 ]
-"235 ../../VLCBlib_PIC/statusLeds2.c
-[; ;../../VLCBlib_PIC/statusLeds2.c: 235: void showStatus(StatusDisplay s) {
-[c E12881 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
-[n E12881 StatusDisplay STATUS_OFF STATUS_UNINITIALISED STATUS_SETUP STATUS_NORMAL STATUS_RESET_WARNING STATUS_LEARN STATUS_BOOT STATUS_MESSAGE_RECEIVED STATUS_MESSAGE_ACTED STATUS_TRANSMIT_ERROR STATUS_RECEIVE_ERROR STATUS_MEMORY_FAULT STATUS_FATAL_ERROR  ]
-"56
-[; ;../../VLCBlib_PIC/statusLeds2.c: 56: extern uint8_t mode_state;
+"238 ../../VLCBlib_PIC/statusLeds2.c
+[; ;../../VLCBlib_PIC/statusLeds2.c: 238: void showStatus(StatusDisplay s) {
+[c E12209 0 1 2 3 4 5 6 7 8 9 10 11 12 .. ]
+[n E12209 StatusDisplay STATUS_OFF STATUS_UNINITIALISED STATUS_SETUP STATUS_NORMAL STATUS_RESET_WARNING STATUS_LEARN STATUS_BOOT STATUS_MESSAGE_RECEIVED STATUS_MESSAGE_ACTED STATUS_TRANSMIT_ERROR STATUS_RECEIVE_ERROR STATUS_MEMORY_FAULT STATUS_FATAL_ERROR  ]
+"59
+[; ;../../VLCBlib_PIC/statusLeds2.c: 59: extern uint8_t mode_state;
 [v _mode_state `uc ~T0 @X0 0 e ]
-"264
-[; ;../../VLCBlib_PIC/statusLeds2.c: 264:             if (mode_state == MODE_UNINITIALISED) {
-[c E12598 255 0 1 8 9 10 11 12 13 14 .. ]
-[n E12598 VlcbModeParams MODE_UNINITIALISED MODE_SETUP MODE_NORMAL MODE_LEARN_ON MODE_LEARN_OFF MODE_EVENT_ACK_ON MODE_EVENT_ACK_OFF MODE_HEARTBEAT_ON MODE_HEARTBEAT_OFF MODE_BOOT  ]
+"267
+[; ;../../VLCBlib_PIC/statusLeds2.c: 267:             if (mode_state == MODE_UNINITIALISED) {
+[c E12629 255 0 1 8 9 10 11 12 13 14 16 17 .. ]
+[n E12629 VlcbModeParams MODE_UNINITIALISED MODE_SETUP MODE_NORMAL MODE_LEARN_ON MODE_LEARN_OFF MODE_EVENT_ACK_ON MODE_EVENT_ACK_OFF MODE_HEARTBEAT_ON MODE_HEARTBEAT_OFF MODE_BOOT MODE_FCUCOMPAT_ON MODE_FCUCOMPAT_OFF  ]
 "54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1446,694 +1449,694 @@ Version 4.0 HI-TECH Software Intermediate Code
 "37211
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 37211: __asm("TOSU equ 0FFFh");
 [; <" TOSU equ 0FFFh ;# ">
-"60 ../../VLCBlib_PIC/statusLeds2.c
-[; ;../../VLCBlib_PIC/statusLeds2.c: 60: LedState ledState[2];
-[v _ledState `E12896 ~T0 @X0 -> 2 `i e ]
-"70
-[; ;../../VLCBlib_PIC/statusLeds2.c: 70: static uint8_t flashCounter[2];
+"63 ../../VLCBlib_PIC/statusLeds2.c
+[; ;../../VLCBlib_PIC/statusLeds2.c: 63: LedState ledState[2];
+[v _ledState `E12224 ~T0 @X0 -> 2 `i e ]
+"73
+[; ;../../VLCBlib_PIC/statusLeds2.c: 73: static uint8_t flashCounter[2];
 [v _flashCounter `uc ~T0 @X0 -> 2 `i s ]
-"71
-[; ;../../VLCBlib_PIC/statusLeds2.c: 71: static TickValue ledTimer;
+"74
+[; ;../../VLCBlib_PIC/statusLeds2.c: 74: static TickValue ledTimer;
 [v _ledTimer `S1533 ~T0 @X0 1 s ]
-"77
-[; ;../../VLCBlib_PIC/statusLeds2.c: 77: void leds_powerUp(void) {
+"80
+[; ;../../VLCBlib_PIC/statusLeds2.c: 80: void leds_powerUp(void) {
 [v _leds_powerUp `(v ~T0 @X0 1 ef ]
 {
 [e :U _leds_powerUp ]
 [f ]
-"79
-[; ;../../VLCBlib_PIC/statusLeds2.c: 79:     {ANCON0=ANCON1=0; TRISBbits.TRISB6=TRISBbits.TRISB7=0,TRISAbits.TRISA2=1;};
+"82
+[; ;../../VLCBlib_PIC/statusLeds2.c: 82:     {ANCON0=ANCON1=0; TRISBbits.TRISB6=TRISBbits.TRISB7=0,TRISAbits.TRISA2=1;};
 {
 [e = _ANCON0 = _ANCON1 -> -> 0 `i `uc ]
 [e ; = . . _TRISBbits 0 6 = . . _TRISBbits 0 7 -> -> 0 `i `uc = . . _TRISAbits 0 2 -> -> 1 `i `uc ]
 }
-"80
-[; ;../../VLCBlib_PIC/statusLeds2.c: 80:     flashCounter[0] = 0;
-[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"81
-[; ;../../VLCBlib_PIC/statusLeds2.c: 81:     flashCounter[1] = 0;
-[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"82
-[; ;../../VLCBlib_PIC/statusLeds2.c: 82:     ledTimer.val = tickGet();
-[e = . _ledTimer 0 ( _tickGet ..  ]
 "83
-[; ;../../VLCBlib_PIC/statusLeds2.c: 83: }
+[; ;../../VLCBlib_PIC/statusLeds2.c: 83:     flashCounter[0] = 0;
+[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"84
+[; ;../../VLCBlib_PIC/statusLeds2.c: 84:     flashCounter[1] = 0;
+[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"85
+[; ;../../VLCBlib_PIC/statusLeds2.c: 85:     ledTimer.val = tickGet();
+[e = . _ledTimer 0 ( _tickGet ..  ]
+"86
+[; ;../../VLCBlib_PIC/statusLeds2.c: 86: }
 [e :UE 1536 ]
 }
-"89
-[; ;../../VLCBlib_PIC/statusLeds2.c: 89: void leds_poll(void) {
+"92
+[; ;../../VLCBlib_PIC/statusLeds2.c: 92: void leds_poll(void) {
 [v _leds_poll `(v ~T0 @X0 1 ef ]
 {
 [e :U _leds_poll ]
 [f ]
-"90
-[; ;../../VLCBlib_PIC/statusLeds2.c: 90:     if ((tickGet() - ledTimer.val) > (62500/100)) {
-[e $ ! > - ( _tickGet ..  . _ledTimer 0 -> / -> 62500 `l -> -> 100 `i `l `ul 1538  ]
-{
-"91
-[; ;../../VLCBlib_PIC/statusLeds2.c: 91:         flashCounter[0]++;
-[e ++ *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 1 `i `uc ]
-"92
-[; ;../../VLCBlib_PIC/statusLeds2.c: 92:         flashCounter[1]++;
-[e ++ *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 1 `i `uc ]
 "93
-[; ;../../VLCBlib_PIC/statusLeds2.c: 93:         ledTimer.val = tickGet();
-[e = . _ledTimer 0 ( _tickGet ..  ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 93:     if (((tickNow.val) - (ledTimer).val) > (62500/100)) {
+[e $ ! > - . _tickNow 0 . _ledTimer 0 -> / -> 62500 `l -> -> 100 `i `l `ul 1538  ]
+{
 "94
-[; ;../../VLCBlib_PIC/statusLeds2.c: 94:     }
+[; ;../../VLCBlib_PIC/statusLeds2.c: 94:         flashCounter[0]++;
+[e ++ *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 1 `i `uc ]
+"95
+[; ;../../VLCBlib_PIC/statusLeds2.c: 95:         flashCounter[1]++;
+[e ++ *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 1 `i `uc ]
+"96
+[; ;../../VLCBlib_PIC/statusLeds2.c: 96:         ledTimer.val = (tickNow.val);
+[e = . _ledTimer 0 . _tickNow 0 ]
+"97
+[; ;../../VLCBlib_PIC/statusLeds2.c: 97:     }
 }
 [e :U 1538 ]
-"96
-[; ;../../VLCBlib_PIC/statusLeds2.c: 96:     switch (ledState[1]) {
+"99
+[; ;../../VLCBlib_PIC/statusLeds2.c: 99:     switch (ledState[1]) {
 [e $U 1540  ]
 {
-"97
-[; ;../../VLCBlib_PIC/statusLeds2.c: 97:         case LED_ON:
-[e :U 1541 ]
-"98
-[; ;../../VLCBlib_PIC/statusLeds2.c: 98:             (LATBbits.LATB6=1);
-[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
-"99
-[; ;../../VLCBlib_PIC/statusLeds2.c: 99:             flashCounter[1] = 0;
-[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
 "100
-[; ;../../VLCBlib_PIC/statusLeds2.c: 100:             break;
-[e $U 1539  ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 100:         case LED_ON:
+[e :U 1541 ]
 "101
-[; ;../../VLCBlib_PIC/statusLeds2.c: 101:         case LED_OFF:
-[e :U 1542 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 101:             (LATBbits.LATB6=1);
+[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "102
-[; ;../../VLCBlib_PIC/statusLeds2.c: 102:             (LATBbits.LATB6=0);
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
-"103
-[; ;../../VLCBlib_PIC/statusLeds2.c: 103:             flashCounter[1] = 0;
+[; ;../../VLCBlib_PIC/statusLeds2.c: 102:             flashCounter[1] = 0;
 [e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"104
-[; ;../../VLCBlib_PIC/statusLeds2.c: 104:             break;
+"103
+[; ;../../VLCBlib_PIC/statusLeds2.c: 103:             break;
 [e $U 1539  ]
+"104
+[; ;../../VLCBlib_PIC/statusLeds2.c: 104:         case LED_OFF:
+[e :U 1542 ]
 "105
-[; ;../../VLCBlib_PIC/statusLeds2.c: 105:         case LED_FLASH_50_2HZ:
-[e :U 1543 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 105:             (LATBbits.LATB6=0);
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+"106
+[; ;../../VLCBlib_PIC/statusLeds2.c: 106:             flashCounter[1] = 0;
+[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
 "107
-[; ;../../VLCBlib_PIC/statusLeds2.c: 107:             (LATBbits.LATB6=flashCounter[1]/25);
-[e = . . _LATBbits 0 6 -> / -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 107:             break;
+[e $U 1539  ]
 "108
-[; ;../../VLCBlib_PIC/statusLeds2.c: 108:             if (flashCounter[1] >= 50) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 108:         case LED_FLASH_50_2HZ:
+[e :U 1543 ]
+"110
+[; ;../../VLCBlib_PIC/statusLeds2.c: 110:             (LATBbits.LATB6=flashCounter[1] >= 25);
+[e = . . _LATBbits 0 6 -> -> >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i `i `uc ]
+"111
+[; ;../../VLCBlib_PIC/statusLeds2.c: 111:             if (flashCounter[1] >= 50) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i 1544  ]
 {
-"109
-[; ;../../VLCBlib_PIC/statusLeds2.c: 109:                 flashCounter[1] = 0;
+"112
+[; ;../../VLCBlib_PIC/statusLeds2.c: 112:                 flashCounter[1] = 0;
 [e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"110
-[; ;../../VLCBlib_PIC/statusLeds2.c: 110:             }
+"113
+[; ;../../VLCBlib_PIC/statusLeds2.c: 113:             }
 }
 [e :U 1544 ]
-"111
-[; ;../../VLCBlib_PIC/statusLeds2.c: 111:             break;
-[e $U 1539  ]
-"112
-[; ;../../VLCBlib_PIC/statusLeds2.c: 112:         case LED_FLASH_50_1HZ:
-[e :U 1545 ]
 "114
-[; ;../../VLCBlib_PIC/statusLeds2.c: 114:             (LATBbits.LATB6=flashCounter[1]/50);
-[e = . . _LATBbits 0 6 -> / -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 114:             break;
+[e $U 1539  ]
 "115
-[; ;../../VLCBlib_PIC/statusLeds2.c: 115:             if (flashCounter[1] >= 100) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 115:         case LED_FLASH_50_1HZ:
+[e :U 1545 ]
+"117
+[; ;../../VLCBlib_PIC/statusLeds2.c: 117:             (LATBbits.LATB6=flashCounter[1] >= 50);
+[e = . . _LATBbits 0 6 -> -> >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i `i `uc ]
+"118
+[; ;../../VLCBlib_PIC/statusLeds2.c: 118:             if (flashCounter[1] >= 100) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i 1546  ]
 {
-"116
-[; ;../../VLCBlib_PIC/statusLeds2.c: 116:                 flashCounter[1] = 0;
+"119
+[; ;../../VLCBlib_PIC/statusLeds2.c: 119:                 flashCounter[1] = 0;
 [e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"117
-[; ;../../VLCBlib_PIC/statusLeds2.c: 117:             }
+"120
+[; ;../../VLCBlib_PIC/statusLeds2.c: 120:             }
 }
 [e :U 1546 ]
-"118
-[; ;../../VLCBlib_PIC/statusLeds2.c: 118:             break;
-[e $U 1539  ]
-"119
-[; ;../../VLCBlib_PIC/statusLeds2.c: 119:         case LED_FLASH_50_HALF_HZ:
-[e :U 1547 ]
-"120
-[; ;../../VLCBlib_PIC/statusLeds2.c: 120:             (LATBbits.LATB6=flashCounter[1]/100);
-[e = . . _LATBbits 0 6 -> / -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i `uc ]
 "121
-[; ;../../VLCBlib_PIC/statusLeds2.c: 121:             if (flashCounter[1] >= 200) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 121:             break;
+[e $U 1539  ]
+"122
+[; ;../../VLCBlib_PIC/statusLeds2.c: 122:         case LED_FLASH_50_HALF_HZ:
+[e :U 1547 ]
+"123
+[; ;../../VLCBlib_PIC/statusLeds2.c: 123:             (LATBbits.LATB6=flashCounter[1] >= 100);
+[e = . . _LATBbits 0 6 -> -> >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i `i `uc ]
+"124
+[; ;../../VLCBlib_PIC/statusLeds2.c: 124:             if (flashCounter[1] >= 200) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 200 `i 1548  ]
 {
-"122
-[; ;../../VLCBlib_PIC/statusLeds2.c: 122:                 flashCounter[1] = 0;
+"125
+[; ;../../VLCBlib_PIC/statusLeds2.c: 125:                 flashCounter[1] = 0;
 [e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"123
-[; ;../../VLCBlib_PIC/statusLeds2.c: 123:             }
+"126
+[; ;../../VLCBlib_PIC/statusLeds2.c: 126:             }
 }
 [e :U 1548 ]
-"124
-[; ;../../VLCBlib_PIC/statusLeds2.c: 124:             break;
-[e $U 1539  ]
-"125
-[; ;../../VLCBlib_PIC/statusLeds2.c: 125:         case LED_SINGLE_FLICKER_ON:
-[e :U 1549 ]
-"126
-[; ;../../VLCBlib_PIC/statusLeds2.c: 126:             (LATBbits.LATB6=1);
-[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "127
-[; ;../../VLCBlib_PIC/statusLeds2.c: 127:             if (flashCounter[1] >= 25) {
-[e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i 1550  ]
-{
+[; ;../../VLCBlib_PIC/statusLeds2.c: 127:             break;
+[e $U 1539  ]
 "128
-[; ;../../VLCBlib_PIC/statusLeds2.c: 128:                 flashCounter[1] = 0;
-[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 128:         case LED_SINGLE_FLICKER_ON:
+[e :U 1549 ]
 "129
-[; ;../../VLCBlib_PIC/statusLeds2.c: 129:                 ledState[1] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 129:             (LATBbits.LATB6=1);
+[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "130
-[; ;../../VLCBlib_PIC/statusLeds2.c: 130:             }
+[; ;../../VLCBlib_PIC/statusLeds2.c: 130:             if (flashCounter[1] >= 2) {
+[e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 2 `i 1550  ]
+{
+"131
+[; ;../../VLCBlib_PIC/statusLeds2.c: 131:                 flashCounter[1] = 0;
+[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"132
+[; ;../../VLCBlib_PIC/statusLeds2.c: 132:                 ledState[1] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
+"133
+[; ;../../VLCBlib_PIC/statusLeds2.c: 133:             }
 }
 [e :U 1550 ]
-"131
-[; ;../../VLCBlib_PIC/statusLeds2.c: 131:             break;
-[e $U 1539  ]
-"132
-[; ;../../VLCBlib_PIC/statusLeds2.c: 132:         case LED_SINGLE_FLICKER_OFF:
-[e :U 1551 ]
-"133
-[; ;../../VLCBlib_PIC/statusLeds2.c: 133:             (LATBbits.LATB6=0);
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
 "134
-[; ;../../VLCBlib_PIC/statusLeds2.c: 134:             if (flashCounter[1] >= 25) {
-[e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i 1552  ]
-{
+[; ;../../VLCBlib_PIC/statusLeds2.c: 134:             break;
+[e $U 1539  ]
 "135
-[; ;../../VLCBlib_PIC/statusLeds2.c: 135:                 flashCounter[1] = 0;
-[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 135:         case LED_SINGLE_FLICKER_OFF:
+[e :U 1551 ]
 "136
-[; ;../../VLCBlib_PIC/statusLeds2.c: 136:                 ledState[1] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 136:             (LATBbits.LATB6=0);
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
 "137
-[; ;../../VLCBlib_PIC/statusLeds2.c: 137:             }
+[; ;../../VLCBlib_PIC/statusLeds2.c: 137:             if (flashCounter[1] >= 2) {
+[e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 2 `i 1552  ]
+{
+"138
+[; ;../../VLCBlib_PIC/statusLeds2.c: 138:                 flashCounter[1] = 0;
+[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"139
+[; ;../../VLCBlib_PIC/statusLeds2.c: 139:                 ledState[1] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
+"140
+[; ;../../VLCBlib_PIC/statusLeds2.c: 140:             }
 }
 [e :U 1552 ]
-"138
-[; ;../../VLCBlib_PIC/statusLeds2.c: 138:             break;
-[e $U 1539  ]
-"139
-[; ;../../VLCBlib_PIC/statusLeds2.c: 139:         case LED_LONG_FLICKER_ON:
-[e :U 1553 ]
-"140
-[; ;../../VLCBlib_PIC/statusLeds2.c: 140:             (LATBbits.LATB6=1);
-[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
 "141
-[; ;../../VLCBlib_PIC/statusLeds2.c: 141:             if (flashCounter[1] >= 50) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 141:             break;
+[e $U 1539  ]
+"142
+[; ;../../VLCBlib_PIC/statusLeds2.c: 142:         case LED_LONG_FLICKER_ON:
+[e :U 1553 ]
+"143
+[; ;../../VLCBlib_PIC/statusLeds2.c: 143:             (LATBbits.LATB6=1);
+[e = . . _LATBbits 0 6 -> -> 1 `i `uc ]
+"144
+[; ;../../VLCBlib_PIC/statusLeds2.c: 144:             if (flashCounter[1] >= 50) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i 1554  ]
 {
-"142
-[; ;../../VLCBlib_PIC/statusLeds2.c: 142:                 flashCounter[1] = 0;
+"145
+[; ;../../VLCBlib_PIC/statusLeds2.c: 145:                 flashCounter[1] = 0;
 [e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"143
-[; ;../../VLCBlib_PIC/statusLeds2.c: 143:                 ledState[1] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
-"144
-[; ;../../VLCBlib_PIC/statusLeds2.c: 144:             }
+"146
+[; ;../../VLCBlib_PIC/statusLeds2.c: 146:                 ledState[1] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
+"147
+[; ;../../VLCBlib_PIC/statusLeds2.c: 147:             }
 }
 [e :U 1554 ]
-"145
-[; ;../../VLCBlib_PIC/statusLeds2.c: 145:             break;
-[e $U 1539  ]
-"146
-[; ;../../VLCBlib_PIC/statusLeds2.c: 146:         case LED_LONG_FLICKER_OFF:
-[e :U 1555 ]
-"147
-[; ;../../VLCBlib_PIC/statusLeds2.c: 147:             (LATBbits.LATB6=0);
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
 "148
-[; ;../../VLCBlib_PIC/statusLeds2.c: 148:             if (flashCounter[1] >= 50) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 148:             break;
+[e $U 1539  ]
+"149
+[; ;../../VLCBlib_PIC/statusLeds2.c: 149:         case LED_LONG_FLICKER_OFF:
+[e :U 1555 ]
+"150
+[; ;../../VLCBlib_PIC/statusLeds2.c: 150:             (LATBbits.LATB6=0);
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+"151
+[; ;../../VLCBlib_PIC/statusLeds2.c: 151:             if (flashCounter[1] >= 50) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i 1556  ]
 {
-"149
-[; ;../../VLCBlib_PIC/statusLeds2.c: 149:                 flashCounter[1] = 0;
+"152
+[; ;../../VLCBlib_PIC/statusLeds2.c: 152:                 flashCounter[1] = 0;
 [e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"150
-[; ;../../VLCBlib_PIC/statusLeds2.c: 150:                 ledState[1] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
-"151
-[; ;../../VLCBlib_PIC/statusLeds2.c: 151:             }
+"153
+[; ;../../VLCBlib_PIC/statusLeds2.c: 153:                 ledState[1] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
+"154
+[; ;../../VLCBlib_PIC/statusLeds2.c: 154:             }
 }
 [e :U 1556 ]
-"152
-[; ;../../VLCBlib_PIC/statusLeds2.c: 152:             break;
-[e $U 1539  ]
-"153
-[; ;../../VLCBlib_PIC/statusLeds2.c: 153:         case LED_OFF_1S:
-[e :U 1557 ]
-"154
-[; ;../../VLCBlib_PIC/statusLeds2.c: 154:             (LATBbits.LATB6=0);
-[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
 "155
-[; ;../../VLCBlib_PIC/statusLeds2.c: 155:             if (flashCounter[1] >= 100) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 155:             break;
+[e $U 1539  ]
+"156
+[; ;../../VLCBlib_PIC/statusLeds2.c: 156:         case LED_OFF_1S:
+[e :U 1557 ]
+"157
+[; ;../../VLCBlib_PIC/statusLeds2.c: 157:             (LATBbits.LATB6=0);
+[e = . . _LATBbits 0 6 -> -> 0 `i `uc ]
+"158
+[; ;../../VLCBlib_PIC/statusLeds2.c: 158:             if (flashCounter[1] >= 100) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i 1558  ]
 {
-"156
-[; ;../../VLCBlib_PIC/statusLeds2.c: 156:                 flashCounter[1] = 0;
+"159
+[; ;../../VLCBlib_PIC/statusLeds2.c: 159:                 flashCounter[1] = 0;
 [e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"157
-[; ;../../VLCBlib_PIC/statusLeds2.c: 157:                 ledState[1] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
-"158
-[; ;../../VLCBlib_PIC/statusLeds2.c: 158:             }
+"160
+[; ;../../VLCBlib_PIC/statusLeds2.c: 160:                 ledState[1] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
+"161
+[; ;../../VLCBlib_PIC/statusLeds2.c: 161:             }
 }
 [e :U 1558 ]
-"159
-[; ;../../VLCBlib_PIC/statusLeds2.c: 159:             break;
+"162
+[; ;../../VLCBlib_PIC/statusLeds2.c: 162:             break;
 [e $U 1539  ]
-"160
-[; ;../../VLCBlib_PIC/statusLeds2.c: 160:     }
+"163
+[; ;../../VLCBlib_PIC/statusLeds2.c: 163:     }
 }
 [e $U 1539  ]
 [e :U 1540 ]
-[e [\ -> *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux `ui , $ -> . `E12896 1 `ui 1541
- , $ -> . `E12896 0 `ui 1542
- , $ -> . `E12896 2 `ui 1543
- , $ -> . `E12896 3 `ui 1545
- , $ -> . `E12896 4 `ui 1547
- , $ -> . `E12896 6 `ui 1549
- , $ -> . `E12896 5 `ui 1551
- , $ -> . `E12896 8 `ui 1553
- , $ -> . `E12896 7 `ui 1555
- , $ -> . `E12896 9 `ui 1557
+[e [\ -> *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux `ui , $ -> . `E12224 1 `ui 1541
+ , $ -> . `E12224 0 `ui 1542
+ , $ -> . `E12224 2 `ui 1543
+ , $ -> . `E12224 3 `ui 1545
+ , $ -> . `E12224 4 `ui 1547
+ , $ -> . `E12224 6 `ui 1549
+ , $ -> . `E12224 5 `ui 1551
+ , $ -> . `E12224 8 `ui 1553
+ , $ -> . `E12224 7 `ui 1555
+ , $ -> . `E12224 9 `ui 1557
  1539 ]
 [e :U 1539 ]
-"162
-[; ;../../VLCBlib_PIC/statusLeds2.c: 162:     switch (ledState[0]) {
+"165
+[; ;../../VLCBlib_PIC/statusLeds2.c: 165:     switch (ledState[0]) {
 [e $U 1560  ]
 {
-"163
-[; ;../../VLCBlib_PIC/statusLeds2.c: 163:         case LED_ON:
-[e :U 1561 ]
-"164
-[; ;../../VLCBlib_PIC/statusLeds2.c: 164:             (LATBbits.LATB7=1);
-[e = . . _LATBbits 0 7 -> -> 1 `i `uc ]
-"165
-[; ;../../VLCBlib_PIC/statusLeds2.c: 165:             flashCounter[0] = 0;
-[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
 "166
-[; ;../../VLCBlib_PIC/statusLeds2.c: 166:             break;
-[e $U 1559  ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 166:         case LED_ON:
+[e :U 1561 ]
 "167
-[; ;../../VLCBlib_PIC/statusLeds2.c: 167:         case LED_OFF:
-[e :U 1562 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 167:             (LATBbits.LATB7=1);
+[e = . . _LATBbits 0 7 -> -> 1 `i `uc ]
 "168
-[; ;../../VLCBlib_PIC/statusLeds2.c: 168:             (LATBbits.LATB7=0);
-[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
-"169
-[; ;../../VLCBlib_PIC/statusLeds2.c: 169:             flashCounter[0] = 0;
+[; ;../../VLCBlib_PIC/statusLeds2.c: 168:             flashCounter[0] = 0;
 [e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"170
-[; ;../../VLCBlib_PIC/statusLeds2.c: 170:             break;
+"169
+[; ;../../VLCBlib_PIC/statusLeds2.c: 169:             break;
 [e $U 1559  ]
+"170
+[; ;../../VLCBlib_PIC/statusLeds2.c: 170:         case LED_OFF:
+[e :U 1562 ]
 "171
-[; ;../../VLCBlib_PIC/statusLeds2.c: 171:         case LED_FLASH_50_2HZ:
-[e :U 1563 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 171:             (LATBbits.LATB7=0);
+[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
+"172
+[; ;../../VLCBlib_PIC/statusLeds2.c: 172:             flashCounter[0] = 0;
+[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
 "173
-[; ;../../VLCBlib_PIC/statusLeds2.c: 173:             (LATBbits.LATB7=flashCounter[0]/25);
-[e = . . _LATBbits 0 7 -> / -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 173:             break;
+[e $U 1559  ]
 "174
-[; ;../../VLCBlib_PIC/statusLeds2.c: 174:             if (flashCounter[0] >= 50) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 174:         case LED_FLASH_50_2HZ:
+[e :U 1563 ]
+"176
+[; ;../../VLCBlib_PIC/statusLeds2.c: 176:             (LATBbits.LATB7=flashCounter[0] >= 25);
+[e = . . _LATBbits 0 7 -> -> >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i `i `uc ]
+"177
+[; ;../../VLCBlib_PIC/statusLeds2.c: 177:             if (flashCounter[0] >= 50) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i 1564  ]
 {
-"175
-[; ;../../VLCBlib_PIC/statusLeds2.c: 175:                 flashCounter[0] = 0;
+"178
+[; ;../../VLCBlib_PIC/statusLeds2.c: 178:                 flashCounter[0] = 0;
 [e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"176
-[; ;../../VLCBlib_PIC/statusLeds2.c: 176:             }
+"179
+[; ;../../VLCBlib_PIC/statusLeds2.c: 179:             }
 }
 [e :U 1564 ]
-"177
-[; ;../../VLCBlib_PIC/statusLeds2.c: 177:             break;
-[e $U 1559  ]
-"178
-[; ;../../VLCBlib_PIC/statusLeds2.c: 178:         case LED_FLASH_50_1HZ:
-[e :U 1565 ]
 "180
-[; ;../../VLCBlib_PIC/statusLeds2.c: 180:             (LATBbits.LATB7=flashCounter[0]/50);
-[e = . . _LATBbits 0 7 -> / -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 180:             break;
+[e $U 1559  ]
 "181
-[; ;../../VLCBlib_PIC/statusLeds2.c: 181:             if (flashCounter[0] >= 100) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 181:         case LED_FLASH_50_1HZ:
+[e :U 1565 ]
+"183
+[; ;../../VLCBlib_PIC/statusLeds2.c: 183:             (LATBbits.LATB7=flashCounter[0] >= 50);
+[e = . . _LATBbits 0 7 -> -> >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i `i `uc ]
+"184
+[; ;../../VLCBlib_PIC/statusLeds2.c: 184:             if (flashCounter[0] >= 100) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i 1566  ]
 {
-"182
-[; ;../../VLCBlib_PIC/statusLeds2.c: 182:                 flashCounter[0] = 0;
+"185
+[; ;../../VLCBlib_PIC/statusLeds2.c: 185:                 flashCounter[0] = 0;
 [e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"183
-[; ;../../VLCBlib_PIC/statusLeds2.c: 183:             }
+"186
+[; ;../../VLCBlib_PIC/statusLeds2.c: 186:             }
 }
 [e :U 1566 ]
-"184
-[; ;../../VLCBlib_PIC/statusLeds2.c: 184:             break;
-[e $U 1559  ]
-"185
-[; ;../../VLCBlib_PIC/statusLeds2.c: 185:         case LED_FLASH_50_HALF_HZ:
-[e :U 1567 ]
-"186
-[; ;../../VLCBlib_PIC/statusLeds2.c: 186:             (LATBbits.LATB7=flashCounter[0]/100);
-[e = . . _LATBbits 0 7 -> / -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i `uc ]
 "187
-[; ;../../VLCBlib_PIC/statusLeds2.c: 187:             if (flashCounter[0] >= 200) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 187:             break;
+[e $U 1559  ]
+"188
+[; ;../../VLCBlib_PIC/statusLeds2.c: 188:         case LED_FLASH_50_HALF_HZ:
+[e :U 1567 ]
+"189
+[; ;../../VLCBlib_PIC/statusLeds2.c: 189:             (LATBbits.LATB7=flashCounter[0] >= 100);
+[e = . . _LATBbits 0 7 -> -> >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i `i `uc ]
+"190
+[; ;../../VLCBlib_PIC/statusLeds2.c: 190:             if (flashCounter[0] >= 200) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 200 `i 1568  ]
 {
-"188
-[; ;../../VLCBlib_PIC/statusLeds2.c: 188:                 flashCounter[0] = 0;
+"191
+[; ;../../VLCBlib_PIC/statusLeds2.c: 191:                 flashCounter[0] = 0;
 [e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"189
-[; ;../../VLCBlib_PIC/statusLeds2.c: 189:             }
+"192
+[; ;../../VLCBlib_PIC/statusLeds2.c: 192:             }
 }
 [e :U 1568 ]
-"190
-[; ;../../VLCBlib_PIC/statusLeds2.c: 190:             break;
-[e $U 1559  ]
-"191
-[; ;../../VLCBlib_PIC/statusLeds2.c: 191:         case LED_SINGLE_FLICKER_ON:
-[e :U 1569 ]
-"192
-[; ;../../VLCBlib_PIC/statusLeds2.c: 192:             (LATBbits.LATB7=1);
-[e = . . _LATBbits 0 7 -> -> 1 `i `uc ]
 "193
-[; ;../../VLCBlib_PIC/statusLeds2.c: 193:             if (flashCounter[0] >= 25) {
-[e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i 1570  ]
-{
+[; ;../../VLCBlib_PIC/statusLeds2.c: 193:             break;
+[e $U 1559  ]
 "194
-[; ;../../VLCBlib_PIC/statusLeds2.c: 194:                 flashCounter[0] = 0;
-[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 194:         case LED_SINGLE_FLICKER_ON:
+[e :U 1569 ]
 "195
-[; ;../../VLCBlib_PIC/statusLeds2.c: 195:                 ledState[0] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 195:             (LATBbits.LATB7=1);
+[e = . . _LATBbits 0 7 -> -> 1 `i `uc ]
 "196
-[; ;../../VLCBlib_PIC/statusLeds2.c: 196:             }
+[; ;../../VLCBlib_PIC/statusLeds2.c: 196:             if (flashCounter[0] >= 2) {
+[e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 2 `i 1570  ]
+{
+"197
+[; ;../../VLCBlib_PIC/statusLeds2.c: 197:                 flashCounter[0] = 0;
+[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"198
+[; ;../../VLCBlib_PIC/statusLeds2.c: 198:                 ledState[0] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
+"199
+[; ;../../VLCBlib_PIC/statusLeds2.c: 199:             }
 }
 [e :U 1570 ]
-"197
-[; ;../../VLCBlib_PIC/statusLeds2.c: 197:             break;
-[e $U 1559  ]
-"198
-[; ;../../VLCBlib_PIC/statusLeds2.c: 198:         case LED_SINGLE_FLICKER_OFF:
-[e :U 1571 ]
-"199
-[; ;../../VLCBlib_PIC/statusLeds2.c: 199:             (LATBbits.LATB7=0);
-[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
 "200
-[; ;../../VLCBlib_PIC/statusLeds2.c: 200:             if (flashCounter[0] >= 25) {
-[e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 25 `i 1572  ]
-{
+[; ;../../VLCBlib_PIC/statusLeds2.c: 200:             break;
+[e $U 1559  ]
 "201
-[; ;../../VLCBlib_PIC/statusLeds2.c: 201:                 flashCounter[0] = 0;
-[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 201:         case LED_SINGLE_FLICKER_OFF:
+[e :U 1571 ]
 "202
-[; ;../../VLCBlib_PIC/statusLeds2.c: 202:                 ledState[0] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 202:             (LATBbits.LATB7=0);
+[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
 "203
-[; ;../../VLCBlib_PIC/statusLeds2.c: 203:             }
+[; ;../../VLCBlib_PIC/statusLeds2.c: 203:             if (flashCounter[0] >= 2) {
+[e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 2 `i 1572  ]
+{
+"204
+[; ;../../VLCBlib_PIC/statusLeds2.c: 204:                 flashCounter[0] = 0;
+[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"205
+[; ;../../VLCBlib_PIC/statusLeds2.c: 205:                 ledState[0] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
+"206
+[; ;../../VLCBlib_PIC/statusLeds2.c: 206:             }
 }
 [e :U 1572 ]
-"204
-[; ;../../VLCBlib_PIC/statusLeds2.c: 204:             break;
-[e $U 1559  ]
-"205
-[; ;../../VLCBlib_PIC/statusLeds2.c: 205:         case LED_LONG_FLICKER_ON:
-[e :U 1573 ]
-"206
-[; ;../../VLCBlib_PIC/statusLeds2.c: 206:             (LATBbits.LATB7=1);
-[e = . . _LATBbits 0 7 -> -> 1 `i `uc ]
 "207
-[; ;../../VLCBlib_PIC/statusLeds2.c: 207:             if (flashCounter[0] >= 50) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 207:             break;
+[e $U 1559  ]
+"208
+[; ;../../VLCBlib_PIC/statusLeds2.c: 208:         case LED_LONG_FLICKER_ON:
+[e :U 1573 ]
+"209
+[; ;../../VLCBlib_PIC/statusLeds2.c: 209:             (LATBbits.LATB7=1);
+[e = . . _LATBbits 0 7 -> -> 1 `i `uc ]
+"210
+[; ;../../VLCBlib_PIC/statusLeds2.c: 210:             if (flashCounter[0] >= 50) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i 1574  ]
 {
-"208
-[; ;../../VLCBlib_PIC/statusLeds2.c: 208:                 flashCounter[0] = 0;
+"211
+[; ;../../VLCBlib_PIC/statusLeds2.c: 211:                 flashCounter[0] = 0;
 [e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"209
-[; ;../../VLCBlib_PIC/statusLeds2.c: 209:                 ledState[0] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
-"210
-[; ;../../VLCBlib_PIC/statusLeds2.c: 210:             }
+"212
+[; ;../../VLCBlib_PIC/statusLeds2.c: 212:                 ledState[0] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
+"213
+[; ;../../VLCBlib_PIC/statusLeds2.c: 213:             }
 }
 [e :U 1574 ]
-"211
-[; ;../../VLCBlib_PIC/statusLeds2.c: 211:             break;
-[e $U 1559  ]
-"212
-[; ;../../VLCBlib_PIC/statusLeds2.c: 212:         case LED_LONG_FLICKER_OFF:
-[e :U 1575 ]
-"213
-[; ;../../VLCBlib_PIC/statusLeds2.c: 213:             (LATBbits.LATB7=0);
-[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
 "214
-[; ;../../VLCBlib_PIC/statusLeds2.c: 214:             if (flashCounter[0] >= 50) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 214:             break;
+[e $U 1559  ]
+"215
+[; ;../../VLCBlib_PIC/statusLeds2.c: 215:         case LED_LONG_FLICKER_OFF:
+[e :U 1575 ]
+"216
+[; ;../../VLCBlib_PIC/statusLeds2.c: 216:             (LATBbits.LATB7=0);
+[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
+"217
+[; ;../../VLCBlib_PIC/statusLeds2.c: 217:             if (flashCounter[0] >= 50) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 50 `i 1576  ]
 {
-"215
-[; ;../../VLCBlib_PIC/statusLeds2.c: 215:                 flashCounter[0] = 0;
+"218
+[; ;../../VLCBlib_PIC/statusLeds2.c: 218:                 flashCounter[0] = 0;
 [e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"216
-[; ;../../VLCBlib_PIC/statusLeds2.c: 216:                 ledState[0] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
-"217
-[; ;../../VLCBlib_PIC/statusLeds2.c: 217:             }
+"219
+[; ;../../VLCBlib_PIC/statusLeds2.c: 219:                 ledState[0] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
+"220
+[; ;../../VLCBlib_PIC/statusLeds2.c: 220:             }
 }
 [e :U 1576 ]
-"218
-[; ;../../VLCBlib_PIC/statusLeds2.c: 218:             break;
-[e $U 1559  ]
-"219
-[; ;../../VLCBlib_PIC/statusLeds2.c: 219:         case LED_OFF_1S:
-[e :U 1577 ]
-"220
-[; ;../../VLCBlib_PIC/statusLeds2.c: 220:             (LATBbits.LATB7=0);
-[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
 "221
-[; ;../../VLCBlib_PIC/statusLeds2.c: 221:             if (flashCounter[0] >= 100) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 221:             break;
+[e $U 1559  ]
+"222
+[; ;../../VLCBlib_PIC/statusLeds2.c: 222:         case LED_OFF_1S:
+[e :U 1577 ]
+"223
+[; ;../../VLCBlib_PIC/statusLeds2.c: 223:             (LATBbits.LATB7=0);
+[e = . . _LATBbits 0 7 -> -> 0 `i `uc ]
+"224
+[; ;../../VLCBlib_PIC/statusLeds2.c: 224:             if (flashCounter[0] >= 100) {
 [e $ ! >= -> *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux `i -> 100 `i 1578  ]
 {
-"222
-[; ;../../VLCBlib_PIC/statusLeds2.c: 222:                 flashCounter[0] = 0;
+"225
+[; ;../../VLCBlib_PIC/statusLeds2.c: 225:                 flashCounter[0] = 0;
 [e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"223
-[; ;../../VLCBlib_PIC/statusLeds2.c: 223:                 ledState[0] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
-"224
-[; ;../../VLCBlib_PIC/statusLeds2.c: 224:             }
+"226
+[; ;../../VLCBlib_PIC/statusLeds2.c: 226:                 ledState[0] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
+"227
+[; ;../../VLCBlib_PIC/statusLeds2.c: 227:             }
 }
 [e :U 1578 ]
-"225
-[; ;../../VLCBlib_PIC/statusLeds2.c: 225:             break;
+"228
+[; ;../../VLCBlib_PIC/statusLeds2.c: 228:             break;
 [e $U 1559  ]
-"226
-[; ;../../VLCBlib_PIC/statusLeds2.c: 226:     }
+"229
+[; ;../../VLCBlib_PIC/statusLeds2.c: 229:     }
 }
 [e $U 1559  ]
 [e :U 1560 ]
-[e [\ -> *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux `ui , $ -> . `E12896 1 `ui 1561
- , $ -> . `E12896 0 `ui 1562
- , $ -> . `E12896 2 `ui 1563
- , $ -> . `E12896 3 `ui 1565
- , $ -> . `E12896 4 `ui 1567
- , $ -> . `E12896 6 `ui 1569
- , $ -> . `E12896 5 `ui 1571
- , $ -> . `E12896 8 `ui 1573
- , $ -> . `E12896 7 `ui 1575
- , $ -> . `E12896 9 `ui 1577
+[e [\ -> *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux `ui , $ -> . `E12224 1 `ui 1561
+ , $ -> . `E12224 0 `ui 1562
+ , $ -> . `E12224 2 `ui 1563
+ , $ -> . `E12224 3 `ui 1565
+ , $ -> . `E12224 4 `ui 1567
+ , $ -> . `E12224 6 `ui 1569
+ , $ -> . `E12224 5 `ui 1571
+ , $ -> . `E12224 8 `ui 1573
+ , $ -> . `E12224 7 `ui 1575
+ , $ -> . `E12224 9 `ui 1577
  1559 ]
 [e :U 1559 ]
-"227
-[; ;../../VLCBlib_PIC/statusLeds2.c: 227: }
+"230
+[; ;../../VLCBlib_PIC/statusLeds2.c: 230: }
 [e :UE 1537 ]
 }
-"235
-[; ;../../VLCBlib_PIC/statusLeds2.c: 235: void showStatus(StatusDisplay s) {
-[v _showStatus `(v ~T0 @X0 1 ef1`E12881 ]
+"238
+[; ;../../VLCBlib_PIC/statusLeds2.c: 238: void showStatus(StatusDisplay s) {
+[v _showStatus `(v ~T0 @X0 1 ef1`E12209 ]
 {
 [e :U _showStatus ]
-[v _s `E12881 ~T0 @X0 1 r1 ]
+[v _s `E12209 ~T0 @X0 1 r1 ]
 [f ]
-"236
-[; ;../../VLCBlib_PIC/statusLeds2.c: 236:     switch (s) {
+"239
+[; ;../../VLCBlib_PIC/statusLeds2.c: 239:     switch (s) {
 [e $U 1581  ]
 {
-"237
-[; ;../../VLCBlib_PIC/statusLeds2.c: 237:         case STATUS_OFF:
-[e :U 1582 ]
-"238
-[; ;../../VLCBlib_PIC/statusLeds2.c: 238:             ledState[0] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
-"239
-[; ;../../VLCBlib_PIC/statusLeds2.c: 239:             ledState[1] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
 "240
-[; ;../../VLCBlib_PIC/statusLeds2.c: 240:             break;
-[e $U 1580  ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 240:         case STATUS_OFF:
+[e :U 1582 ]
 "241
-[; ;../../VLCBlib_PIC/statusLeds2.c: 241:         case STATUS_UNINITIALISED:
-[e :U 1583 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 241:             ledState[0] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
 "242
-[; ;../../VLCBlib_PIC/statusLeds2.c: 242:             ledState[0] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 242:             ledState[1] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
 "243
-[; ;../../VLCBlib_PIC/statusLeds2.c: 243:             ledState[1] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 243:             break;
+[e $U 1580  ]
 "244
-[; ;../../VLCBlib_PIC/statusLeds2.c: 244:             break;
-[e $U 1580  ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 244:         case STATUS_UNINITIALISED:
+[e :U 1583 ]
 "245
-[; ;../../VLCBlib_PIC/statusLeds2.c: 245:         case STATUS_SETUP:
-[e :U 1584 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 245:             ledState[0] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
 "246
-[; ;../../VLCBlib_PIC/statusLeds2.c: 246:             ledState[0] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 246:             ledState[1] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
 "247
-[; ;../../VLCBlib_PIC/statusLeds2.c: 247:             ledState[1] = LED_FLASH_50_1HZ;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 3 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 247:             break;
+[e $U 1580  ]
 "248
-[; ;../../VLCBlib_PIC/statusLeds2.c: 248:             break;
-[e $U 1580  ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 248:         case STATUS_SETUP:
+[e :U 1584 ]
 "249
-[; ;../../VLCBlib_PIC/statusLeds2.c: 249:         case STATUS_NORMAL:
-[e :U 1585 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 249:             ledState[0] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
 "250
-[; ;../../VLCBlib_PIC/statusLeds2.c: 250:         case STATUS_LEARN:
-[e :U 1586 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 250:             ledState[1] = LED_FLASH_50_1HZ;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 3 ]
 "251
-[; ;../../VLCBlib_PIC/statusLeds2.c: 251:         case STATUS_BOOT:
-[e :U 1587 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 251:             break;
+[e $U 1580  ]
 "252
-[; ;../../VLCBlib_PIC/statusLeds2.c: 252:         case STATUS_TRANSMIT_ERROR:
-[e :U 1588 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 252:         case STATUS_NORMAL:
+[e :U 1585 ]
 "253
-[; ;../../VLCBlib_PIC/statusLeds2.c: 253:         case STATUS_RECEIVE_ERROR:
-[e :U 1589 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 253:         case STATUS_LEARN:
+[e :U 1586 ]
 "254
-[; ;../../VLCBlib_PIC/statusLeds2.c: 254:             ledState[0] = LED_OFF;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 0 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 254:         case STATUS_BOOT:
+[e :U 1587 ]
 "255
-[; ;../../VLCBlib_PIC/statusLeds2.c: 255:             ledState[1] = LED_ON;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 1 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 255:         case STATUS_TRANSMIT_ERROR:
+[e :U 1588 ]
 "256
-[; ;../../VLCBlib_PIC/statusLeds2.c: 256:             break;
-[e $U 1580  ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 256:         case STATUS_RECEIVE_ERROR:
+[e :U 1589 ]
 "257
-[; ;../../VLCBlib_PIC/statusLeds2.c: 257:         case STATUS_RESET_WARNING:
-[e :U 1590 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 257:             ledState[0] = LED_OFF;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 0 ]
 "258
-[; ;../../VLCBlib_PIC/statusLeds2.c: 258:             flashCounter[1] = 0;
-[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 258:             ledState[1] = LED_ON;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 1 ]
 "259
-[; ;../../VLCBlib_PIC/statusLeds2.c: 259:             flashCounter[0] = 25;
-[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 25 `i `uc ]
-"260
-[; ;../../VLCBlib_PIC/statusLeds2.c: 260:             ledState[0] = LED_FLASH_50_2HZ;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 2 ]
-"261
-[; ;../../VLCBlib_PIC/statusLeds2.c: 261:             ledState[1] = LED_FLASH_50_2HZ;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 2 ]
-"262
-[; ;../../VLCBlib_PIC/statusLeds2.c: 262:             break;
+[; ;../../VLCBlib_PIC/statusLeds2.c: 259:             break;
 [e $U 1580  ]
+"260
+[; ;../../VLCBlib_PIC/statusLeds2.c: 260:         case STATUS_RESET_WARNING:
+[e :U 1590 ]
+"261
+[; ;../../VLCBlib_PIC/statusLeds2.c: 261:             flashCounter[1] = 0;
+[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"262
+[; ;../../VLCBlib_PIC/statusLeds2.c: 262:             flashCounter[0] = 25;
+[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 25 `i `uc ]
 "263
-[; ;../../VLCBlib_PIC/statusLeds2.c: 263:         case STATUS_MESSAGE_RECEIVED:
-[e :U 1591 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 263:             ledState[0] = LED_FLASH_50_2HZ;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 2 ]
 "264
-[; ;../../VLCBlib_PIC/statusLeds2.c: 264:             if (mode_state == MODE_UNINITIALISED) {
-[e $ ! == -> _mode_state `i -> . `E12598 0 `i 1592  ]
-{
+[; ;../../VLCBlib_PIC/statusLeds2.c: 264:             ledState[1] = LED_FLASH_50_2HZ;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 2 ]
 "265
-[; ;../../VLCBlib_PIC/statusLeds2.c: 265:                 ledState[1] = LED_SINGLE_FLICKER_ON;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 6 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 265:             break;
+[e $U 1580  ]
 "266
-[; ;../../VLCBlib_PIC/statusLeds2.c: 266:             } else if (mode_state == MODE_NORMAL) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 266:         case STATUS_MESSAGE_RECEIVED:
+[e :U 1591 ]
+"267
+[; ;../../VLCBlib_PIC/statusLeds2.c: 267:             if (mode_state == MODE_UNINITIALISED) {
+[e $ ! == -> _mode_state `i -> . `E12629 0 `i 1592  ]
+{
+"268
+[; ;../../VLCBlib_PIC/statusLeds2.c: 268:                 ledState[1] = LED_SINGLE_FLICKER_ON;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 6 ]
+"269
+[; ;../../VLCBlib_PIC/statusLeds2.c: 269:             } else if (mode_state == MODE_NORMAL) {
 }
 [e $U 1593  ]
 [e :U 1592 ]
-[e $ ! == -> _mode_state `i -> . `E12598 2 `i 1594  ]
+[e $ ! == -> _mode_state `i -> . `E12629 2 `i 1594  ]
 {
-"267
-[; ;../../VLCBlib_PIC/statusLeds2.c: 267:                 ledState[0] = LED_SINGLE_FLICKER_ON;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 6 ]
-"268
-[; ;../../VLCBlib_PIC/statusLeds2.c: 268:             }
+"270
+[; ;../../VLCBlib_PIC/statusLeds2.c: 270:                 ledState[0] = LED_SINGLE_FLICKER_ON;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 6 ]
+"271
+[; ;../../VLCBlib_PIC/statusLeds2.c: 271:             }
 }
 [e :U 1594 ]
 [e :U 1593 ]
-"269
-[; ;../../VLCBlib_PIC/statusLeds2.c: 269:             break;
-[e $U 1580  ]
-"270
-[; ;../../VLCBlib_PIC/statusLeds2.c: 270:         case STATUS_MESSAGE_ACTED:
-[e :U 1595 ]
-"271
-[; ;../../VLCBlib_PIC/statusLeds2.c: 271:             if (mode_state == MODE_UNINITIALISED) {
-[e $ ! == -> _mode_state `i -> . `E12598 0 `i 1596  ]
-{
 "272
-[; ;../../VLCBlib_PIC/statusLeds2.c: 272:                 ledState[1] = LED_LONG_FLICKER_ON;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 8 ]
+[; ;../../VLCBlib_PIC/statusLeds2.c: 272:             break;
+[e $U 1580  ]
 "273
-[; ;../../VLCBlib_PIC/statusLeds2.c: 273:             } else if (mode_state == MODE_NORMAL) {
+[; ;../../VLCBlib_PIC/statusLeds2.c: 273:         case STATUS_MESSAGE_ACTED:
+[e :U 1595 ]
+"274
+[; ;../../VLCBlib_PIC/statusLeds2.c: 274:             if (mode_state == MODE_UNINITIALISED) {
+[e $ ! == -> _mode_state `i -> . `E12629 0 `i 1596  ]
+{
+"275
+[; ;../../VLCBlib_PIC/statusLeds2.c: 275:                 ledState[1] = LED_LONG_FLICKER_ON;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 8 ]
+"276
+[; ;../../VLCBlib_PIC/statusLeds2.c: 276:             } else if (mode_state == MODE_NORMAL) {
 }
 [e $U 1597  ]
 [e :U 1596 ]
-[e $ ! == -> _mode_state `i -> . `E12598 2 `i 1598  ]
+[e $ ! == -> _mode_state `i -> . `E12629 2 `i 1598  ]
 {
-"274
-[; ;../../VLCBlib_PIC/statusLeds2.c: 274:                 ledState[0] = LED_LONG_FLICKER_ON;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 8 ]
-"275
-[; ;../../VLCBlib_PIC/statusLeds2.c: 275:             }
+"277
+[; ;../../VLCBlib_PIC/statusLeds2.c: 277:                 ledState[0] = LED_LONG_FLICKER_ON;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 8 ]
+"278
+[; ;../../VLCBlib_PIC/statusLeds2.c: 278:             }
 }
 [e :U 1598 ]
 [e :U 1597 ]
-"276
-[; ;../../VLCBlib_PIC/statusLeds2.c: 276:             break;
-[e $U 1580  ]
-"277
-[; ;../../VLCBlib_PIC/statusLeds2.c: 277:         case STATUS_MEMORY_FAULT:
-[e :U 1599 ]
-"278
-[; ;../../VLCBlib_PIC/statusLeds2.c: 278:         case STATUS_FATAL_ERROR:
-[e :U 1600 ]
 "279
-[; ;../../VLCBlib_PIC/statusLeds2.c: 279:             flashCounter[1] = 0;
-[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"280
-[; ;../../VLCBlib_PIC/statusLeds2.c: 280:             flashCounter[0] = 0;
-[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
-"281
-[; ;../../VLCBlib_PIC/statusLeds2.c: 281:             ledState[0] = LED_FLASH_50_2HZ;
-[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 2 ]
-"282
-[; ;../../VLCBlib_PIC/statusLeds2.c: 282:             ledState[1] = LED_FLASH_50_2HZ;
-[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12896 2 ]
-"283
-[; ;../../VLCBlib_PIC/statusLeds2.c: 283:             break;
+[; ;../../VLCBlib_PIC/statusLeds2.c: 279:             break;
 [e $U 1580  ]
+"280
+[; ;../../VLCBlib_PIC/statusLeds2.c: 280:         case STATUS_MEMORY_FAULT:
+[e :U 1599 ]
+"281
+[; ;../../VLCBlib_PIC/statusLeds2.c: 281:         case STATUS_FATAL_ERROR:
+[e :U 1600 ]
+"282
+[; ;../../VLCBlib_PIC/statusLeds2.c: 282:             flashCounter[1] = 0;
+[e = *U + &U _flashCounter * -> -> -> 1 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
+"283
+[; ;../../VLCBlib_PIC/statusLeds2.c: 283:             flashCounter[0] = 0;
+[e = *U + &U _flashCounter * -> -> -> 0 `i `ui `ux -> -> # *U &U _flashCounter `ui `ux -> -> 0 `i `uc ]
 "284
-[; ;../../VLCBlib_PIC/statusLeds2.c: 284:     }
+[; ;../../VLCBlib_PIC/statusLeds2.c: 284:             ledState[0] = LED_FLASH_50_2HZ;
+[e = *U + &U _ledState * -> -> -> 0 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 2 ]
+"285
+[; ;../../VLCBlib_PIC/statusLeds2.c: 285:             ledState[1] = LED_FLASH_50_2HZ;
+[e = *U + &U _ledState * -> -> -> 1 `i `ui `ux -> -> # *U &U _ledState `ui `ux . `E12224 2 ]
+"286
+[; ;../../VLCBlib_PIC/statusLeds2.c: 286:             break;
+[e $U 1580  ]
+"287
+[; ;../../VLCBlib_PIC/statusLeds2.c: 287:     }
 }
 [e $U 1580  ]
 [e :U 1581 ]
-[e [\ -> _s `ui , $ -> . `E12881 0 `ui 1582
- , $ -> . `E12881 1 `ui 1583
- , $ -> . `E12881 2 `ui 1584
- , $ -> . `E12881 3 `ui 1585
- , $ -> . `E12881 5 `ui 1586
- , $ -> . `E12881 6 `ui 1587
- , $ -> . `E12881 9 `ui 1588
- , $ -> . `E12881 10 `ui 1589
- , $ -> . `E12881 4 `ui 1590
- , $ -> . `E12881 7 `ui 1591
- , $ -> . `E12881 8 `ui 1595
- , $ -> . `E12881 11 `ui 1599
- , $ -> . `E12881 12 `ui 1600
+[e [\ -> _s `ui , $ -> . `E12209 0 `ui 1582
+ , $ -> . `E12209 1 `ui 1583
+ , $ -> . `E12209 2 `ui 1584
+ , $ -> . `E12209 3 `ui 1585
+ , $ -> . `E12209 5 `ui 1586
+ , $ -> . `E12209 6 `ui 1587
+ , $ -> . `E12209 9 `ui 1588
+ , $ -> . `E12209 10 `ui 1589
+ , $ -> . `E12209 4 `ui 1590
+ , $ -> . `E12209 7 `ui 1591
+ , $ -> . `E12209 8 `ui 1595
+ , $ -> . `E12209 11 `ui 1599
+ , $ -> . `E12209 12 `ui 1600
  1580 ]
 [e :U 1580 ]
-"285
-[; ;../../VLCBlib_PIC/statusLeds2.c: 285: }
+"288
+[; ;../../VLCBlib_PIC/statusLeds2.c: 288: }
 [e :UE 1579 ]
 }

@@ -7,7 +7,7 @@
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\language_support.h" 1 3
 # 2 "<built-in>" 2
 # 1 "../../VLCBlib_PIC/mns.c" 2
-# 101 "../../VLCBlib_PIC/mns.c"
+# 106 "../../VLCBlib_PIC/mns.c"
 # 1 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 1 3
 # 18 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 3
 extern const char __xc8_OPTIM_SPEED;
@@ -20144,7 +20144,7 @@ __attribute__((__unsupported__("The " "Write_b_eep" " routine is no longer suppo
 unsigned char __t1rd16on(void);
 unsigned char __t3rd16on(void);
 # 33 "C:\\Program Files\\Microchip\\xc8\\v2.46\\pic\\include\\xc.h" 2 3
-# 101 "../../VLCBlib_PIC/mns.c" 2
+# 106 "../../VLCBlib_PIC/mns.c" 2
 
 
 # 1 "../../VLCBlib_PIC/vlcb.h" 1
@@ -20157,57 +20157,7 @@ unsigned char __t3rd16on(void);
 
 
 # 1 "../../VLCBlib_PIC\\statusLeds.h" 1
-# 42 "../../VLCBlib_PIC\\statusLeds.h"
-# 1 "../../VLCBlib_PIC/vlcb.h" 1
-# 42 "../../VLCBlib_PIC\\statusLeds.h" 2
-
-# 1 "../../VLCBlib_PIC/ticktime.h" 1
-# 211 "../../VLCBlib_PIC/ticktime.h"
-typedef union _TickValue {
-
-    uint32_t val;
-
-    struct TickBytes
-    {
-        uint8_t b0;
-        uint8_t b1;
-        uint8_t b2;
-        uint8_t b3;
-    } byte;
-    uint8_t v[4];
-
-    struct TickWords
-    {
-        uint16_t w0;
-        uint16_t w1;
-    } word;
-} TickValue;
-# 238 "../../VLCBlib_PIC/ticktime.h"
-void initTicker(uint8_t priority);
-
-
-
-
-
-uint32_t tickGet(void);
-
-
-
-
-
-
-
-extern volatile uint8_t timerExtension1;
-
-
-
-
-extern volatile uint8_t timerExtension2;
-# 43 "../../VLCBlib_PIC\\statusLeds.h" 2
-
-# 1 ".\\module.h" 1
-# 44 "../../VLCBlib_PIC\\statusLeds.h" 2
-
+# 43 "../../VLCBlib_PIC\\statusLeds.h"
 # 1 "../../VLCBlib_PIC/statusDisplay.h" 1
 # 55 "../../VLCBlib_PIC/statusDisplay.h"
 typedef enum StatusDisplay {
@@ -20225,8 +20175,8 @@ typedef enum StatusDisplay {
     STATUS_MEMORY_FAULT,
     STATUS_FATAL_ERROR
 } StatusDisplay;
-# 45 "../../VLCBlib_PIC\\statusLeds.h" 2
-# 55 "../../VLCBlib_PIC\\statusLeds.h"
+# 43 "../../VLCBlib_PIC\\statusLeds.h" 2
+# 52 "../../VLCBlib_PIC\\statusLeds.h"
 typedef enum {
     LED_OFF,
     LED_ON,
@@ -20259,11 +20209,8 @@ typedef enum VlcbManufacturer
   MANU_SPROG = 44,
   MANU_ROCRAIL = 70,
   MANU_SPECTRUM = 80,
-  MANU_MERG_VLCB = 250,
-  MANU_VLCB = 250,
   MANU_SYSPIXIE = 249,
   MANU_RME = 248,
-
 } VlcbManufacturer;
 
 typedef enum VlcbMergModuleTypes
@@ -20362,8 +20309,9 @@ typedef enum VlcbMergModuleTypes
   MTYP_CANPIXEL = 84,
   MTYP_CANCABPE = 85,
   MTYP_CANSMARTTD = 86,
+  MTYP_CANARGB = 87,
+  MTYP_CANCDU_U = 88,
   MTYP_VLCB = 0xFC,
-
 
 
 
@@ -20389,7 +20337,6 @@ typedef enum VlcbSprogModuleTypes
   MTYP_CANSERVOIO = 50,
   MTYP_CANISB = 100,
   MTYP_CANSOLIO = 101,
-
 } VlcbSprogModuleTypes;
 
 typedef enum VlcbRocRailModuleTypes
@@ -20414,7 +20361,6 @@ typedef enum VlcbSpectrumModuleTypes
 
   MTYP_AMCTRLR = 1,
   MTYP_DUALCAB = 2,
-
 } VlcbSpectrumModuleTypes;
 
 typedef enum VlcbSysPixieModuleTypes
@@ -20423,7 +20369,6 @@ typedef enum VlcbSysPixieModuleTypes
 
 
   MTYP_CANPMSense = 1,
-
 } VlcbSysPixieModuleTypes;
 
 typedef enum VlcbOpCodes
@@ -20820,6 +20765,8 @@ typedef enum VlcbModeParams
   MODE_HEARTBEAT_OFF = 0x0D,
 
   MODE_BOOT = 0x0E,
+  MODE_FCUCOMPAT_ON = 0x10,
+  MODE_FCUCOMPAT_OFF = 0x11,
 } VlcbModeParams;
 
 typedef enum VlcbBusTypes
@@ -20893,13 +20840,13 @@ typedef enum VlcbArmProcessors
   ARM1176JZF_S = 1,
   ARMCortex_A7 = 2,
   ARMCortex_A53 = 3,
-
-
-
 } VlcbArmProcessors;
 
 typedef enum VlcbCanHardware
 {
+
+
+
   CAN_HW_NOT_SPECIFIED = 0x00,
   CAN_HW_PIC_ECAN = 0x01,
   CAN_HW_PIC_CAN_2_0 = 0x02,
@@ -20907,9 +20854,40 @@ typedef enum VlcbCanHardware
   CAN_HW_MCP2515 = 0x04,
   CAN_HW_MCP2518 = 0x05,
   CAN_HW_ESP32_TWAI = 0x06,
-  CAN_HW_SAM3X8E = 0x06,
-  CAN_HW_PICO_PIO = 0x07,
+  CAN_HW_SAM3X8E = 0x07,
+  CAN_HW_PICO_PIO = 0x08,
 } VlcbCanHardware;
+
+typedef enum VlcbProducerEvUsage
+{
+
+
+
+  PRODUCER_EV_NOT_SPECIFIED = 0x00,
+  PRODUCER_EV_HAPPENING = 0x01,
+  PRODUCER_EV_SLOTS = 0x02,
+} VlcbProducerEvUsage;
+
+typedef enum VlcbConsumerEvUsage
+{
+
+
+
+  CONSUMER_EV_NOT_SPECIFIED = 0x00,
+  CONSUMER_EV_ACTIONS = 0x01,
+  CONSUMER_EV_SLOTS = 0x02,
+} VlcbConsumerEvUsage;
+
+typedef enum VlcbBootloaderType
+{
+
+
+
+  BL_TYPE_Unknown = 0,
+  BL_TYPE_MikeBolton = 1,
+  BL_TYPE_KonradOrlowski = 2,
+  BL_TYPE_IanHogg = 3,
+} VlcbBootloaderType;
 # 39 "../../VLCBlib_PIC/vlcb.h" 2
 
 # 1 "../../VLCBlib_PIC/nvm.h" 1
@@ -20944,7 +20922,12 @@ typedef uint8_t eeprom_data_t;
 
 
 typedef uint16_t eeprom_address_t;
-# 147 "../../VLCBlib_PIC/nvm.h"
+# 163 "../../VLCBlib_PIC/nvm.h"
+extern void flushNVM(void);
+
+
+
+
 extern void flushFlashBlock(void);
 
 
@@ -20959,8 +20942,26 @@ extern void initRomOps(void);
 
 
 extern int16_t readNVM(NVMtype type, uint24_t index);
-# 169 "../../VLCBlib_PIC/nvm.h"
+# 192 "../../VLCBlib_PIC/nvm.h"
 extern uint8_t writeNVM(NVMtype type, uint24_t index, uint8_t value);
+
+
+
+
+
+
+extern eeprom_data_t EEPROM_Read(eeprom_address_t index);
+
+
+
+
+
+
+
+extern uint8_t EEPROM_Write(eeprom_address_t index, eeprom_data_t value);
+# 216 "../../VLCBlib_PIC/nvm.h"
+extern uint8_t EEPROM_WriteNoVerify(eeprom_address_t index, eeprom_data_t value);
+
 
 
 
@@ -20968,7 +20969,7 @@ extern uint8_t writeNVM(NVMtype type, uint24_t index, uint8_t value);
 
 extern ValidTime APP_isSuitableTimeToWriteFlash(void);
 # 40 "../../VLCBlib_PIC/vlcb.h" 2
-# 91 "../../VLCBlib_PIC/vlcb.h"
+# 103 "../../VLCBlib_PIC/vlcb.h"
 typedef enum Priority {
     pLOW=0,
     pNORMAL=1,
@@ -21023,7 +21024,7 @@ typedef enum {
     EVENT_OFF=0,
     EVENT_ON=1
 } EventState;
-# 156 "../../VLCBlib_PIC/vlcb.h"
+# 168 "../../VLCBlib_PIC/vlcb.h"
 typedef union DiagnosticVal {
     uint16_t asUint;
     int16_t asInt;
@@ -21055,8 +21056,9 @@ typedef enum Mode_state {
 
 
 
+
 extern const Priority priorities[256];
-# 198 "../../VLCBlib_PIC/vlcb.h"
+# 211 "../../VLCBlib_PIC/vlcb.h"
 extern Processed checkLen(Message * m, uint8_t needed, uint8_t service);
 
 
@@ -21099,17 +21101,17 @@ void sendMessage2(VlcbOpCodes opc, uint8_t data1, uint8_t data2);
 
 
 void sendMessage3(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3);
-# 248 "../../VLCBlib_PIC/vlcb.h"
+# 261 "../../VLCBlib_PIC/vlcb.h"
 void sendMessage4(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4);
-# 258 "../../VLCBlib_PIC/vlcb.h"
+# 271 "../../VLCBlib_PIC/vlcb.h"
 void sendMessage5(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5);
-# 269 "../../VLCBlib_PIC/vlcb.h"
+# 282 "../../VLCBlib_PIC/vlcb.h"
 void sendMessage6(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6);
-# 281 "../../VLCBlib_PIC/vlcb.h"
-void sendMessage7(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
 # 294 "../../VLCBlib_PIC/vlcb.h"
-void sendMessage(VlcbOpCodes opc, uint8_t len, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
+void sendMessage7(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
 # 307 "../../VLCBlib_PIC/vlcb.h"
+void sendMessage(VlcbOpCodes opc, uint8_t len, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5, uint8_t data6, uint8_t data7);
+# 320 "../../VLCBlib_PIC/vlcb.h"
 typedef struct Service {
     uint8_t serviceNo;
     uint8_t version;
@@ -21169,9 +21171,9 @@ extern uint8_t findServiceIndex(uint8_t id);
 
 
 extern void factoryReset(void);
-# 397 "../../VLCBlib_PIC/vlcb.h"
+# 410 "../../VLCBlib_PIC/vlcb.h"
 extern void APP_highIsr(void);
-# 407 "../../VLCBlib_PIC/vlcb.h"
+# 420 "../../VLCBlib_PIC/vlcb.h"
 extern void APP_lowIsr(void);
 
 
@@ -21194,23 +21196,92 @@ typedef enum SendResult {
 
 
 
+typedef enum TxDrainResult {
+    DRAIN_OK,
+    OVERALL_TIMEOUT,
+    MESSAGE_TIMEOUT,
+    BUS_OFF_ERROR
+} TxDrainResult;
+
+
+
 
 typedef struct Transport {
     SendResult (* sendMessage)(Message * m);
     MessageReceived (* receiveMessage)(Message * m);
+    TxDrainResult (*waitForTxQueueToDrain)(void);
 } Transport;
-# 442 "../../VLCBlib_PIC/vlcb.h"
+# 465 "../../VLCBlib_PIC/vlcb.h"
 extern const Transport * transport;
-# 455 "../../VLCBlib_PIC/vlcb.h"
+# 478 "../../VLCBlib_PIC/vlcb.h"
 extern ValidTime APP_isSuitableTimeToWriteFlash(void);
-# 103 "../../VLCBlib_PIC/mns.c" 2
+
+
+
+
+
+
+
+extern void APP_earlyInit(void);
+# 108 "../../VLCBlib_PIC/mns.c" 2
 
 
 # 1 "../../VLCBlib_PIC/devincs.h" 1
-# 105 "../../VLCBlib_PIC/mns.c" 2
+# 110 "../../VLCBlib_PIC/mns.c" 2
 
 
 # 1 "../../VLCBlib_PIC/mns.h" 1
+# 43 "../../VLCBlib_PIC/mns.h"
+# 1 "../../VLCBlib_PIC/ticktime.h" 1
+# 211 "../../VLCBlib_PIC/ticktime.h"
+typedef union _TickValue {
+
+    uint32_t val;
+
+    struct TickBytes
+    {
+        uint8_t b0;
+        uint8_t b1;
+        uint8_t b2;
+        uint8_t b3;
+    } byte;
+    uint8_t v[4];
+
+    struct TickWords
+    {
+        uint16_t w0;
+        uint16_t w1;
+    } word;
+} TickValue;
+
+
+
+
+
+
+extern TickValue tickNow;
+# 246 "../../VLCBlib_PIC/ticktime.h"
+void initTicker(uint8_t priority);
+
+
+
+
+
+uint32_t tickGet(void);
+
+
+
+
+
+
+
+extern volatile uint8_t timerExtension1;
+
+
+
+
+extern volatile uint8_t timerExtension2;
+# 43 "../../VLCBlib_PIC/mns.h" 2
 # 111 "../../VLCBlib_PIC/mns.h"
 extern const Service mnsService;
 # 126 "../../VLCBlib_PIC/mns.h"
@@ -21229,12 +21300,12 @@ extern uint8_t mode_flags;
 
 
 
-extern DiagnosticVal mnsDiagnostics[6];
+extern DiagnosticVal mnsDiagnostics[6 +1];
 extern void updateModuleErrorStatus(void);
 
 
 extern TickValue pbTimer;
-# 107 "../../VLCBlib_PIC/mns.c" 2
+# 112 "../../VLCBlib_PIC/mns.c" 2
 
 
 
@@ -21260,6 +21331,11 @@ extern void initTimedResponse(void);
 
 
 
+extern uint8_t timedResponseInProgress(void);
+
+
+
+
 
 
 
@@ -21270,7 +21346,7 @@ extern void startTimedResponse(uint8_t type, uint8_t serviceIndex, TimedResponse
 
 
 extern void pollTimedResponse(void);
-# 110 "../../VLCBlib_PIC/mns.c" 2
+# 115 "../../VLCBlib_PIC/mns.c" 2
 
 
 
@@ -21279,19 +21355,19 @@ extern void pollTimedResponse(void);
 
 
 
-static void mnsFactoryReset(void);
-static void mnsPowerUp(void);
-static void mnsPoll(void);
-static Processed mnsProcessMessage(Message * m);
-static void mnsLowIsr(void);
+static void mnsFactoryReset(void) __attribute__((reentrant));
+static void mnsPowerUp(void) __attribute__((reentrant));
+static void mnsPoll(void) __attribute__((reentrant));
+static Processed mnsProcessMessage(Message * m) __attribute__((reentrant));
+static void mnsLowIsr(void) __attribute__((reentrant));
 static uint8_t getParameter(uint8_t);
 
 static DiagnosticVal * mnsGetDiagnostic(uint8_t index);
 
 
 
-DiagnosticVal mnsDiagnostics[6];
-# 138 "../../VLCBlib_PIC/mns.c"
+DiagnosticVal mnsDiagnostics[6 +1];
+# 145 "../../VLCBlib_PIC/mns.c"
 void setLEDsByMode(void);
 
 
@@ -21299,7 +21375,7 @@ void setLEDsByMode(void);
 
 const Service mnsService = {
     SERVICE_ID_MNS,
-    1,
+    2,
     mnsFactoryReset,
     mnsPowerUp,
     mnsProcessMessage,
@@ -21326,6 +21402,9 @@ Word nn;
 
 uint8_t mode_state;
 static uint8_t last_mode_state;
+
+
+
 
 
 
@@ -21356,18 +21435,22 @@ TickValue pbTimer;
 
 
 
+
+static uint8_t pbWasPushed;
+
+
 static uint8_t heartbeatSequence;
 static TickValue heartbeatTimer;
 
 
 static TickValue uptimeTimer;
-# 216 "../../VLCBlib_PIC/mns.c"
+# 230 "../../VLCBlib_PIC/mns.c"
 TimedResponseResult mnsTRserviceDiscoveryCallback(uint8_t type, uint8_t serviceIndex, uint8_t step);
-# 225 "../../VLCBlib_PIC/mns.c"
+# 239 "../../VLCBlib_PIC/mns.c"
 TimedResponseResult mnsTRallDiagnosticsCallback(uint8_t type, uint8_t serviceIndex, uint8_t step);
-# 234 "../../VLCBlib_PIC/mns.c"
+# 248 "../../VLCBlib_PIC/mns.c"
 TimedResponseResult mnsTRrqnpnCallback(uint8_t type, uint8_t serviceIndex, uint8_t step);
-# 257 "../../VLCBlib_PIC/mns.c"
+# 271 "../../VLCBlib_PIC/mns.c"
 static uint8_t getParameterFlags(void);
 
 
@@ -21379,12 +21462,11 @@ static uint8_t getParameterFlags(void);
 static void mnsFactoryReset(void) {
     nn.bytes.hi = 0;
     nn.bytes.lo = 0;
-    writeNVM(EEPROM_NVM_TYPE, 0x3FC, nn.bytes.hi);
-    writeNVM(EEPROM_NVM_TYPE, 0x3FC +1, nn.bytes.lo);
+    writeNVM(EEPROM_NVM_TYPE, 0x3FC +1, nn.bytes.hi);
+    writeNVM(EEPROM_NVM_TYPE, 0x3FC, nn.bytes.lo);
 
     last_mode_state = mode_state = MODE_UNINITIALISED;
     writeNVM(EEPROM_NVM_TYPE, 0x3FB, mode_state);
-
 
     last_mode_flags = mode_flags = 0;
     writeNVM(EEPROM_NVM_TYPE, 0x3F9, mode_flags);
@@ -21399,13 +21481,13 @@ static void mnsPowerUp(void) {
     int temp;
     uint8_t i;
 
-    temp = readNVM(EEPROM_NVM_TYPE, 0x3FC);
+    temp = readNVM(EEPROM_NVM_TYPE, 0x3FC +1);
     if (temp < 0) {
         nn.bytes.hi = 0;
         nn.bytes.lo = 0;
     } else {
         nn.bytes.hi = (uint8_t)temp;
-        temp = readNVM(EEPROM_NVM_TYPE, 0x3FC +1);
+        temp = readNVM(EEPROM_NVM_TYPE, 0x3FC);
         if (temp < 0) {
             nn.bytes.hi = 0;
             nn.bytes.lo = 0;
@@ -21419,32 +21501,38 @@ static void mnsPowerUp(void) {
     } else {
         mode_state = (uint8_t)temp;
     }
+    setupModePreviousMode = mode_state;
     temp = readNVM(EEPROM_NVM_TYPE, 0x3F9);
     if (temp < 0) {
-        mode_flags = 4;
+        mode_flags = 0;
     } else {
         mode_flags = (uint8_t)temp;
     }
+    last_mode_state = mode_state;
+    mode_flags &= ~8;
 
+
+
+    last_mode_flags = mode_flags;
     setLEDsByMode();
 
     pbTimer.val = tickGet();
+    pbWasPushed = FALSE;
 
 
 
-    for (i=0; i< 6; i++) {
+    for (i=1; i<= 6; i++) {
         mnsDiagnostics[i].asInt = 0;
     }
+    mnsDiagnostics[0x00].asInt = 6;
 
     heartbeatSequence = 0;
     heartbeatTimer.val = 0;
     uptimeTimer.val = 0;
 }
-# 338 "../../VLCBlib_PIC/mns.c"
+# 359 "../../VLCBlib_PIC/mns.c"
 static Processed mnsProcessMessage(Message * m) {
     uint8_t i;
-    uint8_t flags;
-
     uint8_t newMode;
 
 
@@ -21455,20 +21543,23 @@ static Processed mnsProcessMessage(Message * m) {
             case OPC_SNN:
                 if (m->len < 3) {
 
-                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_NVRD, SERVICE_ID_MNS, CMDERR_INV_CMD);
+                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_SNN, SERVICE_ID_MNS, CMDERR_INV_CMD);
 
                 } else {
                     nn.bytes.hi = m->bytes[0];
                     nn.bytes.lo = m->bytes[1];
-                    writeNVM(EEPROM_NVM_TYPE, 0x3FC, nn.bytes.hi);
-                    writeNVM(EEPROM_NVM_TYPE, 0x3FC +1, nn.bytes.lo);
+                    writeNVM(EEPROM_NVM_TYPE, 0x3FC +1, nn.bytes.hi);
+                    writeNVM(EEPROM_NVM_TYPE, 0x3FC, nn.bytes.lo);
 
                     mode_state = MODE_NORMAL;
 
 
+
+
+
                     sendMessage2(OPC_NNACK, nn.bytes.hi, nn.bytes.lo);
 
-                    mnsDiagnostics[0x04].asUint++;
+                    mnsDiagnostics[0x05].asUint++;
 
 
                     setLEDsByMode();
@@ -21505,14 +21596,21 @@ static Processed mnsProcessMessage(Message * m) {
             if ((m->bytes[0] == 0) && (m->bytes[1] == 0)) {
                 newMode = m->bytes[2];
 
-                if (newMode == MODE_HEARTBEAT_ON) {
-                    mode_flags |= 4;
-
-                    return PROCESSED;
-                } else if (newMode == MODE_HEARTBEAT_OFF) {
-                    mode_flags &= ~4;
-
-                    return PROCESSED;
+                switch (newMode) {
+                    case MODE_HEARTBEAT_ON:
+                        mode_flags |= 4;
+                        return PROCESSED;
+                    case MODE_HEARTBEAT_OFF:
+                        mode_flags &= ~4;
+                        return PROCESSED;
+                    case MODE_FCUCOMPAT_ON:
+                        mode_flags |= 8;
+                        return PROCESSED;
+                    case MODE_FCUCOMPAT_OFF:
+                        mode_flags &= ~8;
+                        return PROCESSED;
+                    default:
+                        break;
                 }
             }
             break;
@@ -21545,18 +21643,21 @@ static Processed mnsProcessMessage(Message * m) {
             i = getParameter(m->bytes[2]);
             sendMessage4(OPC_PARAN, nn.bytes.hi, nn.bytes.lo, m->bytes[2], i);
 
-            if (m->bytes[2] == 0) {
+            if (((mode_flags & 8) == 0) && (m->bytes[2] == 0)) {
                 startTimedResponse(7, findServiceIndex(SERVICE_ID_MNS), mnsTRrqnpnCallback);
             }
 
             return PROCESSED;
         case OPC_NNRSM:
             previousNN.word = nn.word;
-            factoryReset();
+
+            writeNVM(EEPROM_NVM_TYPE, 0x3FA, 0xFF);
             if (previousNN.word != 0) {
                 sendMessage2(OPC_NNREL, previousNN.bytes.hi, previousNN.bytes.lo);
+                transport->waitForTxQueueToDrain();
             }
-            return PROCESSED;
+            flushNVM();
+            __asm("reset");
 
         case OPC_RDGN:
             if (m->len < 5) {
@@ -21569,12 +21670,14 @@ static Processed mnsProcessMessage(Message * m) {
             } else {
 
                 if (m->bytes[2] > 2) {
-                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_RDGN, 1, GRSP_INVALID_SERVICE);
+                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_RDGN, SERVICE_ID_MNS, GRSP_INVALID_SERVICE);
                     return PROCESSED;
                 }
                 if (services[m->bytes[2]-1]->getDiagnostic == ((void*)0)) {
 
-                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_RDGN, 1, GRSP_INVALID_DIAGNOSTIC);
+
+                    sendMessage6(OPC_DGN, nn.bytes.hi, nn.bytes.lo, m->bytes[2], 0, 0, 0);
+                    return PROCESSED;
                 }
                 if (m->bytes[3] == 0) {
 
@@ -21584,7 +21687,7 @@ static Processed mnsProcessMessage(Message * m) {
                     DiagnosticVal * d = services[m->bytes[2]-1]->getDiagnostic(m->bytes[3]);
                     if (d == ((void*)0)) {
 
-                        sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_RDGN, 1, GRSP_INVALID_DIAGNOSTIC);
+                        sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_RDGN, SERVICE_ID_MNS, GRSP_INVALID_DIAGNOSTIC);
                     } else {
 
                         sendMessage6(OPC_DGN, nn.bytes.hi, nn.bytes.lo, m->bytes[2], m->bytes[3],d->asBytes.hi, d->asBytes.lo);
@@ -21603,7 +21706,7 @@ static Processed mnsProcessMessage(Message * m) {
 
                 sendMessage5(OPC_SD, nn.bytes.hi, nn.bytes.lo, 0, 0, 2);
 
-                startTimedResponse(3, SERVICE_ID_MNS, mnsTRserviceDiscoveryCallback);
+                startTimedResponse(3, findServiceIndex(SERVICE_ID_MNS), mnsTRserviceDiscoveryCallback);
             } else if (m->bytes[2] > 2) {
                 sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_RQSD, SERVICE_ID_MNS, GRSP_INVALID_SERVICE);
                 return PROCESSED;
@@ -21629,54 +21732,45 @@ static Processed mnsProcessMessage(Message * m) {
             newMode = m->bytes[2];
             previousNN.word = nn.word;
 
-            switch (mode_state) {
-                case MODE_UNINITIALISED:
-                    if (newMode == MODE_SETUP) {
-                        mode_state = MODE_SETUP;
-                        setupModePreviousMode = MODE_UNINITIALISED;
-                        sendMessage5(OPC_GRSP, previousNN.bytes.hi, previousNN.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
-
-                        sendMessage2(OPC_RQNN, nn.bytes.hi, nn.bytes.lo);
-
-                        setLEDsByMode();
-                        return PROCESSED;
-                    }
-                    break;
+            switch (newMode) {
                 case MODE_SETUP:
-                    break;
-                default:
-                    if (newMode == MODE_SETUP) {
+                case MODE_UNINITIALISED:
+                    if (mode_state == MODE_NORMAL) {
+                        sendMessage2((newMode == MODE_SETUP) ? OPC_RQNN : OPC_NNREL, nn.bytes.hi, nn.bytes.lo);
                         sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
-
-
-                        sendMessage2(OPC_RQNN, nn.bytes.hi, nn.bytes.lo);
-
                         nn.bytes.lo = nn.bytes.hi = 0;
-                        writeNVM(EEPROM_NVM_TYPE, 0x3FC, nn.bytes.hi);
-                        writeNVM(EEPROM_NVM_TYPE, 0x3FC +1, nn.bytes.lo);
 
-                        mode_state = MODE_SETUP;
+
+                        mode_state = (newMode == MODE_SETUP) ? MODE_SETUP : MODE_UNINITIALISED;
                         setupModePreviousMode = MODE_NORMAL;
 
                         setLEDsByMode();
-
                         return PROCESSED;
                     }
                     break;
-            }
-
-            if (newMode == MODE_HEARTBEAT_ON) {
-                mode_flags |= 4;
-                sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
-                return PROCESSED;
-            } else if (newMode == MODE_HEARTBEAT_OFF) {
-                mode_flags &= ~4;
-                sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
-                return PROCESSED;
+                case MODE_HEARTBEAT_ON:
+                    mode_flags |= 4;
+                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
+                    return PROCESSED;
+                case MODE_HEARTBEAT_OFF:
+                    mode_flags &= ~4;
+                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
+                    return PROCESSED;
+                case MODE_FCUCOMPAT_ON:
+                    mode_flags |= 8;
+                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
+                    return PROCESSED;
+                case MODE_FCUCOMPAT_OFF:
+                    mode_flags &= ~8;
+                    sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_MODE, SERVICE_ID_MNS, GRSP_OK);
+                    return PROCESSED;
+                default:
+                    break;
             }
             return NOT_PROCESSED;
 
         case OPC_NNRST:
+            flushNVM();
             __asm("reset");
             return PROCESSED;
         default:
@@ -21698,12 +21792,15 @@ static uint8_t getParameterFlags() {
     if (have(SERVICE_ID_PRODUCER)) {
         flags |= 2;
     }
-    if (flags == (2 & 1)) flags |= 16;
+    if (flags == (2 | 1)) flags |= 16;
     if (have(SERVICE_ID_BOOT)) {
         flags |= 8;
     }
     if (mode_flags & 1) {
         flags |= 32;
+    }
+    if (mode_state == MODE_NORMAL) {
+        flags |= 4;
     }
 
     flags |= 64;
@@ -21717,8 +21814,8 @@ static uint8_t getParameterFlags() {
 
 
 void updateModuleErrorStatus(void) {
-    if (mnsDiagnostics[0x00].asBytes.lo < 0xFF) {
-        mnsDiagnostics[0x00].asBytes.lo++;
+    if (mnsDiagnostics[0x01].asBytes.lo < 0xFF) {
+        mnsDiagnostics[0x01].asBytes.lo++;
     }
 }
 
@@ -21731,13 +21828,13 @@ static void mnsPoll(void) {
 
 
     if (mode_state == MODE_NORMAL) {
-        if ((tickGet() - heartbeatTimer.val) > 5*62500) {
+        if (((tickNow.val) - (heartbeatTimer).val) > 5*62500) {
             if (mode_flags & 4) {
-                sendMessage5(OPC_HEARTB, nn.bytes.hi,nn.bytes.lo,heartbeatSequence++,mnsDiagnostics[0x00].asBytes.lo,0);
+                sendMessage5(OPC_HEARTB, nn.bytes.hi,nn.bytes.lo,heartbeatSequence++,mnsDiagnostics[0x01].asBytes.lo,0);
             }
-            heartbeatTimer.val = tickGet();
-            if (mnsDiagnostics[0x00].asBytes.lo > 0) {
-                mnsDiagnostics[0x00].asBytes.lo--;
+            heartbeatTimer.val = (tickNow.val);
+            if (mnsDiagnostics[0x01].asBytes.lo > 0) {
+                mnsDiagnostics[0x01].asBytes.lo--;
             }
         }
     }
@@ -21749,16 +21846,24 @@ static void mnsPoll(void) {
         last_mode_flags = mode_flags;
     }
     if (mode_state != last_mode_state) {
-        writeNVM(EEPROM_NVM_TYPE, 0x3FB, mode_state);
+
+        if ((mode_state == MODE_UNINITIALISED) || (mode_state == MODE_NORMAL)) {
+            writeNVM(EEPROM_NVM_TYPE, 0x3FB, mode_state);
+        }
+
+        if ((mode_state == MODE_UNINITIALISED) && (setupModePreviousMode == MODE_NORMAL)) {
+            writeNVM(EEPROM_NVM_TYPE, 0x3FC +1, 0);
+            writeNVM(EEPROM_NVM_TYPE, 0x3FC, 0);
+        }
         last_mode_state = mode_state;
     }
 
 
-    if ((tickGet() - uptimeTimer.val) > 62500) {
-        uptimeTimer.val = tickGet();
-        mnsDiagnostics[0x02].asUint++;
-        if (mnsDiagnostics[0x02].asUint == 0) {
-            mnsDiagnostics[0x01].asUint++;
+    if (((tickNow.val) - (uptimeTimer).val) > 62500) {
+        uptimeTimer.val = (tickNow.val);
+        mnsDiagnostics[0x03].asUint++;
+        if (mnsDiagnostics[0x03].asUint == 0) {
+            mnsDiagnostics[0x02].asUint++;
         }
     }
 
@@ -21769,67 +21874,91 @@ static void mnsPoll(void) {
 
             if ((!(PORTAbits.RA2)) == 0) {
 
-                pbTimer.val = tickGet();
+                pbTimer.val = (tickNow.val);
             } else {
 
-                if ((tickGet() - pbTimer.val) > 4*62500) {
+                if (((tickNow.val) - (pbTimer).val) > 4*62500) {
 
-                    mode_state = MODE_SETUP;
+                    mode_state = 0xFD;
                     setupModePreviousMode = MODE_UNINITIALISED;
-                    pbTimer.val = tickGet();
-
-                    sendMessage2(OPC_RQNN, nn.bytes.hi, nn.bytes.lo);
                     setLEDsByMode();
                 }
             }
             break;
-        case MODE_SETUP:
-# 694 "../../VLCBlib_PIC/mns.c"
+        case 0xFD:
             if ((!(PORTAbits.RA2)) == 0) {
 
 
-                if ((tickGet() - pbTimer.val) > 4*62500) {
 
+                mode_state = MODE_SETUP;
+                setupModePreviousMode = MODE_UNINITIALISED;
+                pbTimer.val = (tickNow.val);
+
+                sendMessage2(OPC_RQNN, nn.bytes.hi, nn.bytes.lo);
+                setLEDsByMode();
+            }
+            pbTimer.val = tickGet();
+            break;
+        case MODE_SETUP:
+            if ((!(PORTAbits.RA2)) == 0) {
+
+
+                if (pbWasPushed && (((tickNow.val) - (pbTimer).val) > (62500/10)) && (((tickNow.val) - (pbTimer).val) < 2*62500)) {
 
                     mode_state = setupModePreviousMode;
                     if (mode_state == MODE_NORMAL) {
+
                         nn.word = previousNN.word;
+
+                        writeNVM(EEPROM_NVM_TYPE, 0x3FC +1, nn.bytes.hi);
+                        writeNVM(EEPROM_NVM_TYPE, 0x3FC, nn.bytes.lo);
                         sendMessage2(OPC_NNACK, nn.bytes.hi, nn.bytes.lo);
 
-                        mnsDiagnostics[0x04].asUint++;
+                        mnsDiagnostics[0x05].asUint++;
 
                     }
                     setLEDsByMode();
-                } else if ((tickGet() - pbTimer.val) > 62500) {
-
-                    if (nn.word != 0) {
-                        sendMessage2(OPC_NNREL, nn.bytes.hi, nn.bytes.lo);
-                    }
-                    nn.word = 0;
+                }
+                if (pbWasPushed && (((tickNow.val) - (pbTimer).val) > 4*62500)) {
                     mode_state = MODE_UNINITIALISED;
                     setLEDsByMode();
                 }
-                pbTimer.val = tickGet();
+                pbTimer.val = (tickNow.val);
+                pbWasPushed = FALSE;
+            } else {
+                pbWasPushed = TRUE;
             }
             break;
         default:
 
             if ((!(PORTAbits.RA2)) == 0) {
 
-                if ((tickGet() - pbTimer.val) > 4*62500) {
-
+                if (pbWasPushed && (((tickNow.val) - (pbTimer).val) > (62500/10)) && (((tickNow.val) - (pbTimer).val) < 2*62500)) {
 
                     previousNN.word = nn.word;
                     nn.bytes.lo = nn.bytes.hi = 0;
 
                     mode_state = MODE_SETUP;
                     setupModePreviousMode = MODE_NORMAL;
-                    pbTimer.val = tickGet();
 
                     sendMessage2(OPC_RQNN, previousNN.bytes.hi, previousNN.bytes.lo);
                     setLEDsByMode();
                 }
-                pbTimer.val = tickGet();
+                if (pbWasPushed &&(((tickNow.val) - (pbTimer).val) >= 4*62500)) {
+
+                    previousNN.word = nn.word;
+                    nn.bytes.lo = nn.bytes.hi = 0;
+
+                    mode_state = MODE_UNINITIALISED;
+                    setupModePreviousMode = MODE_NORMAL;
+
+                    sendMessage2(OPC_NNREL, previousNN.bytes.hi, previousNN.bytes.lo);
+                    setLEDsByMode();
+                }
+                pbTimer.val = (tickNow.val);
+                pbWasPushed = FALSE;
+            } else {
+                pbWasPushed = TRUE;
             }
     }
 }
@@ -21852,12 +21981,12 @@ static void mnsLowIsr(void) {
     }
     return;
 }
-# 769 "../../VLCBlib_PIC/mns.c"
+# 817 "../../VLCBlib_PIC/mns.c"
 static DiagnosticVal * mnsGetDiagnostic(uint8_t index) {
-    if ((index<1) || (index>6)) {
+    if (index > 6) {
         return ((void*)0);
     }
-    return &(mnsDiagnostics[index-1]);
+    return &(mnsDiagnostics[index]);
 }
 
 
@@ -21870,6 +21999,7 @@ void setLEDsByMode(void) {
             showStatus(STATUS_UNINITIALISED);
             break;
         case MODE_SETUP:
+        case 0xFD:
             showStatus(STATUS_SETUP);
             break;
         default:
@@ -21884,7 +22014,7 @@ void setLEDsByMode(void) {
 
 
 static uint8_t getParameter(uint8_t idx) {
-    uint8_t i;
+
     switch(idx) {
     case PAR_NUM:
         return 20;
@@ -21937,7 +22067,7 @@ static uint8_t getParameter(uint8_t idx) {
         return 0;
     }
 }
-# 862 "../../VLCBlib_PIC/mns.c"
+# 911 "../../VLCBlib_PIC/mns.c"
 TimedResponseResult mnsTRserviceDiscoveryCallback(uint8_t type, uint8_t serviceIndex, uint8_t step) {
     if (step >= 2) {
         return TIMED_RESPONSE_RESULT_FINISHED;
@@ -21947,21 +22077,22 @@ TimedResponseResult mnsTRserviceDiscoveryCallback(uint8_t type, uint8_t serviceI
 
     return TIMED_RESPONSE_RESULT_NEXT;
 }
-# 881 "../../VLCBlib_PIC/mns.c"
+# 930 "../../VLCBlib_PIC/mns.c"
 TimedResponseResult mnsTRallDiagnosticsCallback(uint8_t type, uint8_t serviceIndex, uint8_t step) {
     if (services[serviceIndex]->getDiagnostic == ((void*)0)) {
+        sendMessage6(OPC_DGN, nn.bytes.hi, nn.bytes.lo, serviceIndex+1, 0, 0, 0);
         return TIMED_RESPONSE_RESULT_FINISHED;
     }
-    DiagnosticVal * d = services[serviceIndex]->getDiagnostic(step+1);
+    DiagnosticVal * d = services[serviceIndex]->getDiagnostic(step);
     if (d == ((void*)0)) {
 
         return TIMED_RESPONSE_RESULT_FINISHED;
     }
 
-    sendMessage6(OPC_DGN, nn.bytes.hi, nn.bytes.lo, serviceIndex+1, step+1, d->asBytes.hi, d->asBytes.lo);
+    sendMessage6(OPC_DGN, nn.bytes.hi, nn.bytes.lo, serviceIndex+1, step, d->asBytes.hi, d->asBytes.lo);
     return TIMED_RESPONSE_RESULT_NEXT;
 }
-# 904 "../../VLCBlib_PIC/mns.c"
+# 953 "../../VLCBlib_PIC/mns.c"
 TimedResponseResult mnsTRrqnpnCallback(uint8_t type, uint8_t serviceIndex, uint8_t step) {
     if (step >= 20) {
         return TIMED_RESPONSE_RESULT_FINISHED;

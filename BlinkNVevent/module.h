@@ -89,6 +89,9 @@
 #define EV_FILL             0
 #define EVENT_TABLE_ADDRESS     0x100
 #define EVENT_TABLE_NVM_TYPE    EEPROM_NVM_TYPE
+#define HAPPENING_SIZE  1
+#define EVENT_TABLE_WIDTH 10
+#define EVperEVT 1
 
 //
 // Event Consumer service
@@ -102,7 +105,7 @@
 #define PARAM_MAJOR_VERSION     1
 #define PARAM_MINOR_VERSION     'a'
 #define PARAM_BUILD_VERSION     1
-#define PARAM_NUM_NV            0
+#define PARAM_NUM_NV            NV_NUM
 #define PARAM_NUM_EVENTS        NUM_EVENTS
 #define PARAM_NUM_EV_EVENT      1
 // Module name - must be 7 characters

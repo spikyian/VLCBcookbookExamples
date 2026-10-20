@@ -10,35 +10,35 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S1533 _TickValue val byte v word ]
 "71 main.c
 [; ;main.c: 71: Boolean blinkState;
-[c E12700 0 1 .. ]
-[n E12700 Boolean FALSE TRUE  ]
-[v F12809 `(v ~T0 @X0 0 tf ]
-[v F12811 `(v ~T0 @X0 0 tf ]
+[c E12758 0 1 .. ]
+[n E12758 Boolean FALSE TRUE  ]
+[v F12867 `(v ~T0 @X0 0 tf ]
+[v F12869 `(v ~T0 @X0 0 tf ]
 "73
 [; ;main.c: 73: const Service * const services[] = {
-[c E12342 0 1 2 3 4 5 6 7 8 9 10 12 13 16 17 33 34 35 48 63 64 65 66 67 68 69 70 71 72 73 74 76 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 99 111 112 113 114 115 116 117 118 120 127 128 130 131 132 133 135 142 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 162 171 172 175 176 177 178 179 180 181 182 184 185 189 190 191 192 193 194 199 207 208 209 210 211 212 213 216 217 221 222 223 224 225 226 227 230 231 233 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 164 .. ]
-[n E12342 VlcbOpCodes OPC_ACK OPC_NAK OPC_HLT OPC_BON OPC_TOF OPC_TON OPC_ESTOP OPC_ARST OPC_RTOF OPC_RTON OPC_RESTP OPC_RSTAT OPC_QNN OPC_RQNP OPC_RQMN OPC_KLOC OPC_QLOC OPC_DKEEP OPC_DBG1 OPC_EXTC OPC_RLOC OPC_QCON OPC_SNN OPC_ALOC OPC_STMOD OPC_PCON OPC_KCON OPC_DSPD OPC_DFLG OPC_DFNON OPC_DFNOF OPC_SSTAT OPC_NNRSM OPC_RQNN OPC_NNREL OPC_NNACK OPC_NNLRN OPC_NNULN OPC_NNCLR OPC_NNEVN OPC_NERD OPC_RQEVN OPC_WRACK OPC_RQDAT OPC_RQDDS OPC_BOOT OPC_ENUM OPC_NNRST OPC_EXTC1 OPC_DFUN OPC_GLOC OPC_ERR OPC_CMDERR OPC_EVNLF OPC_NVRD OPC_NENRD OPC_RQNPN OPC_NUMEV OPC_CANID OPC_MODE OPC_RQSD OPC_EXTC2 OPC_RDCC3 OPC_WCVO OPC_WCVB OPC_QCVS OPC_PCVS OPC_RDGN OPC_NVSETRD OPC_ACON OPC_ACOF OPC_AREQ OPC_ARON OPC_AROF OPC_EVULN OPC_NVSET OPC_NVANS OPC_ASON OPC_ASOF OPC_ASRQ OPC_PARAN OPC_REVAL OPC_ARSON OPC_ARSOF OPC_EXTC3 OPC_RDCC4 OPC_WCVS OPC_HEARTB OPC_SD OPC_GRSP OPC_ACON1 OPC_ACOF1 OPC_REQEV OPC_ARON1 OPC_AROF1 OPC_NEVAL OPC_PNN OPC_ASON1 OPC_ASOF1 OPC_ARSON1 OPC_ARSOF1 OPC_EXTC4 OPC_RDCC5 OPC_WCVOA OPC_CABDAT OPC_DGN OPC_FCLK OPC_ACON2 OPC_ACOF2 OPC_EVLRN OPC_EVANS OPC_ARON2 OPC_AROF2 OPC_ASON2 OPC_ASOF2 OPC_ARSON2 OPC_ARSOF2 OPC_EXTC5 OPC_RDCC6 OPC_PLOC OPC_NAME OPC_STAT OPC_ENACK OPC_ESD OPC_DTXC OPC_PARAMS OPC_ACON3 OPC_ACOF3 OPC_ENRSP OPC_ARON3 OPC_AROF3 OPC_EVLRNI OPC_ACDAT OPC_ARDAT OPC_ASON3 OPC_ASOF3 OPC_DDES OPC_DDRS OPC_DDWS OPC_ARSON3 OPC_ARSOF3 OPC_EXTC6 OPC_VCVS  ]
-"119 ../../VLCBlib_PIC\vlcb.h
-[s S1526 `uc 1 `E12342 1 `uc -> 7 `i ]
+[c E12373 0 1 2 3 4 5 6 7 8 9 10 12 13 16 17 33 34 35 48 63 64 65 66 67 68 69 70 71 72 73 74 76 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 99 111 112 113 114 115 116 117 118 120 127 128 130 131 132 133 135 142 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 162 171 172 175 176 177 178 179 180 181 182 184 185 189 190 191 192 193 194 199 207 208 209 210 211 212 213 216 217 221 222 223 224 225 226 227 230 231 233 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 164 .. ]
+[n E12373 VlcbOpCodes OPC_ACK OPC_NAK OPC_HLT OPC_BON OPC_TOF OPC_TON OPC_ESTOP OPC_ARST OPC_RTOF OPC_RTON OPC_RESTP OPC_RSTAT OPC_QNN OPC_RQNP OPC_RQMN OPC_KLOC OPC_QLOC OPC_DKEEP OPC_DBG1 OPC_EXTC OPC_RLOC OPC_QCON OPC_SNN OPC_ALOC OPC_STMOD OPC_PCON OPC_KCON OPC_DSPD OPC_DFLG OPC_DFNON OPC_DFNOF OPC_SSTAT OPC_NNRSM OPC_RQNN OPC_NNREL OPC_NNACK OPC_NNLRN OPC_NNULN OPC_NNCLR OPC_NNEVN OPC_NERD OPC_RQEVN OPC_WRACK OPC_RQDAT OPC_RQDDS OPC_BOOT OPC_ENUM OPC_NNRST OPC_EXTC1 OPC_DFUN OPC_GLOC OPC_ERR OPC_CMDERR OPC_EVNLF OPC_NVRD OPC_NENRD OPC_RQNPN OPC_NUMEV OPC_CANID OPC_MODE OPC_RQSD OPC_EXTC2 OPC_RDCC3 OPC_WCVO OPC_WCVB OPC_QCVS OPC_PCVS OPC_RDGN OPC_NVSETRD OPC_ACON OPC_ACOF OPC_AREQ OPC_ARON OPC_AROF OPC_EVULN OPC_NVSET OPC_NVANS OPC_ASON OPC_ASOF OPC_ASRQ OPC_PARAN OPC_REVAL OPC_ARSON OPC_ARSOF OPC_EXTC3 OPC_RDCC4 OPC_WCVS OPC_HEARTB OPC_SD OPC_GRSP OPC_ACON1 OPC_ACOF1 OPC_REQEV OPC_ARON1 OPC_AROF1 OPC_NEVAL OPC_PNN OPC_ASON1 OPC_ASOF1 OPC_ARSON1 OPC_ARSOF1 OPC_EXTC4 OPC_RDCC5 OPC_WCVOA OPC_CABDAT OPC_DGN OPC_FCLK OPC_ACON2 OPC_ACOF2 OPC_EVLRN OPC_EVANS OPC_ARON2 OPC_AROF2 OPC_ASON2 OPC_ASOF2 OPC_ARSON2 OPC_ARSOF2 OPC_EXTC5 OPC_RDCC6 OPC_PLOC OPC_NAME OPC_STAT OPC_ENACK OPC_ESD OPC_DTXC OPC_PARAMS OPC_ACON3 OPC_ACOF3 OPC_ENRSP OPC_ARON3 OPC_AROF3 OPC_EVLRNI OPC_ACDAT OPC_ARDAT OPC_ASON3 OPC_ASOF3 OPC_DDES OPC_DDRS OPC_DDWS OPC_ARSON3 OPC_ARSOF3 OPC_EXTC6 OPC_VCVS  ]
+"131 ../../VLCBlib_PIC/vlcb.h
+[s S1526 `uc 1 `E12373 1 `uc -> 7 `i ]
 [n S1526 Message len opc bytes ]
 "73 main.c
 [; ;main.c: 73: const Service * const services[] = {
-[c E12733 0 1 .. ]
-[n E12733 Processed NOT_PROCESSED PROCESSED  ]
-[v F12813 `(E12733 ~T0 @X0 0 tf1`*S1526 ]
-[v F12816 `(v ~T0 @X0 0 tf ]
-[v F12818 `(v ~T0 @X0 0 tf ]
-[v F12820 `(v ~T0 @X0 0 tf ]
-[v F12822 `(uc ~T0 @X0 0 tf1`uc ]
-"159 ../../VLCBlib_PIC\vlcb.h
+[c E12791 0 1 .. ]
+[n E12791 Processed NOT_PROCESSED PROCESSED  ]
+[v F12871 `(E12791 ~T0 @X0 0 tf1`*S1526 ]
+[v F12874 `(v ~T0 @X0 0 tf ]
+[v F12876 `(v ~T0 @X0 0 tf ]
+[v F12878 `(v ~T0 @X0 0 tf ]
+[v F12880 `(uc ~T0 @X0 0 tf1`uc ]
+"171 ../../VLCBlib_PIC/vlcb.h
 [s S1530 `uc 1 `uc 1 ]
 [n S1530 . lo hi ]
-"156
+"168
 [u S1529 `us 1 `s 1 `S1530 1 ]
 [n S1529 DiagnosticVal asUint asInt asBytes ]
-[v F12825 `(*S1529 ~T0 @X0 0 tf1`uc ]
-"307
-[s S1531 `uc 1 `uc 1 `*F12809 1 `*F12811 1 `*F12813 1 `*F12816 1 `*F12818 1 `*F12820 1 `*F12822 1 `*F12825 1 ]
+[v F12883 `(*S1529 ~T0 @X0 0 tf1`uc ]
+"320
+[s S1531 `uc 1 `uc 1 `*F12867 1 `*F12869 1 `*F12871 1 `*F12874 1 `*F12876 1 `*F12878 1 `*F12880 1 `*F12883 1 ]
 [n S1531 Service serviceNo version factoryReset powerUp processMessage poll highIsr lowIsr getESDdata getDiagnostic ]
 "85 ../../VLCBlib_PIC\can.h
 [; ;../../VLCBlib_PIC\can.h: 85: extern const Service canService;
@@ -49,47 +49,50 @@ Version 4.0 HI-TECH Software Intermediate Code
 "86 ../../VLCBlib_PIC\nv.h
 [; ;../../VLCBlib_PIC\nv.h: 86: extern const Service nvService;
 [v _nvService `CS1531 ~T0 @X0 0 e ]
-"99 main.c
-[; ;main.c: 99:     transport = &canTransport;
-[c E12848 0 1 .. ]
-[n E12848 SendResult SEND_FAILED SEND_OK  ]
-[v F12854 `(E12848 ~T0 @X0 0 tf1`*S1526 ]
-[c E12844 0 1 .. ]
-[n E12844 MessageReceived NOT_RECEIVED RECEIVED  ]
-[v F12857 `(E12844 ~T0 @X0 0 tf1`*S1526 ]
-"430 ../../VLCBlib_PIC\vlcb.h
-[s S1532 `*F12854 1 `*F12857 1 ]
-[n S1532 Transport sendMessage receiveMessage ]
-"442
+"106 main.c
+[; ;main.c: 106:     transport = &canTransport;
+[c E12906 0 1 .. ]
+[n E12906 SendResult SEND_FAILED SEND_OK  ]
+[v F12918 `(E12906 ~T0 @X0 0 tf1`*S1526 ]
+[c E12902 0 1 .. ]
+[n E12902 MessageReceived NOT_RECEIVED RECEIVED  ]
+[v F12921 `(E12902 ~T0 @X0 0 tf1`*S1526 ]
+[c E12910 0 1 2 3 .. ]
+[n E12910 TxDrainResult DRAIN_OK OVERALL_TIMEOUT MESSAGE_TIMEOUT BUS_OFF_ERROR  ]
+[v F12924 `(E12910 ~T0 @X0 0 tf ]
+"452 ../../VLCBlib_PIC/vlcb.h
+[s S1532 `*F12918 1 `*F12921 1 `*F12924 1 ]
+[n S1532 Transport sendMessage receiveMessage waitForTxQueueToDrain ]
+"465
 [v _transport `*CS1532 ~T0 @X0 0 e ]
 "89 ../../VLCBlib_PIC\can.h
 [; ;../../VLCBlib_PIC\can.h: 89: extern const Transport canTransport;
 [v _canTransport `CS1532 ~T0 @X0 0 e ]
-"210 ../../VLCBlib_PIC\vlcb.h
+"223 ../../VLCBlib_PIC/vlcb.h
 [v _setTimedResponseDelay `(v ~T0 @X0 0 ef1`uc ]
-"109 main.c
-[; ;main.c: 109:     pinMode(0, OUTPUT);
-[c E12974 0 1 2 .. ]
-[n E12974 PinMode OUTPUT INPUT ANALOGUE  ]
+"116 main.c
+[; ;main.c: 116:     pinMode(0, OUTPUT);
+[c E13012 0 1 2 .. ]
+[n E13012 PinMode OUTPUT INPUT ANALOGUE  ]
 "84 ../../VLCBlib_PIC\arduino.h
 [; ;../../VLCBlib_PIC\arduino.h: 84: extern void pinMode(uint8_t channel, PinMode mode);
-[v _pinMode `(v ~T0 @X0 0 ef2`uc`E12974 ]
-"244 ../../VLCBlib_PIC\ticktime.h
+[v _pinMode `(v ~T0 @X0 0 ef2`uc`E13012 ]
+"252 ../../VLCBlib_PIC\ticktime.h
 [v _tickGet `(ul ~T0 @X0 0 ef ]
 "97 ../../VLCBlib_PIC\arduino.h
 [; ;../../VLCBlib_PIC\arduino.h: 97: extern void digitalWrite(uint8_t channel, uint8_t value);
 [v _digitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
-"115 ../../VLCBlib_PIC\nv.h
-[; ;../../VLCBlib_PIC\nv.h: 115: extern int16_t getNV(uint8_t index);
+"116 ../../VLCBlib_PIC\nv.h
+[; ;../../VLCBlib_PIC\nv.h: 116: extern int16_t getNV(uint8_t index);
 [v _getNV `(s ~T0 @X0 0 ef1`uc ]
-"138 main.c
-[; ;main.c: 138: ValidTime APP_isSuitableTimeToWriteFlash(void){
-[c E12676 0 1 .. ]
-[n E12676 ValidTime BAD_TIME GOOD_TIME  ]
-"190
-[; ;main.c: 190: NvValidation APP_nvValidate(uint8_t index, uint8_t value) {
-[c E12926 0 1 .. ]
-[n E12926 NvValidation INVALID VALID  ]
+"145 main.c
+[; ;main.c: 145: ValidTime APP_isSuitableTimeToWriteFlash(void){
+[c E12725 0 1 .. ]
+[n E12725 ValidTime BAD_TIME GOOD_TIME  ]
+"197
+[; ;main.c: 197: NvValidation APP_nvValidate(uint8_t index, uint8_t value) {
+[c E12963 0 1 .. ]
+[n E12963 NvValidation INVALID VALID  ]
 "54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1469,8 +1472,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _blinkTime `S1533 ~T0 @X0 1 s ]
 "71
 [; ;main.c: 71: Boolean blinkState;
-[v _blinkState `E12700 ~T0 @X0 1 e ]
-[v F12991 `*CS1531 ~T0 @X0 1 t ]
+[v _blinkState `E12758 ~T0 @X0 1 e ]
+[v F13029 `*CS1531 ~T0 @X0 1 t ]
 "73
 [; ;main.c: 73: const Service * const services[] = {
 [v _services `C*CS1531 ~T0 @X0 -> 3 `i e ]
@@ -1501,164 +1504,174 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 92: }
 [e :UE 1538 ]
 }
-"97
-[; ;main.c: 97: void setup(void) {
+"98
+[; ;main.c: 98: void APP_earlyInit(void) {
+[v _APP_earlyInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _APP_earlyInit ]
+[f ]
+"99
+[; ;main.c: 99: }
+[e :UE 1539 ]
+}
+"104
+[; ;main.c: 104: void setup(void) {
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"99
-[; ;main.c: 99:     transport = &canTransport;
+"106
+[; ;main.c: 106:     transport = &canTransport;
 [e = _transport &U _canTransport ]
-"104
-[; ;main.c: 104:     setTimedResponseDelay(5);
+"111
+[; ;main.c: 111:     setTimedResponseDelay(5);
 [e ( _setTimedResponseDelay (1 -> -> 5 `i `uc ]
-"109
-[; ;main.c: 109:     pinMode(0, OUTPUT);
-[e ( _pinMode (2 , -> -> 0 `i `uc . `E12974 0 ]
-"114
-[; ;main.c: 114:     blinkTime.val = tickGet();
+"116
+[; ;main.c: 116:     pinMode(0, OUTPUT);
+[e ( _pinMode (2 , -> -> 0 `i `uc . `E13012 0 ]
+"121
+[; ;main.c: 121:     blinkTime.val = tickGet();
 [e = . _blinkTime 0 ( _tickGet ..  ]
-"115
-[; ;main.c: 115:     blinkState = FALSE;
-[e = _blinkState . `E12700 0 ]
-"117
-[; ;main.c: 117:     digitalWrite(0, blinkState);
+"122
+[; ;main.c: 122:     blinkState = FALSE;
+[e = _blinkState . `E12758 0 ]
+"124
+[; ;main.c: 124:     digitalWrite(0, blinkState);
 [e ( _digitalWrite (2 , -> -> 0 `i `uc -> _blinkState `uc ]
-"118
-[; ;main.c: 118: }
-[e :UE 1539 ]
+"125
+[; ;main.c: 125: }
+[e :UE 1540 ]
 }
-"120
-[; ;main.c: 120: void loop(void) {
+"127
+[; ;main.c: 127: void loop(void) {
 [v _loop `(v ~T0 @X0 1 ef ]
 {
 [e :U _loop ]
 [f ]
-"123
-[; ;main.c: 123:     if ((tickGet() - blinkTime.val) > (62500/10) * getNV(1)) {
-[e $ ! > - ( _tickGet ..  . _blinkTime 0 -> * / -> 62500 `l -> -> 10 `i `l -> ( _getNV (1 -> -> 1 `i `uc `l `ul 1541  ]
-{
-"125
-[; ;main.c: 125:         blinkState = ~ blinkState;
-[e = _blinkState -> ~ -> _blinkState `ui `E12700 ]
-"127
-[; ;main.c: 127:         digitalWrite(0, blinkState);
-[e ( _digitalWrite (2 , -> -> 0 `i `uc -> _blinkState `uc ]
-"129
-[; ;main.c: 129:         blinkTime.val = tickGet();
-[e = . _blinkTime 0 ( _tickGet ..  ]
 "130
-[; ;main.c: 130:     }
+[; ;main.c: 130:     if ((tickGet() - blinkTime.val) > (62500/10) * getNV(1)) {
+[e $ ! > - ( _tickGet ..  . _blinkTime 0 -> * / -> 62500 `l -> -> 10 `i `l -> ( _getNV (1 -> -> 1 `i `uc `l `ul 1542  ]
+{
+"132
+[; ;main.c: 132:         blinkState = ! blinkState;
+[e = _blinkState -> -> ! != -> _blinkState `ui -> -> 0 `i `ui `i `E12758 ]
+"134
+[; ;main.c: 134:         digitalWrite(0, blinkState);
+[e ( _digitalWrite (2 , -> -> 0 `i `uc -> _blinkState `uc ]
+"136
+[; ;main.c: 136:         blinkTime.val = tickGet();
+[e = . _blinkTime 0 ( _tickGet ..  ]
+"137
+[; ;main.c: 137:     }
 }
-[e :U 1541 ]
-"131
-[; ;main.c: 131: }
-[e :UE 1540 ]
-}
+[e :U 1542 ]
 "138
-[; ;main.c: 138: ValidTime APP_isSuitableTimeToWriteFlash(void){
-[v _APP_isSuitableTimeToWriteFlash `(E12676 ~T0 @X0 1 ef ]
+[; ;main.c: 138: }
+[e :UE 1541 ]
+}
+"145
+[; ;main.c: 145: ValidTime APP_isSuitableTimeToWriteFlash(void){
+[v _APP_isSuitableTimeToWriteFlash `(E12725 ~T0 @X0 1 ef ]
 {
 [e :U _APP_isSuitableTimeToWriteFlash ]
 [f ]
-"139
-[; ;main.c: 139:     return GOOD_TIME;
-[e ) . `E12676 1 ]
-[e $UE 1542  ]
-"140
-[; ;main.c: 140: }
-[e :UE 1542 ]
-}
-"145
-[; ;main.c: 145: Processed APP_preProcessMessage(Message * m) {
-[v _APP_preProcessMessage `(E12733 ~T0 @X0 1 ef1`*S1526 ]
-{
-[e :U _APP_preProcessMessage ]
-[v _m `*S1526 ~T0 @X0 1 r1 ]
-[f ]
 "146
-[; ;main.c: 146:     return NOT_PROCESSED;
-[e ) . `E12733 0 ]
+[; ;main.c: 146:     return GOOD_TIME;
+[e ) . `E12725 1 ]
 [e $UE 1543  ]
 "147
 [; ;main.c: 147: }
 [e :UE 1543 ]
 }
 "152
-[; ;main.c: 152: Processed APP_postProcessMessage(Message * m) {
-[v _APP_postProcessMessage `(E12733 ~T0 @X0 1 ef1`*S1526 ]
+[; ;main.c: 152: Processed APP_preProcessMessage(Message * m) {
+[v _APP_preProcessMessage `(E12791 ~T0 @X0 1 ef1`*S1526 ]
 {
-[e :U _APP_postProcessMessage ]
+[e :U _APP_preProcessMessage ]
 [v _m `*S1526 ~T0 @X0 1 r1 ]
 [f ]
 "153
 [; ;main.c: 153:     return NOT_PROCESSED;
-[e ) . `E12733 0 ]
+[e ) . `E12791 0 ]
 [e $UE 1544  ]
 "154
 [; ;main.c: 154: }
 [e :UE 1544 ]
 }
-"158
-[; ;main.c: 158: void APP_lowIsr(void) {
+"159
+[; ;main.c: 159: Processed APP_postProcessMessage(Message * m) {
+[v _APP_postProcessMessage `(E12791 ~T0 @X0 1 ef1`*S1526 ]
+{
+[e :U _APP_postProcessMessage ]
+[v _m `*S1526 ~T0 @X0 1 r1 ]
+[f ]
+"160
+[; ;main.c: 160:     return NOT_PROCESSED;
+[e ) . `E12791 0 ]
+[e $UE 1545  ]
+"161
+[; ;main.c: 161: }
+[e :UE 1545 ]
+}
+"165
+[; ;main.c: 165: void APP_lowIsr(void) {
 [v _APP_lowIsr `(v ~T0 @X0 1 ef ]
 {
 [e :U _APP_lowIsr ]
 [f ]
-"159
-[; ;main.c: 159: }
-[e :UE 1545 ]
+"166
+[; ;main.c: 166: }
+[e :UE 1546 ]
 }
-"162
-[; ;main.c: 162: void APP_highIsr(void) {
+"169
+[; ;main.c: 169: void APP_highIsr(void) {
 [v _APP_highIsr `(v ~T0 @X0 1 ef ]
 {
 [e :U _APP_highIsr ]
 [f ]
-"163
-[; ;main.c: 163: }
-[e :UE 1546 ]
-}
 "170
-[; ;main.c: 170: uint8_t APP_nvDefault(uint8_t index) {
+[; ;main.c: 170: }
+[e :UE 1547 ]
+}
+"177
+[; ;main.c: 177: uint8_t APP_nvDefault(uint8_t index) {
 [v _APP_nvDefault `(uc ~T0 @X0 1 ef1`uc ]
 {
 [e :U _APP_nvDefault ]
 [v _index `uc ~T0 @X0 1 r1 ]
 [f ]
-"171
-[; ;main.c: 171:     switch (index) {
-[e $U 1549  ]
+"178
+[; ;main.c: 178:     switch (index) {
+[e $U 1550  ]
 {
-"172
-[; ;main.c: 172:         case 1:
-[e :U 1550 ]
-"173
-[; ;main.c: 173:             return 10;
-[e ) -> -> 10 `i `uc ]
-[e $UE 1547  ]
-"174
-[; ;main.c: 174:         default:
+"179
+[; ;main.c: 179:         case 1:
 [e :U 1551 ]
-"175
-[; ;main.c: 175:             return 0;
+"180
+[; ;main.c: 180:             return 10;
+[e ) -> -> 10 `i `uc ]
+[e $UE 1548  ]
+"181
+[; ;main.c: 181:         default:
+[e :U 1552 ]
+"182
+[; ;main.c: 182:             return 0;
 [e ) -> -> 0 `i `uc ]
-[e $UE 1547  ]
-"176
-[; ;main.c: 176:     }
-}
-[e $U 1548  ]
-[e :U 1549 ]
-[e [\ _index , $ -> 1 `i 1550
- 1551 ]
-[e :U 1548 ]
-"177
-[; ;main.c: 177: }
-[e :UE 1547 ]
-}
+[e $UE 1548  ]
 "183
-[; ;main.c: 183: void APP_nvValueChanged(uint8_t index, uint8_t newValue, uint8_t oldValue) {
+[; ;main.c: 183:     }
+}
+[e $U 1549  ]
+[e :U 1550 ]
+[e [\ _index , $ -> 1 `i 1551
+ 1552 ]
+[e :U 1549 ]
+"184
+[; ;main.c: 184: }
+[e :UE 1548 ]
+}
+"190
+[; ;main.c: 190: void APP_nvValueChanged(uint8_t index, uint8_t newValue, uint8_t oldValue) {
 [v _APP_nvValueChanged `(v ~T0 @X0 1 ef3`uc`uc`uc ]
 {
 [e :U _APP_nvValueChanged ]
@@ -1666,63 +1679,63 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _newValue `uc ~T0 @X0 1 r2 ]
 [v _oldValue `uc ~T0 @X0 1 r3 ]
 [f ]
-"185
-[; ;main.c: 185: }
-[e :UE 1552 ]
+"192
+[; ;main.c: 192: }
+[e :UE 1553 ]
 }
-"190
-[; ;main.c: 190: NvValidation APP_nvValidate(uint8_t index, uint8_t value) {
-[v _APP_nvValidate `(E12926 ~T0 @X0 1 ef2`uc`uc ]
+"197
+[; ;main.c: 197: NvValidation APP_nvValidate(uint8_t index, uint8_t value) {
+[v _APP_nvValidate `(E12963 ~T0 @X0 1 ef2`uc`uc ]
 {
 [e :U _APP_nvValidate ]
 [v _index `uc ~T0 @X0 1 r1 ]
 [v _value `uc ~T0 @X0 1 r2 ]
 [f ]
-"191
-[; ;main.c: 191:     switch (index) {
-[e $U 1555  ]
-{
-"192
-[; ;main.c: 192:         case 1:
-[e :U 1556 ]
-"193
-[; ;main.c: 193:             if (value == 0) {
-[e $ ! == -> _value `i -> 0 `i 1557  ]
-{
-"194
-[; ;main.c: 194:                 return INVALID;
-[e ) . `E12926 0 ]
-[e $UE 1553  ]
-"195
-[; ;main.c: 195:             } else {
-}
-[e $U 1558  ]
-[e :U 1557 ]
-{
-"196
-[; ;main.c: 196:                 return VALID;
-[e ) . `E12926 1 ]
-[e $UE 1553  ]
-"197
-[; ;main.c: 197:             }
-}
-[e :U 1558 ]
 "198
-[; ;main.c: 198:         default:
-[e :U 1559 ]
+[; ;main.c: 198:     switch (index) {
+[e $U 1556  ]
+{
 "199
-[; ;main.c: 199:             return 0;
-[e ) -> -> 0 `i `E12926 ]
-[e $UE 1553  ]
+[; ;main.c: 199:         case 1:
+[e :U 1557 ]
 "200
-[; ;main.c: 200:     }
-}
-[e $U 1554  ]
-[e :U 1555 ]
-[e [\ _index , $ -> 1 `i 1556
- 1559 ]
-[e :U 1554 ]
+[; ;main.c: 200:             if (value == 0) {
+[e $ ! == -> _value `i -> 0 `i 1558  ]
+{
 "201
-[; ;main.c: 201: }
-[e :UE 1553 ]
+[; ;main.c: 201:                 return INVALID;
+[e ) . `E12963 0 ]
+[e $UE 1554  ]
+"202
+[; ;main.c: 202:             } else {
+}
+[e $U 1559  ]
+[e :U 1558 ]
+{
+"203
+[; ;main.c: 203:                 return VALID;
+[e ) . `E12963 1 ]
+[e $UE 1554  ]
+"204
+[; ;main.c: 204:             }
+}
+[e :U 1559 ]
+"205
+[; ;main.c: 205:         default:
+[e :U 1560 ]
+"206
+[; ;main.c: 206:             return 0;
+[e ) -> -> 0 `i `E12963 ]
+[e $UE 1554  ]
+"207
+[; ;main.c: 207:     }
+}
+[e $U 1555  ]
+[e :U 1556 ]
+[e [\ _index , $ -> 1 `i 1557
+ 1560 ]
+[e :U 1555 ]
+"208
+[; ;main.c: 208: }
+[e :UE 1554 ]
 }

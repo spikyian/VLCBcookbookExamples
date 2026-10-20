@@ -10,35 +10,35 @@ Version 4.0 HI-TECH Software Intermediate Code
 [n S1533 _TickValue val byte v word ]
 "39 main.c
 [; ;main.c: 39: Boolean blinkState;
-[c E12700 0 1 .. ]
-[n E12700 Boolean FALSE TRUE  ]
-[v F12809 `(v ~T0 @X0 0 tf ]
-[v F12811 `(v ~T0 @X0 0 tf ]
+[c E12758 0 1 .. ]
+[n E12758 Boolean FALSE TRUE  ]
+[v F12867 `(v ~T0 @X0 0 tf ]
+[v F12869 `(v ~T0 @X0 0 tf ]
 "41
 [; ;main.c: 41: const Service * const services[] = {
-[c E12342 0 1 2 3 4 5 6 7 8 9 10 12 13 16 17 33 34 35 48 63 64 65 66 67 68 69 70 71 72 73 74 76 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 99 111 112 113 114 115 116 117 118 120 127 128 130 131 132 133 135 142 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 162 171 172 175 176 177 178 179 180 181 182 184 185 189 190 191 192 193 194 199 207 208 209 210 211 212 213 216 217 221 222 223 224 225 226 227 230 231 233 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 164 .. ]
-[n E12342 VlcbOpCodes OPC_ACK OPC_NAK OPC_HLT OPC_BON OPC_TOF OPC_TON OPC_ESTOP OPC_ARST OPC_RTOF OPC_RTON OPC_RESTP OPC_RSTAT OPC_QNN OPC_RQNP OPC_RQMN OPC_KLOC OPC_QLOC OPC_DKEEP OPC_DBG1 OPC_EXTC OPC_RLOC OPC_QCON OPC_SNN OPC_ALOC OPC_STMOD OPC_PCON OPC_KCON OPC_DSPD OPC_DFLG OPC_DFNON OPC_DFNOF OPC_SSTAT OPC_NNRSM OPC_RQNN OPC_NNREL OPC_NNACK OPC_NNLRN OPC_NNULN OPC_NNCLR OPC_NNEVN OPC_NERD OPC_RQEVN OPC_WRACK OPC_RQDAT OPC_RQDDS OPC_BOOT OPC_ENUM OPC_NNRST OPC_EXTC1 OPC_DFUN OPC_GLOC OPC_ERR OPC_CMDERR OPC_EVNLF OPC_NVRD OPC_NENRD OPC_RQNPN OPC_NUMEV OPC_CANID OPC_MODE OPC_RQSD OPC_EXTC2 OPC_RDCC3 OPC_WCVO OPC_WCVB OPC_QCVS OPC_PCVS OPC_RDGN OPC_NVSETRD OPC_ACON OPC_ACOF OPC_AREQ OPC_ARON OPC_AROF OPC_EVULN OPC_NVSET OPC_NVANS OPC_ASON OPC_ASOF OPC_ASRQ OPC_PARAN OPC_REVAL OPC_ARSON OPC_ARSOF OPC_EXTC3 OPC_RDCC4 OPC_WCVS OPC_HEARTB OPC_SD OPC_GRSP OPC_ACON1 OPC_ACOF1 OPC_REQEV OPC_ARON1 OPC_AROF1 OPC_NEVAL OPC_PNN OPC_ASON1 OPC_ASOF1 OPC_ARSON1 OPC_ARSOF1 OPC_EXTC4 OPC_RDCC5 OPC_WCVOA OPC_CABDAT OPC_DGN OPC_FCLK OPC_ACON2 OPC_ACOF2 OPC_EVLRN OPC_EVANS OPC_ARON2 OPC_AROF2 OPC_ASON2 OPC_ASOF2 OPC_ARSON2 OPC_ARSOF2 OPC_EXTC5 OPC_RDCC6 OPC_PLOC OPC_NAME OPC_STAT OPC_ENACK OPC_ESD OPC_DTXC OPC_PARAMS OPC_ACON3 OPC_ACOF3 OPC_ENRSP OPC_ARON3 OPC_AROF3 OPC_EVLRNI OPC_ACDAT OPC_ARDAT OPC_ASON3 OPC_ASOF3 OPC_DDES OPC_DDRS OPC_DDWS OPC_ARSON3 OPC_ARSOF3 OPC_EXTC6 OPC_VCVS  ]
-"119 ../../VLCBlib_PIC\vlcb.h
-[s S1526 `uc 1 `E12342 1 `uc -> 7 `i ]
+[c E12373 0 1 2 3 4 5 6 7 8 9 10 12 13 16 17 33 34 35 48 63 64 65 66 67 68 69 70 71 72 73 74 76 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 99 111 112 113 114 115 116 117 118 120 127 128 130 131 132 133 135 142 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 162 171 172 175 176 177 178 179 180 181 182 184 185 189 190 191 192 193 194 199 207 208 209 210 211 212 213 216 217 221 222 223 224 225 226 227 230 231 233 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 164 .. ]
+[n E12373 VlcbOpCodes OPC_ACK OPC_NAK OPC_HLT OPC_BON OPC_TOF OPC_TON OPC_ESTOP OPC_ARST OPC_RTOF OPC_RTON OPC_RESTP OPC_RSTAT OPC_QNN OPC_RQNP OPC_RQMN OPC_KLOC OPC_QLOC OPC_DKEEP OPC_DBG1 OPC_EXTC OPC_RLOC OPC_QCON OPC_SNN OPC_ALOC OPC_STMOD OPC_PCON OPC_KCON OPC_DSPD OPC_DFLG OPC_DFNON OPC_DFNOF OPC_SSTAT OPC_NNRSM OPC_RQNN OPC_NNREL OPC_NNACK OPC_NNLRN OPC_NNULN OPC_NNCLR OPC_NNEVN OPC_NERD OPC_RQEVN OPC_WRACK OPC_RQDAT OPC_RQDDS OPC_BOOT OPC_ENUM OPC_NNRST OPC_EXTC1 OPC_DFUN OPC_GLOC OPC_ERR OPC_CMDERR OPC_EVNLF OPC_NVRD OPC_NENRD OPC_RQNPN OPC_NUMEV OPC_CANID OPC_MODE OPC_RQSD OPC_EXTC2 OPC_RDCC3 OPC_WCVO OPC_WCVB OPC_QCVS OPC_PCVS OPC_RDGN OPC_NVSETRD OPC_ACON OPC_ACOF OPC_AREQ OPC_ARON OPC_AROF OPC_EVULN OPC_NVSET OPC_NVANS OPC_ASON OPC_ASOF OPC_ASRQ OPC_PARAN OPC_REVAL OPC_ARSON OPC_ARSOF OPC_EXTC3 OPC_RDCC4 OPC_WCVS OPC_HEARTB OPC_SD OPC_GRSP OPC_ACON1 OPC_ACOF1 OPC_REQEV OPC_ARON1 OPC_AROF1 OPC_NEVAL OPC_PNN OPC_ASON1 OPC_ASOF1 OPC_ARSON1 OPC_ARSOF1 OPC_EXTC4 OPC_RDCC5 OPC_WCVOA OPC_CABDAT OPC_DGN OPC_FCLK OPC_ACON2 OPC_ACOF2 OPC_EVLRN OPC_EVANS OPC_ARON2 OPC_AROF2 OPC_ASON2 OPC_ASOF2 OPC_ARSON2 OPC_ARSOF2 OPC_EXTC5 OPC_RDCC6 OPC_PLOC OPC_NAME OPC_STAT OPC_ENACK OPC_ESD OPC_DTXC OPC_PARAMS OPC_ACON3 OPC_ACOF3 OPC_ENRSP OPC_ARON3 OPC_AROF3 OPC_EVLRNI OPC_ACDAT OPC_ARDAT OPC_ASON3 OPC_ASOF3 OPC_DDES OPC_DDRS OPC_DDWS OPC_ARSON3 OPC_ARSOF3 OPC_EXTC6 OPC_VCVS  ]
+"131 ../../VLCBlib_PIC/vlcb.h
+[s S1526 `uc 1 `E12373 1 `uc -> 7 `i ]
 [n S1526 Message len opc bytes ]
 "41 main.c
 [; ;main.c: 41: const Service * const services[] = {
-[c E12733 0 1 .. ]
-[n E12733 Processed NOT_PROCESSED PROCESSED  ]
-[v F12813 `(E12733 ~T0 @X0 0 tf1`*S1526 ]
-[v F12816 `(v ~T0 @X0 0 tf ]
-[v F12818 `(v ~T0 @X0 0 tf ]
-[v F12820 `(v ~T0 @X0 0 tf ]
-[v F12822 `(uc ~T0 @X0 0 tf1`uc ]
-"159 ../../VLCBlib_PIC\vlcb.h
+[c E12791 0 1 .. ]
+[n E12791 Processed NOT_PROCESSED PROCESSED  ]
+[v F12871 `(E12791 ~T0 @X0 0 tf1`*S1526 ]
+[v F12874 `(v ~T0 @X0 0 tf ]
+[v F12876 `(v ~T0 @X0 0 tf ]
+[v F12878 `(v ~T0 @X0 0 tf ]
+[v F12880 `(uc ~T0 @X0 0 tf1`uc ]
+"171 ../../VLCBlib_PIC/vlcb.h
 [s S1530 `uc 1 `uc 1 ]
 [n S1530 . lo hi ]
-"156
+"168
 [u S1529 `us 1 `s 1 `S1530 1 ]
 [n S1529 DiagnosticVal asUint asInt asBytes ]
-[v F12825 `(*S1529 ~T0 @X0 0 tf1`uc ]
-"307
-[s S1531 `uc 1 `uc 1 `*F12809 1 `*F12811 1 `*F12813 1 `*F12816 1 `*F12818 1 `*F12820 1 `*F12822 1 `*F12825 1 ]
+[v F12883 `(*S1529 ~T0 @X0 0 tf1`uc ]
+"320
+[s S1531 `uc 1 `uc 1 `*F12867 1 `*F12869 1 `*F12871 1 `*F12874 1 `*F12876 1 `*F12878 1 `*F12880 1 `*F12883 1 ]
 [n S1531 Service serviceNo version factoryReset powerUp processMessage poll highIsr lowIsr getESDdata getDiagnostic ]
 "85 ../../VLCBlib_PIC\can.h
 [; ;../../VLCBlib_PIC\can.h: 85: extern const Service canService;
@@ -46,40 +46,43 @@ Version 4.0 HI-TECH Software Intermediate Code
 "111 ../../VLCBlib_PIC\mns.h
 [; ;../../VLCBlib_PIC\mns.h: 111: extern const Service mnsService;
 [v _mnsService `CS1531 ~T0 @X0 0 e ]
-"66 main.c
-[; ;main.c: 66:     transport = &canTransport;
-[c E12848 0 1 .. ]
-[n E12848 SendResult SEND_FAILED SEND_OK  ]
-[v F12854 `(E12848 ~T0 @X0 0 tf1`*S1526 ]
-[c E12844 0 1 .. ]
-[n E12844 MessageReceived NOT_RECEIVED RECEIVED  ]
-[v F12857 `(E12844 ~T0 @X0 0 tf1`*S1526 ]
-"430 ../../VLCBlib_PIC\vlcb.h
-[s S1532 `*F12854 1 `*F12857 1 ]
-[n S1532 Transport sendMessage receiveMessage ]
-"442
+"73 main.c
+[; ;main.c: 73:     transport = &canTransport;
+[c E12906 0 1 .. ]
+[n E12906 SendResult SEND_FAILED SEND_OK  ]
+[v F12918 `(E12906 ~T0 @X0 0 tf1`*S1526 ]
+[c E12902 0 1 .. ]
+[n E12902 MessageReceived NOT_RECEIVED RECEIVED  ]
+[v F12921 `(E12902 ~T0 @X0 0 tf1`*S1526 ]
+[c E12910 0 1 2 3 .. ]
+[n E12910 TxDrainResult DRAIN_OK OVERALL_TIMEOUT MESSAGE_TIMEOUT BUS_OFF_ERROR  ]
+[v F12924 `(E12910 ~T0 @X0 0 tf ]
+"452 ../../VLCBlib_PIC/vlcb.h
+[s S1532 `*F12918 1 `*F12921 1 `*F12924 1 ]
+[n S1532 Transport sendMessage receiveMessage waitForTxQueueToDrain ]
+"465
 [v _transport `*CS1532 ~T0 @X0 0 e ]
 "89 ../../VLCBlib_PIC\can.h
 [; ;../../VLCBlib_PIC\can.h: 89: extern const Transport canTransport;
 [v _canTransport `CS1532 ~T0 @X0 0 e ]
-"210 ../../VLCBlib_PIC\vlcb.h
+"223 ../../VLCBlib_PIC/vlcb.h
 [v _setTimedResponseDelay `(v ~T0 @X0 0 ef1`uc ]
-"76 main.c
-[; ;main.c: 76:     pinMode(0, OUTPUT);
-[c E12957 0 1 2 .. ]
-[n E12957 PinMode OUTPUT INPUT ANALOGUE  ]
+"83 main.c
+[; ;main.c: 83:     pinMode(0, OUTPUT);
+[c E12995 0 1 2 .. ]
+[n E12995 PinMode OUTPUT INPUT ANALOGUE  ]
 "84 ../../VLCBlib_PIC\arduino.h
 [; ;../../VLCBlib_PIC\arduino.h: 84: extern void pinMode(uint8_t channel, PinMode mode);
-[v _pinMode `(v ~T0 @X0 0 ef2`uc`E12957 ]
-"244 ../../VLCBlib_PIC\ticktime.h
+[v _pinMode `(v ~T0 @X0 0 ef2`uc`E12995 ]
+"252 ../../VLCBlib_PIC\ticktime.h
 [v _tickGet `(ul ~T0 @X0 0 ef ]
 "97 ../../VLCBlib_PIC\arduino.h
 [; ;../../VLCBlib_PIC\arduino.h: 97: extern void digitalWrite(uint8_t channel, uint8_t value);
 [v _digitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
-"110 main.c
-[; ;main.c: 110: ValidTime APP_isSuitableTimeToWriteFlash(void){
-[c E12676 0 1 .. ]
-[n E12676 ValidTime BAD_TIME GOOD_TIME  ]
+"117 main.c
+[; ;main.c: 117: ValidTime APP_isSuitableTimeToWriteFlash(void){
+[c E12725 0 1 .. ]
+[n E12725 ValidTime BAD_TIME GOOD_TIME  ]
 "54 C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h
 [; ;C:/Program Files/Microchip/MPLABX/v6.20/packs/Microchip/PIC18F-K_DFP/1.13.292/xc8\pic\include\proc\pic18f26k80.h: 54: __asm("RXERRCNT equ 0E41h");
 [; <" RXERRCNT equ 0E41h ;# ">
@@ -1459,8 +1462,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 [v _blinkTime `S1533 ~T0 @X0 1 s ]
 "39
 [; ;main.c: 39: Boolean blinkState;
-[v _blinkState `E12700 ~T0 @X0 1 e ]
-[v F12974 `*CS1531 ~T0 @X0 1 t ]
+[v _blinkState `E12758 ~T0 @X0 1 e ]
+[v F13012 `*CS1531 ~T0 @X0 1 t ]
 "41
 [; ;main.c: 41: const Service * const services[] = {
 [v _services `C*CS1531 ~T0 @X0 -> 2 `i e ]
@@ -1490,139 +1493,149 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;main.c: 59: }
 [e :UE 1538 ]
 }
-"64
-[; ;main.c: 64: void setup(void) {
+"65
+[; ;main.c: 65: void APP_earlyInit(void) {
+[v _APP_earlyInit `(v ~T0 @X0 1 ef ]
+{
+[e :U _APP_earlyInit ]
+[f ]
+"66
+[; ;main.c: 66: }
+[e :UE 1539 ]
+}
+"71
+[; ;main.c: 71: void setup(void) {
 [v _setup `(v ~T0 @X0 1 ef ]
 {
 [e :U _setup ]
 [f ]
-"66
-[; ;main.c: 66:     transport = &canTransport;
+"73
+[; ;main.c: 73:     transport = &canTransport;
 [e = _transport &U _canTransport ]
-"71
-[; ;main.c: 71:     setTimedResponseDelay(5);
+"78
+[; ;main.c: 78:     setTimedResponseDelay(5);
 [e ( _setTimedResponseDelay (1 -> -> 5 `i `uc ]
-"76
-[; ;main.c: 76:     pinMode(0, OUTPUT);
-[e ( _pinMode (2 , -> -> 0 `i `uc . `E12957 0 ]
-"81
-[; ;main.c: 81:     blinkTime.val = tickGet();
+"83
+[; ;main.c: 83:     pinMode(0, OUTPUT);
+[e ( _pinMode (2 , -> -> 0 `i `uc . `E12995 0 ]
+"88
+[; ;main.c: 88:     blinkTime.val = tickGet();
 [e = . _blinkTime 0 ( _tickGet ..  ]
-"82
-[; ;main.c: 82:     blinkState = FALSE;
-[e = _blinkState . `E12700 0 ]
-"84
-[; ;main.c: 84:     digitalWrite(0, blinkState);
+"89
+[; ;main.c: 89:     blinkState = FALSE;
+[e = _blinkState . `E12758 0 ]
+"91
+[; ;main.c: 91:     digitalWrite(0, blinkState);
 [e ( _digitalWrite (2 , -> -> 0 `i `uc -> _blinkState `uc ]
-"85
-[; ;main.c: 85: }
-[e :UE 1539 ]
+"92
+[; ;main.c: 92: }
+[e :UE 1540 ]
 }
-"87
-[; ;main.c: 87: void loop(void) {
+"94
+[; ;main.c: 94: void loop(void) {
 [v _loop `(v ~T0 @X0 1 ef ]
 {
 [e :U _loop ]
 [f ]
-"90
-[; ;main.c: 90:     if ((tickGet() - blinkTime.val) > 62500) {
-[e $ ! > - ( _tickGet ..  . _blinkTime 0 -> -> 62500 `l `ul 1541  ]
-{
-"91
-[; ;main.c: 91:         if (blinkState) {
-[e $ ! != -> _blinkState `ui -> -> 0 `i `ui 1542  ]
-{
-"93
-[; ;main.c: 93:             blinkState = FALSE;
-[e = _blinkState . `E12700 0 ]
-"94
-[; ;main.c: 94:         } else {
-}
-[e $U 1543  ]
-[e :U 1542 ]
-{
-"96
-[; ;main.c: 96:             blinkState = TRUE;
-[e = _blinkState . `E12700 1 ]
 "97
-[; ;main.c: 97:         }
-}
-[e :U 1543 ]
-"99
-[; ;main.c: 99:         digitalWrite(0, blinkState);
-[e ( _digitalWrite (2 , -> -> 0 `i `uc -> _blinkState `uc ]
+[; ;main.c: 97:     if ((tickGet() - blinkTime.val) > 62500) {
+[e $ ! > - ( _tickGet ..  . _blinkTime 0 -> -> 62500 `l `ul 1542  ]
+{
+"98
+[; ;main.c: 98:         if (blinkState) {
+[e $ ! != -> _blinkState `ui -> -> 0 `i `ui 1543  ]
+{
+"100
+[; ;main.c: 100:             blinkState = FALSE;
+[e = _blinkState . `E12758 0 ]
 "101
-[; ;main.c: 101:         blinkTime.val = tickGet();
-[e = . _blinkTime 0 ( _tickGet ..  ]
-"102
-[; ;main.c: 102:     }
+[; ;main.c: 101:         } else {
 }
-[e :U 1541 ]
+[e $U 1544  ]
+[e :U 1543 ]
+{
 "103
-[; ;main.c: 103: }
-[e :UE 1540 ]
+[; ;main.c: 103:             blinkState = TRUE;
+[e = _blinkState . `E12758 1 ]
+"104
+[; ;main.c: 104:         }
 }
+[e :U 1544 ]
+"106
+[; ;main.c: 106:         digitalWrite(0, blinkState);
+[e ( _digitalWrite (2 , -> -> 0 `i `uc -> _blinkState `uc ]
+"108
+[; ;main.c: 108:         blinkTime.val = tickGet();
+[e = . _blinkTime 0 ( _tickGet ..  ]
+"109
+[; ;main.c: 109:     }
+}
+[e :U 1542 ]
 "110
-[; ;main.c: 110: ValidTime APP_isSuitableTimeToWriteFlash(void){
-[v _APP_isSuitableTimeToWriteFlash `(E12676 ~T0 @X0 1 ef ]
+[; ;main.c: 110: }
+[e :UE 1541 ]
+}
+"117
+[; ;main.c: 117: ValidTime APP_isSuitableTimeToWriteFlash(void){
+[v _APP_isSuitableTimeToWriteFlash `(E12725 ~T0 @X0 1 ef ]
 {
 [e :U _APP_isSuitableTimeToWriteFlash ]
 [f ]
-"111
-[; ;main.c: 111:     return GOOD_TIME;
-[e ) . `E12676 1 ]
-[e $UE 1544  ]
-"112
-[; ;main.c: 112: }
-[e :UE 1544 ]
-}
-"117
-[; ;main.c: 117: Processed APP_preProcessMessage(Message * m) {
-[v _APP_preProcessMessage `(E12733 ~T0 @X0 1 ef1`*S1526 ]
-{
-[e :U _APP_preProcessMessage ]
-[v _m `*S1526 ~T0 @X0 1 r1 ]
-[f ]
 "118
-[; ;main.c: 118:     return NOT_PROCESSED;
-[e ) . `E12733 0 ]
+[; ;main.c: 118:     return GOOD_TIME;
+[e ) . `E12725 1 ]
 [e $UE 1545  ]
 "119
 [; ;main.c: 119: }
 [e :UE 1545 ]
 }
 "124
-[; ;main.c: 124: Processed APP_postProcessMessage(Message * m) {
-[v _APP_postProcessMessage `(E12733 ~T0 @X0 1 ef1`*S1526 ]
+[; ;main.c: 124: Processed APP_preProcessMessage(Message * m) {
+[v _APP_preProcessMessage `(E12791 ~T0 @X0 1 ef1`*S1526 ]
 {
-[e :U _APP_postProcessMessage ]
+[e :U _APP_preProcessMessage ]
 [v _m `*S1526 ~T0 @X0 1 r1 ]
 [f ]
 "125
 [; ;main.c: 125:     return NOT_PROCESSED;
-[e ) . `E12733 0 ]
+[e ) . `E12791 0 ]
 [e $UE 1546  ]
 "126
 [; ;main.c: 126: }
 [e :UE 1546 ]
 }
-"130
-[; ;main.c: 130: void APP_lowIsr(void) {
+"131
+[; ;main.c: 131: Processed APP_postProcessMessage(Message * m) {
+[v _APP_postProcessMessage `(E12791 ~T0 @X0 1 ef1`*S1526 ]
+{
+[e :U _APP_postProcessMessage ]
+[v _m `*S1526 ~T0 @X0 1 r1 ]
+[f ]
+"132
+[; ;main.c: 132:     return NOT_PROCESSED;
+[e ) . `E12791 0 ]
+[e $UE 1547  ]
+"133
+[; ;main.c: 133: }
+[e :UE 1547 ]
+}
+"137
+[; ;main.c: 137: void APP_lowIsr(void) {
 [v _APP_lowIsr `(v ~T0 @X0 1 ef ]
 {
 [e :U _APP_lowIsr ]
 [f ]
-"131
-[; ;main.c: 131: }
-[e :UE 1547 ]
+"138
+[; ;main.c: 138: }
+[e :UE 1548 ]
 }
-"134
-[; ;main.c: 134: void APP_highIsr(void) {
+"141
+[; ;main.c: 141: void APP_highIsr(void) {
 [v _APP_highIsr `(v ~T0 @X0 1 ef ]
 {
 [e :U _APP_highIsr ]
 [f ]
-"135
-[; ;main.c: 135: }
-[e :UE 1548 ]
+"142
+[; ;main.c: 142: }
+[e :UE 1549 ]
 }

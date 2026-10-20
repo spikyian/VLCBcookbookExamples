@@ -1469,15 +1469,15 @@ Version 4.0 HI-TECH Software Intermediate Code
 [; ;../../VLCBlib_PIC/ticktime.c: 105:     for (i=64;i>0;i>>=1)
 {
 [e = _i -> -> 64 `i `uc ]
-[e $ > -> _i `i -> 0 `i 1537  ]
-[e $U 1538  ]
-[e :U 1537 ]
+[e $ > -> _i `i -> 0 `i 1530  ]
+[e $U 1531  ]
+[e :U 1530 ]
 "106
 [; ;../../VLCBlib_PIC/ticktime.c: 106:         divider++;
 [e ++ _divider -> -> 1 `i `uc ]
 [e =>> _i -> -> 1 `i `uc ]
-[e $ > -> _i `i -> 0 `i 1537  ]
-[e :U 1538 ]
+[e $ > -> _i `i -> 0 `i 1530  ]
+[e :U 1531 ]
 }
 "109
 [; ;../../VLCBlib_PIC/ticktime.c: 109:     T0CON = (uint8_t)(0b00000000 | divider);
@@ -1514,7 +1514,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = _timerExtension2 -> -> 0 `i `uc ]
 "147
 [; ;../../VLCBlib_PIC/ticktime.c: 147: }
-[e :UE 1536 ]
+[e :UE 1529 ]
 }
 "158
 [; ;../../VLCBlib_PIC/ticktime.c: 158: uint32_t tickGet(void) {
@@ -1542,7 +1542,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e = . . _INTCONbits 0 5 -> -> 0 `i `uc ]
 "170
 [; ;../../VLCBlib_PIC/ticktime.c: 170:     do {
-[e :U 1543 ]
+[e :U 1536 ]
 {
 "171
 [; ;../../VLCBlib_PIC/ticktime.c: 171:         IntFlag1 = INTCONbits.TMR0IF;
@@ -1559,11 +1559,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "175
 [; ;../../VLCBlib_PIC/ticktime.c: 175:     } while(IntFlag1 != IntFlag2);
 }
-[e $ != -> _IntFlag1 `i -> _IntFlag2 `i 1543  ]
-[e :U 1542 ]
+[e $ != -> _IntFlag1 `i -> _IntFlag2 `i 1536  ]
+[e :U 1535 ]
 "177
 [; ;../../VLCBlib_PIC/ticktime.c: 177:     if( IntFlag1 > 0 ) {
-[e $ ! > -> _IntFlag1 `i -> 0 `i 1544  ]
+[e $ ! > -> _IntFlag1 `i -> 0 `i 1537  ]
 {
 "178
 [; ;../../VLCBlib_PIC/ticktime.c: 178:         INTCONbits.TMR0IF = 0;
@@ -1573,7 +1573,7 @@ Version 4.0 HI-TECH Software Intermediate Code
 [e ++ _timerExtension1 -> -> 1 `i `Vuc ]
 "180
 [; ;../../VLCBlib_PIC/ticktime.c: 180:         if(timerExtension1 == 0)
-[e $ ! == -> _timerExtension1 `i -> 0 `i 1545  ]
+[e $ ! == -> _timerExtension1 `i -> 0 `i 1538  ]
 "181
 [; ;../../VLCBlib_PIC/ticktime.c: 181:         {
 {
@@ -1583,11 +1583,11 @@ Version 4.0 HI-TECH Software Intermediate Code
 "183
 [; ;../../VLCBlib_PIC/ticktime.c: 183:         }
 }
-[e :U 1545 ]
+[e :U 1538 ]
 "184
 [; ;../../VLCBlib_PIC/ticktime.c: 184:     }
 }
-[e :U 1544 ]
+[e :U 1537 ]
 "187
 [; ;../../VLCBlib_PIC/ticktime.c: 187:     currentTime.byte.b2 += timerExtension1;
 [e =+ . . _currentTime 1 2 -> _timerExtension1 `uc ]
@@ -1600,8 +1600,8 @@ Version 4.0 HI-TECH Software Intermediate Code
 "193
 [; ;../../VLCBlib_PIC/ticktime.c: 193:     return currentTime.val;
 [e ) . _currentTime 0 ]
-[e $UE 1540  ]
+[e $UE 1533  ]
 "194
 [; ;../../VLCBlib_PIC/ticktime.c: 194: }
-[e :UE 1540 ]
+[e :UE 1533 ]
 }
