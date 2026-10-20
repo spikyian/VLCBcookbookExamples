@@ -6,10 +6,10 @@ Linker command line:
   --edf=C:\Program Files\Microchip\xc8\v2.46\pic\dat\20240104201356_en.msgs \
   -cn -h+dist/default/production\Blink.production.sym \
   --cmf=dist/default/production\Blink.production.cmf -z -Q18F26K80 \
-  -oC:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o \
+  -oC:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o \
   --defsym=__MPLAB_BUILD=1 --fixupoverflow=error \
   -Mdist/default/production/Blink.production.map \
-  --md=C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_0.dat -E1 \
+  --md=C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_0.dat -E1 \
   -ver=XC8 Compiler --acfsm=1493 -ASTACK=0315h-0E40h -pstack=STACK \
   -p_name_text=848h -ACODE=00h-0FFFFh -ACONST=00h-0FFFFh \
   -ASMALLCONST=0F00h-0FFFhx241 -AMEDIUMCONST=0F00h-0FFFFh -ACOMRAM=01h-05Fh \
@@ -30,7 +30,7 @@ Linker command line:
   -pfarbss=FARRAM,fardata=FARRAM,nvFARRAM=FARRAM \
   -pintsave_regs=BIGRAM,bigbss=BIGRAM,bigdata=BIGRAM -pbss=RAM \
   -pidata=CODE,irdata=CODE,ibigdata=CODE,ifardata=CODE -prparam=COMRAM \
-  C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o \
+  C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o \
   dist/default/production\Blink.production.o 
 
 Object code version is 3.11
@@ -40,7 +40,7 @@ Machine type is 18F26K80
 
 
                 Name                               Link     Load   Length Selector   Space Scale
-C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
                 stack                               315      315      B2C      315       2
                 config                           300000   300000        E        0       4
                 init                                 1C       1C        8        C       0

@@ -1,7 +1,7 @@
 ### HEXMate logfile and output summary ###
 
 ### Command-line arguments ###
- C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o
+ C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o
  -Odist/default/production\Blink.production.hex
  -logfile=dist/default/production\Blink.production.hxl
  -addressing=1
@@ -9,13 +9,13 @@
 
 ### Memory Usage ###
  Input file ranges:
-  0h - 3h		(C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
-  8h - Bh		(C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
-  18h - 23h		(C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
-  848h - 650Dh		(C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
-  FE8Ah - FFFEh		(C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
-  300000h - 30000Dh		(C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
-  F003FAh - F003FAh		(C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
+  0h - 3h		(C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
+  8h - Bh		(C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
+  18h - 23h		(C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
+  848h - 650Dh		(C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
+  FE8Ah - FFFEh		(C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
+  300000h - 30000Dh		(C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
+  F003FAh - F003FAh		(C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
  Unused ranges:
   4h - 7h
   Ch - 17h
@@ -27,7 +27,7 @@
 ### Hex Memory Map ###
  Legend:
   -- = Unused memory
-  H1 = Input file             (C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_3.o)
+  H1 = Input file             (C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_3.o)
 ----------------------------------------------------------
          | 00 01 02 03 04 05 06 07 08 09 0A 0B 0C 0D 0E 0F
 ----------------------------------------------------------

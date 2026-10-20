@@ -128,7 +128,7 @@ bssBIGRAM BIGRAM 1 1F5 1F5 120 1 1
 bssCOMRAM COMRAM 1 49 49 15 1 1
 mediumconst MEDIUMCONST 0 FE8A FE8A 176 1 2
 config CONFIG 4 300000 300000 E 1 1
-$C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+$C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 stack STACK 2 315 315 B2C 1 1
 init CODE 0 1C 1C 8 1 2
 reset_vec CODE 0 0 0 4 1 2
@@ -187,10 +187,10 @@ MEDIUMCONST 650E-FE89 1
 %LINETAB
 $dist/default/production\Blink.production.o
 F003FA eeprom_data EEDATA >687:C:\Users\ianwh\github/VLCBlib_PIC/vlcb.c
-18 intcodelo CODE >31057:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-18 intcodelo CODE >31059:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-8 intcode CODE >33571:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-8 intcode CODE >33573:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
+18 intcodelo CODE >31057:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+18 intcodelo CODE >31059:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+8 intcode CODE >33571:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+8 intcode CODE >33573:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
 650C text101 CODE >141:C:\Users\ianwh\github\VLCBcookbookExamples\Blink\main.c
 650C text101 CODE >142:C:\Users\ianwh\github\VLCBcookbookExamples\Blink\main.c
 511E text100 CODE >693:C:\Users\ianwh\github/VLCBlib_PIC/can18_ecan.c
@@ -1777,39 +1777,39 @@ FD2 text19 CODE >512:C:\Users\ianwh\github/VLCBlib_PIC/mns.c
 50FA text0 CODE >1339:C:\Users\ianwh\github/VLCBlib_PIC/vlcb.c
 510E text0 CODE >1346:C:\Users\ianwh\github/VLCBlib_PIC/vlcb.c
 5112 text0 CODE >1348:C:\Users\ianwh\github/VLCBlib_PIC/vlcb.c
-6150 cinit CODE >10227:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6150 cinit CODE >10229:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6150 cinit CODE >10232:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6150 cinit CODE >10357:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6154 cinit CODE >10358:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6158 cinit CODE >10359:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6158 cinit CODE >10360:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-615A cinit CODE >10361:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-615C cinit CODE >10362:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-615E cinit CODE >10363:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6160 cinit CODE >10364:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6162 cinit CODE >10365:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6164 cinit CODE >10368:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6168 cinit CODE >10369:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-616A cinit CODE >10370:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-616A cinit CODE >10371:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-616C cinit CODE >10372:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-616E cinit CODE >10373:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6170 cinit CODE >10376:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6174 cinit CODE >10377:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6176 cinit CODE >10378:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6176 cinit CODE >10379:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6178 cinit CODE >10380:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-617A cinit CODE >10381:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-617C cinit CODE >10384:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6180 cinit CODE >10385:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6182 cinit CODE >10386:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6182 cinit CODE >10387:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6184 cinit CODE >10388:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6186 cinit CODE >10389:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6188 cinit CODE >10395:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-6188 cinit CODE >10397:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
-618A cinit CODE >10398:C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_1.s
+6150 cinit CODE >10227:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6150 cinit CODE >10229:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6150 cinit CODE >10232:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6150 cinit CODE >10357:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6154 cinit CODE >10358:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6158 cinit CODE >10359:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6158 cinit CODE >10360:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+615A cinit CODE >10361:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+615C cinit CODE >10362:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+615E cinit CODE >10363:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6160 cinit CODE >10364:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6162 cinit CODE >10365:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6164 cinit CODE >10368:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6168 cinit CODE >10369:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+616A cinit CODE >10370:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+616A cinit CODE >10371:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+616C cinit CODE >10372:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+616E cinit CODE >10373:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6170 cinit CODE >10376:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6174 cinit CODE >10377:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6176 cinit CODE >10378:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6176 cinit CODE >10379:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6178 cinit CODE >10380:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+617A cinit CODE >10381:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+617C cinit CODE >10384:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6180 cinit CODE >10385:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6182 cinit CODE >10386:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6182 cinit CODE >10387:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6184 cinit CODE >10388:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6186 cinit CODE >10389:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6188 cinit CODE >10395:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+6188 cinit CODE >10397:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
+618A cinit CODE >10398:C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_1.s
 # %SYMTAB Section
 # An enumeration of all symbols in the program.
 # The beginning of the section is indicated by %SYMTAB.
@@ -1853,7 +1853,7 @@ _RXM0SIDL EF9 0 ABS 0 - dist/default/production\Blink.production.o
 __end_of_findServiceIndex 56C2 0 CODE 0 text30 dist/default/production\Blink.production.o
 _setTimedResponseDelay 61CA 0 CODE 0 text2 dist/default/production\Blink.production.o
 __Hibigdata 0 0 CODE 0 ibigdata dist/default/production\Blink.production.o
-__mediumconst FE8A 0 MEDIUMCONST 0 mediumconst C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+__mediumconst FE8A 0 MEDIUMCONST 0 mediumconst C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 findServiceIndex@serviceType C2 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 __Heeprom_data F003FB 0 EEDATA 0 eeprom_data dist/default/production\Blink.production.o
 _TBLPTRU FF8 0 ABS 0 - dist/default/production\Blink.production.o
@@ -1876,7 +1876,7 @@ _IPR5 F78 0 ABS 0 - dist/default/production\Blink.production.o
 _LATA F89 0 ABS 0 - dist/default/production\Blink.production.o
 _LATB F8A 0 ABS 0 - dist/default/production\Blink.production.o
 _LATC F8B 0 ABS 0 - dist/default/production\Blink.production.o
-___sp 315 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+___sp 315 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 _have 559E 0 CODE 0 text29 dist/default/production\Blink.production.o
 _loop 5A3C 0 CODE 0 text52 dist/default/production\Blink.production.o
 _main 5064 0 CODE 0 text0 dist/default/production\Blink.production.o
@@ -1884,12 +1884,12 @@ _name 848 0 CODE 0 _name_text dist/default/production\Blink.production.o
 _poll 3986 0 CODE 0 text12 dist/default/production\Blink.production.o
 _push 24EC 0 CODE 0 text49 dist/default/production\Blink.production.o
 btemp 29 0 COMRAM 1 temp dist/default/production\Blink.production.o
-___stack_hi 6CF 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-___stack_lo 315 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+___stack_hi 6CF 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+___stack_lo 315 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 _mnsTRallDiagnosticsCallback 449A 0 CODE 0 text14 dist/default/production\Blink.production.o
 pop@q C0 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 __HbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\Blink.production.o
-start 1C 0 CODE 0 init C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+start 1C 0 CODE 0 init C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 _mnsGetDiagnostic 6274 0 CODE 0 text26 dist/default/production\Blink.production.o
 i1pop@q A1 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 _eraseFlashBlock 5C6E 0 CODE 0 text71 dist/default/production\Blink.production.o
@@ -1934,11 +1934,11 @@ __LbssBIGRAM 0 0 ABS 0 bssBIGRAM dist/default/production\Blink.production.o
 _mnsLowIsr 6420 0 CODE 0 text82 dist/default/production\Blink.production.o
 _enumerationState 8B 0 BANK0 1 bssBANK0 dist/default/production\Blink.production.o
 __end_of_canTxError 5D40 0 CODE 0 text85 dist/default/production\Blink.production.o
-__accesstop 60 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-intlevel0 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-intlevel1 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-intlevel2 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-intlevel3 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+__accesstop 60 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+intlevel0 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 __ptext100 511E 0 CODE 0 text100 dist/default/production\Blink.production.o
 __ptext101 650C 0 CODE 0 text101 dist/default/production\Blink.production.o
 APP_preProcessMessage@m C0 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
@@ -1989,8 +1989,8 @@ _mode_state 88 0 BANK0 1 bssBANK0 dist/default/production\Blink.production.o
 _ANCON0 F5D 0 ABS 0 - dist/default/production\Blink.production.o
 _ANCON1 F5C 0 ABS 0 - dist/default/production\Blink.production.o
 initTicker@i C2 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
-___inthi_sp 6CF 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-___intlo_sp A88 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+___inthi_sp 6CF 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+___intlo_sp A88 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 have@id C2 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 _timerExtension1 8A 0 BANK0 1 bssBANK0 dist/default/production\Blink.production.o
 _timerExtension2 89 0 BANK0 1 bssBANK0 dist/default/production\Blink.production.o
@@ -2094,7 +2094,7 @@ i1_updateModuleErrorStatus 64A0 0 CODE 0 text90 dist/default/production\Blink.pr
 initTicker@divider C1 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 ?i2_getNextWriteMessage 1 0 COMRAM 1 cstackCOMRAM dist/default/production\Blink.production.o
 __end_of_APP_lowIsr 650C 0 CODE 0 text93 dist/default/production\Blink.production.o
-isa$xinst 0 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+isa$xinst 0 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 _readNVM 59C6 0 CODE 0 text10 dist/default/production\Blink.production.o
 i1tickGet@IntFlag1 A2 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 i1tickGet@IntFlag2 A1 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
@@ -2150,7 +2150,7 @@ __Hbigbss 0 0 BIGRAM 1 bigbss dist/default/production\Blink.production.o
 __Hbigram 0 0 ABS 0 bigram dist/default/production\Blink.production.o
 __Hbigsfr 0 0 ABS 0 bigsfr dist/default/production\Blink.production.o
 digitalWrite@channel C3 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
-__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+__smallconst 0 0 SMALLCONST 0 smallconst C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 __end_of_checkTxFifo 37C6 0 CODE 0 text86 dist/default/production\Blink.production.o
 _getNumRxBuffersInUse 607A 0 CODE 0 text39 dist/default/production\Blink.production.o
 __Hcomram 0 0 ABS 0 comram dist/default/production\Blink.production.o
@@ -2527,13 +2527,13 @@ tickGet@currentTime C6 0 BANK0 1 cstackBANK0 dist/default/production\Blink.produ
 __end_of_setNewCanId 594E 0 CODE 0 text35 dist/default/production\Blink.production.o
 handleSelfEnumeration@incomingCanId D0 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 __Lfarbss 0 0 FARRAM 0 farbss dist/default/production\Blink.production.o
-___inthi_stack_hi A88 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-___inthi_stack_lo 6CF 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+___inthi_stack_hi A88 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+___inthi_stack_lo 6CF 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 __end_of_tickGet 59C6 0 CODE 0 text59 dist/default/production\Blink.production.o
 _mnsProcessMessage 850 0 CODE 0 text19 dist/default/production\Blink.production.o
 __end_of_pbUpTimer 4D46 0 CODE 0 text57 dist/default/production\Blink.production.o
 __Lfardata 0 0 FARRAM 0 fardata dist/default/production\Blink.production.o
-isa$std 1 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+isa$std 1 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 i1getBufferPointer@b A1 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 writeNVM@index CA 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 _timedResponseDelay 7C 0 BANK0 1 bssBANK0 dist/default/production\Blink.production.o
@@ -2548,8 +2548,8 @@ __end_of_loadFlashBlock 5F86 0 CODE 0 text69 dist/default/production\Blink.produ
 _flashCounter 72 0 BANK0 1 bssBANK0 dist/default/production\Blink.production.o
 _TXBIEbits E7F 0 ABS 0 - dist/default/production\Blink.production.o
 _canWaitForTxQueueToDrain 57DA 0 CODE 0 text31 dist/default/production\Blink.production.o
-stackhi E40 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-stacklo 315 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+stackhi E40 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+stacklo 315 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 pbDownTimer@timeout DB 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 _initRomOps 64CC 0 CODE 0 text54 dist/default/production\Blink.production.o
 pinMode@mode C0 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
@@ -2725,7 +2725,7 @@ __Ltext96 0 0 ABS 0 text96 dist/default/production\Blink.production.o
 __Ltext97 0 0 ABS 0 text97 dist/default/production\Blink.production.o
 __Ltext98 0 0 ABS 0 text98 dist/default/production\Blink.production.o
 __Ltext99 0 0 ABS 0 text99 dist/default/production\Blink.production.o
-__ramtop F00 0 RAM 0 ramtop C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+__ramtop F00 0 RAM 0 ramtop C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 __end_of_APP_postProcessMessage 6500 0 CODE 0 text42 dist/default/production\Blink.production.o
 _processEnumeration 37C6 0 CODE 0 text34 dist/default/production\Blink.production.o
 _canTransmitFailed 58 0 COMRAM 1 bssCOMRAM dist/default/production\Blink.production.o
@@ -2746,13 +2746,13 @@ readNVM@index C4 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.
 _pinMode 1CA6 0 CODE 0 text3 dist/default/production\Blink.production.o
 pbUpTimer@timeout DB 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 i1_getBufferPointer 56C2 0 CODE 0 text92 dist/default/production\Blink.production.o
-___heap_hi 0 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-___heap_lo 0 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+___heap_hi 0 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 __end_of_initTicker 607A 0 CODE 0 text9 dist/default/production\Blink.production.o
 getParameter@idx C5 0 BANK0 1 cstackBANK0 dist/default/production\Blink.production.o
 ___param_bank 0 0 ABS 0 - dist/default/production\Blink.production.o
-___intlo_stack_hi E41 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
-___intlo_stack_lo A88 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAs92c.\driver_tmp_9.o
+___intlo_stack_hi E41 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
+___intlo_stack_lo A88 0 STACK 2 stack C:\Users\ianwh\AppData\Local\Temp\xcAsndc.\driver_tmp_9.o
 __Hbigdata 0 0 BIGRAM 1 bigdata dist/default/production\Blink.production.o
 _timedResponseStep 7D 0 BANK0 1 bssBANK0 dist/default/production\Blink.production.o
 _timedResponseTime 154 0 BANK1 1 bssBANK1 dist/default/production\Blink.production.o

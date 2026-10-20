@@ -1,0 +1,3658 @@
+Version 4.0 HI-TECH Software Intermediate Code
+"171 ../../../VLCBlib_PIC/vlcb.h
+[; ;../../../VLCBlib_PIC/vlcb.h: 171:     struct {
+[s S1555 `uc 1 `uc 1 ]
+[n S1555 . lo hi ]
+"168
+[; ;../../../VLCBlib_PIC/vlcb.h: 168: typedef union DiagnosticVal {
+[u S1554 `us 1 `s 1 `S1555 1 ]
+[n S1554 DiagnosticVal asUint asInt asBytes ]
+[v F13165 `(v ~T0 @X0 0 tf ]
+[v F13167 `(v ~T0 @X0 0 tf ]
+"115 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 115: const Service canService = {
+[c E12671 0 1 2 3 4 5 6 7 8 9 10 12 13 16 17 33 34 35 48 63 64 65 66 67 68 69 70 71 72 73 74 76 79 80 81 82 83 84 85 86 87 88 89 90 91 92 93 94 95 96 97 99 111 112 113 114 115 116 117 118 120 127 128 130 131 132 133 135 142 144 145 146 147 148 149 150 151 152 153 154 155 156 157 158 159 160 162 171 172 175 176 177 178 179 180 181 182 184 185 189 190 191 192 193 194 199 207 208 209 210 211 212 213 216 217 221 222 223 224 225 226 227 230 231 233 239 240 241 242 243 244 245 246 247 248 249 250 251 252 253 254 255 164 .. ]
+[n E12671 VlcbOpCodes OPC_ACK OPC_NAK OPC_HLT OPC_BON OPC_TOF OPC_TON OPC_ESTOP OPC_ARST OPC_RTOF OPC_RTON OPC_RESTP OPC_RSTAT OPC_QNN OPC_RQNP OPC_RQMN OPC_KLOC OPC_QLOC OPC_DKEEP OPC_DBG1 OPC_EXTC OPC_RLOC OPC_QCON OPC_SNN OPC_ALOC OPC_STMOD OPC_PCON OPC_KCON OPC_DSPD OPC_DFLG OPC_DFNON OPC_DFNOF OPC_SSTAT OPC_NNRSM OPC_RQNN OPC_NNREL OPC_NNACK OPC_NNLRN OPC_NNULN OPC_NNCLR OPC_NNEVN OPC_NERD OPC_RQEVN OPC_WRACK OPC_RQDAT OPC_RQDDS OPC_BOOT OPC_ENUM OPC_NNRST OPC_EXTC1 OPC_DFUN OPC_GLOC OPC_ERR OPC_CMDERR OPC_EVNLF OPC_NVRD OPC_NENRD OPC_RQNPN OPC_NUMEV OPC_CANID OPC_MODE OPC_RQSD OPC_EXTC2 OPC_RDCC3 OPC_WCVO OPC_WCVB OPC_QCVS OPC_PCVS OPC_RDGN OPC_NVSETRD OPC_ACON OPC_ACOF OPC_AREQ OPC_ARON OPC_AROF OPC_EVULN OPC_NVSET OPC_NVANS OPC_ASON OPC_ASOF OPC_ASRQ OPC_PARAN OPC_REVAL OPC_ARSON OPC_ARSOF OPC_EXTC3 OPC_RDCC4 OPC_WCVS OPC_HEARTB OPC_SD OPC_GRSP OPC_ACON1 OPC_ACOF1 OPC_REQEV OPC_ARON1 OPC_AROF1 OPC_NEVAL OPC_PNN OPC_ASON1 OPC_ASOF1 OPC_ARSON1 OPC_ARSOF1 OPC_EXTC4 OPC_RDCC5 OPC_WCVOA OPC_CABDAT OPC_DGN OPC_FCLK OPC_ACON2 OPC_ACOF2 OPC_EVLRN OPC_EVANS OPC_ARON2 OPC_AROF2 OPC_ASON2 OPC_ASOF2 OPC_ARSON2 OPC_ARSOF2 OPC_EXTC5 OPC_RDCC6 OPC_PLOC OPC_NAME OPC_STAT OPC_ENACK OPC_ESD OPC_DTXC OPC_PARAMS OPC_ACON3 OPC_ACOF3 OPC_ENRSP OPC_ARON3 OPC_AROF3 OPC_EVLRNI OPC_ACDAT OPC_ARDAT OPC_ASON3 OPC_ASOF3 OPC_DDES OPC_DDRS OPC_DDWS OPC_ARSON3 OPC_ARSOF3 OPC_EXTC6 OPC_VCVS  ]
+"131 ../../../VLCBlib_PIC/vlcb.h
+[; ;../../../VLCBlib_PIC/vlcb.h: 131: typedef struct Message {
+[s S1551 `uc 1 `E12671 1 `uc -> 7 `i ]
+[n S1551 Message len opc bytes ]
+"115 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 115: const Service canService = {
+[c E13089 0 1 .. ]
+[n E13089 Processed NOT_PROCESSED PROCESSED  ]
+[v F13169 `(E13089 ~T0 @X0 0 tf1`*S1551 ]
+[v F13172 `(v ~T0 @X0 0 tf ]
+[v F13174 `(v ~T0 @X0 0 tf ]
+[v F13176 `(v ~T0 @X0 0 tf ]
+[v F13178 `(uc ~T0 @X0 0 tf1`uc ]
+[v F13181 `(*S1554 ~T0 @X0 0 tf1`uc ]
+"320 ../../../VLCBlib_PIC/vlcb.h
+[; ;../../../VLCBlib_PIC/vlcb.h: 320: typedef struct Service {
+[s S1556 `uc 1 `uc 1 `*F13165 1 `*F13167 1 `*F13169 1 `*F13172 1 `*F13174 1 `*F13176 1 `*F13178 1 `*F13181 1 ]
+[n S1556 Service serviceNo version factoryReset powerUp processMessage poll highIsr lowIsr getESDdata getDiagnostic ]
+"115 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 115: const Service canService = {
+[c E12878 0 1 2 3 4 5 6 7 8 9 10 17 .. ]
+[n E12878 VlcbServiceTypes SERVICE_ID_NONE SERVICE_ID_MNS SERVICE_ID_NV SERVICE_ID_CAN SERVICE_ID_OLD_TEACH SERVICE_ID_PRODUCER SERVICE_ID_CONSUMER SERVICE_ID_TEACH SERVICE_ID_CONSUME_OWN_EVENTS SERVICE_ID_EVENTACK SERVICE_ID_BOOT SERVICE_ID_STREAMING  ]
+"90
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 90: static void canFactoryReset(void);
+[v _canFactoryReset `(v ~T0 @X0 0 sf ]
+"91
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 91: static void canPowerUp(void);
+[v _canPowerUp `(v ~T0 @X0 0 sf ]
+[v F13283 `(E13089 ~T0 @X0 1 tf1`*S1551 ]
+"93
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 93: static Processed canProcessMessage(Message * m) __attribute__((reentrant));
+[v _canProcessMessage `RF13283 ~T0 @X0 0 s ]
+[v F13302 `(v ~T0 @X0 0 tf ]
+"94
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 94: static void canIsr(void);
+[v _canIsr `(v ~T0 @X0 0 sf ]
+"95
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 95: static uint8_t canEsdData(uint8_t id);
+[v _canEsdData `(uc ~T0 @X0 0 sf1`uc ]
+"102
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 102: static DiagnosticVal * canGetDiagnostic(uint8_t index);
+[v _canGetDiagnostic `(*S1554 ~T0 @X0 0 sf1`uc ]
+"143
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 143: const Transport canTransport = {
+[c E13204 0 1 .. ]
+[n E13204 SendResult SEND_FAILED SEND_OK  ]
+[v F13216 `(E13204 ~T0 @X0 0 tf1`*S1551 ]
+[c E13200 0 1 .. ]
+[n E13200 MessageReceived NOT_RECEIVED RECEIVED  ]
+[v F13219 `(E13200 ~T0 @X0 0 tf1`*S1551 ]
+[c E13208 0 1 2 3 .. ]
+[n E13208 TxDrainResult DRAIN_OK OVERALL_TIMEOUT MESSAGE_TIMEOUT BUS_OFF_ERROR  ]
+[v F13222 `(E13208 ~T0 @X0 0 tf ]
+"452 ../../../VLCBlib_PIC/vlcb.h
+[; ;../../../VLCBlib_PIC/vlcb.h: 452: typedef struct Transport {
+[s S1557 `*F13216 1 `*F13219 1 `*F13222 1 ]
+[n S1557 Transport sendMessage receiveMessage waitForTxQueueToDrain ]
+"133 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 133: static SendResult canSendMessage(Message * mp);
+[v _canSendMessage `(E13204 ~T0 @X0 0 sf1`*S1551 ]
+"134
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 134: static MessageReceived canReceiveMessage(Message * m);
+[v _canReceiveMessage `(E13200 ~T0 @X0 0 sf1`*S1551 ]
+"135
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 135: static TxDrainResult canWaitForTxQueueToDrain(void);
+[v _canWaitForTxQueueToDrain `(E13208 ~T0 @X0 0 sf ]
+"216 ../../../VLCBlib_PIC/ticktime.h
+[; ;../../../VLCBlib_PIC/ticktime.h: 216:     {
+[s S1559 `uc 1 `uc 1 `uc 1 `uc 1 ]
+[n S1559 TickBytes b0 b1 b2 b3 ]
+"225
+[; ;../../../VLCBlib_PIC/ticktime.h: 225:     {
+[s S1560 `us 1 `us 1 ]
+[n S1560 TickWords w0 w1 ]
+"211
+[; ;../../../VLCBlib_PIC/ticktime.h: 211: typedef union _TickValue {
+[u S1558 `ul 1 `S1559 1 `uc -> 4 `i `S1560 1 ]
+[n S1558 _TickValue val byte v word ]
+"54 ../../../VLCBlib_PIC/messageQueue.h
+[; ;../../../VLCBlib_PIC/messageQueue.h: 54: typedef struct MessageQueue {
+[s S1561 `*S1551 1 `uc 1 `uc 1 `uc 1 ]
+[n S1561 MessageQueue messages readIndex writeIndex size ]
+"173 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 173: } EnumerationState;
+[c E13327 0 1 2 .. ]
+[n E13327 EnumerationState NO_ENUMERATION ENUMERATION_REQUIRED ENUMERATION_IN_PROGRESS  ]
+"213
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 213:     writeNVM(EEPROM_NVM_TYPE, 0x3FE, canId);
+[c E13019 0 1 .. ]
+[n E13019 . EEPROM_NVM_TYPE FLASH_NVM_TYPE  ]
+"192 ../../../VLCBlib_PIC/nvm.h
+[; ;../../../VLCBlib_PIC/nvm.h: 192: extern uint8_t writeNVM(NVMtype type, uint24_t index, uint8_t value);
+[v _writeNVM `(uc ~T0 @X0 0 ef3`E13019`um`uc ]
+"181
+[; ;../../../VLCBlib_PIC/nvm.h: 181: extern int16_t readNVM(NVMtype type, uint24_t index);
+[v _readNVM `(s ~T0 @X0 0 ef2`E13019`um ]
+"29547 C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29547: extern volatile unsigned char IPR5 __attribute__((address(0xF78)));
+[v _IPR5 `Vuc ~T0 @X0 0 e@3960 ]
+"29012
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29012: extern volatile unsigned char CANCON __attribute__((address(0xF6F)));
+[v _CANCON `Vuc ~T0 @X0 0 e@3951 ]
+"28907
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28907:     struct {
+[s S1087 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :3 `uc 1 ]
+[n S1087 . EICODE0 EICODE1_ICODE0 EICODE2_ICODE1 EICODE3_ICODE2 EICODE4 OPMODE ]
+"28915
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28915:     struct {
+[s S1088 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1088 . . EICODE1 EICODE2 EICODE3 . OPMODE0 OPMODE1 OPMODE2 ]
+"28925
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28925:     struct {
+[s S1089 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1089 . . ICODE0 ICODE1 ICODE2 ]
+"28906
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28906: typedef union {
+[u S1086 `S1087 1 `S1088 1 `S1089 1 ]
+[n S1086 . . . . ]
+"28932
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28932: extern volatile CANSTATbits_t CANSTATbits __attribute__((address(0xF6E)));
+[v _CANSTATbits `VS1086 ~T0 @X0 0 e@3950 ]
+"29244
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29244: extern volatile unsigned char ECANCON __attribute__((address(0xF72)));
+[v _ECANCON `Vuc ~T0 @X0 0 e@3954 ]
+"6260
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6260: extern volatile unsigned char BSEL0 __attribute__((address(0xE7D)));
+[v _BSEL0 `Vuc ~T0 @X0 0 e@3709 ]
+"176
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 176: extern volatile unsigned char BRGCON1 __attribute__((address(0xE43)));
+[v _BRGCON1 `Vuc ~T0 @X0 0 e@3651 ]
+"252
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 252: extern volatile unsigned char BRGCON2 __attribute__((address(0xE44)));
+[v _BRGCON2 `Vuc ~T0 @X0 0 e@3652 ]
+"337
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 337: extern volatile unsigned char BRGCON3 __attribute__((address(0xE45)));
+[v _BRGCON3 `Vuc ~T0 @X0 0 e@3653 ]
+"29104
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29104: extern volatile unsigned char CIOCON __attribute__((address(0xF70)));
+[v _CIOCON `Vuc ~T0 @X0 0 e@3952 ]
+"19065
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19065: extern volatile unsigned char RXM0SIDH __attribute__((address(0xEF8)));
+[v _RXM0SIDH `Vuc ~T0 @X0 0 e@3832 ]
+"19185
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19185: extern volatile unsigned char RXM0SIDL __attribute__((address(0xEF9)));
+[v _RXM0SIDL `Vuc ~T0 @X0 0 e@3833 ]
+"19292
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19292: extern volatile unsigned char RXM0EIDH __attribute__((address(0xEFA)));
+[v _RXM0EIDH `Vuc ~T0 @X0 0 e@3834 ]
+"19412
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19412: extern volatile unsigned char RXM0EIDL __attribute__((address(0xEFB)));
+[v _RXM0EIDL `Vuc ~T0 @X0 0 e@3835 ]
+"16383
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16383: extern volatile unsigned char RXF0SIDL __attribute__((address(0xEE1)));
+[v _RXF0SIDL `Vuc ~T0 @X0 0 e@3809 ]
+"5236
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5236: extern volatile unsigned char RXFBCON0 __attribute__((address(0xE71)));
+[v _RXFBCON0 `Vuc ~T0 @X0 0 e@3697 ]
+"5908
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5908: extern volatile unsigned char MSEL0 __attribute__((address(0xE79)));
+[v _MSEL0 `Vuc ~T0 @X0 0 e@3705 ]
+"390
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 390: extern volatile unsigned char RXFCON0 __attribute__((address(0xE46)));
+[v _RXFCON0 `Vuc ~T0 @X0 0 e@3654 ]
+"27566
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27566: extern volatile unsigned char RXB0CON __attribute__((address(0xF60)));
+[v _RXB0CON `Vuc ~T0 @X0 0 e@3936 ]
+"24292
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24292: extern volatile unsigned char RXB1CON __attribute__((address(0xF30)));
+[v _RXB1CON `Vuc ~T0 @X0 0 e@3888 ]
+"6441
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6441: extern volatile unsigned char B0CON __attribute__((address(0xE80)));
+[v _B0CON `Vuc ~T0 @X0 0 e@3712 ]
+"8072
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8072: extern volatile unsigned char B1CON __attribute__((address(0xE90)));
+[v _B1CON `Vuc ~T0 @X0 0 e@3728 ]
+"9703
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9703: extern volatile unsigned char B2CON __attribute__((address(0xEA0)));
+[v _B2CON `Vuc ~T0 @X0 0 e@3744 ]
+"11343
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11343: extern volatile unsigned char B3CON __attribute__((address(0xEB0)));
+[v _B3CON `Vuc ~T0 @X0 0 e@3760 ]
+"12983
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12983: extern volatile unsigned char B4CON __attribute__((address(0xEC0)));
+[v _B4CON `Vuc ~T0 @X0 0 e@3776 ]
+"14623
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14623: extern volatile unsigned char B5CON __attribute__((address(0xED0)));
+[v _B5CON `Vuc ~T0 @X0 0 e@3792 ]
+"6311
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6311: extern volatile unsigned char BIE0 __attribute__((address(0xE7E)));
+[v _BIE0 `Vuc ~T0 @X0 0 e@3710 ]
+"6393
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6393:     struct {
+[s S239 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S239 . . TXB0IE TXB1IE TXB2IE ]
+"6399
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6399:     struct {
+[s S240 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S240 . . TX0IE TX1IE TX2IE ]
+"6392
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6392: typedef union {
+[u S238 `S239 1 `S240 1 ]
+[n S238 . . . ]
+"6406
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6406: extern volatile TXBIEbits_t TXBIEbits __attribute__((address(0xE7F)));
+[v _TXBIEbits `VS238 ~T0 @X0 0 e@3711 ]
+"22861
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22861: extern volatile unsigned char TXB0CON __attribute__((address(0xF20)));
+[v _TXB0CON `Vuc ~T0 @X0 0 e@3872 ]
+"22867
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22867:     struct {
+[s S840 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S840 . TXPRI . TXREQ TXERR TXLARB TXABT TXBIF ]
+"22876
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22876:     struct {
+[s S841 :1 `uc 1 :1 `uc 1 ]
+[n S841 . TXPRI0 TXPRI1 ]
+"22880
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22880:     struct {
+[s S842 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S842 . TXB0PRI0 TXB0PRI1 . TXB0REQ TXB0ERR TXB0LARB TXB0ABT TX0IF ]
+"22866
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22866: typedef union {
+[u S839 `S840 1 `S841 1 `S842 1 ]
+[n S839 . . . . ]
+"22891
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22891: extern volatile TXB0CONbits_t TXB0CONbits __attribute__((address(0xF20)));
+[v _TXB0CONbits `VS839 ~T0 @X0 0 e@3872 ]
+"23443
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23443: extern volatile unsigned char TXB0DLC __attribute__((address(0xF25)));
+[v _TXB0DLC `Vuc ~T0 @X0 0 e@3877 ]
+"22971
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22971: extern volatile unsigned char TXB0SIDH __attribute__((address(0xF21)));
+[v _TXB0SIDH `Vuc ~T0 @X0 0 e@3873 ]
+"23091
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23091: extern volatile unsigned char TXB0SIDL __attribute__((address(0xF22)));
+[v _TXB0SIDL `Vuc ~T0 @X0 0 e@3874 ]
+"21430
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21430: extern volatile unsigned char TXB1CON __attribute__((address(0xF10)));
+[v _TXB1CON `Vuc ~T0 @X0 0 e@3856 ]
+"21436
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21436:     struct {
+[s S784 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S784 . TXPRI . TXREQ TXERR TXLARB TXABT TXBIF ]
+"21445
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21445:     struct {
+[s S785 :1 `uc 1 :1 `uc 1 ]
+[n S785 . TXPRI0 TXPRI1 ]
+"21449
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21449:     struct {
+[s S786 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S786 . TXB1PRI0 TXB1PRI1 . TXB1REQ TXB1ERR TXB1LARB TXB1ABT TX1IF ]
+"21435
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21435: typedef union {
+[u S783 `S784 1 `S785 1 `S786 1 ]
+[n S783 . . . . ]
+"21460
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21460: extern volatile TXB1CONbits_t TXB1CONbits __attribute__((address(0xF10)));
+[v _TXB1CONbits `VS783 ~T0 @X0 0 e@3856 ]
+"22012
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22012: extern volatile unsigned char TXB1DLC __attribute__((address(0xF15)));
+[v _TXB1DLC `Vuc ~T0 @X0 0 e@3861 ]
+"21540
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21540: extern volatile unsigned char TXB1SIDH __attribute__((address(0xF11)));
+[v _TXB1SIDH `Vuc ~T0 @X0 0 e@3857 ]
+"21660
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21660: extern volatile unsigned char TXB1SIDL __attribute__((address(0xF12)));
+[v _TXB1SIDL `Vuc ~T0 @X0 0 e@3858 ]
+"19999
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19999: extern volatile unsigned char TXB2CON __attribute__((address(0xF00)));
+[v _TXB2CON `Vuc ~T0 @X0 0 e@3840 ]
+"20005
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20005:     struct {
+[s S728 :2 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S728 . TXPRI . TXREQ TXERR TXLARB TXABT TXBIF ]
+"20014
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20014:     struct {
+[s S729 :1 `uc 1 :1 `uc 1 ]
+[n S729 . TXPRI0 TXPRI1 ]
+"20018
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20018:     struct {
+[s S730 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S730 . TXB2PRI0 TXB2PRI1 . TXB2REQ TXB2ERR TXB2LARB TXB2ABT TX2IF ]
+"20004
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20004: typedef union {
+[u S727 `S728 1 `S729 1 `S730 1 ]
+[n S727 . . . . ]
+"20029
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20029: extern volatile TXB2CONbits_t TXB2CONbits __attribute__((address(0xF00)));
+[v _TXB2CONbits `VS727 ~T0 @X0 0 e@3840 ]
+"20581
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20581: extern volatile unsigned char TXB2DLC __attribute__((address(0xF05)));
+[v _TXB2DLC `Vuc ~T0 @X0 0 e@3845 ]
+"20109
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20109: extern volatile unsigned char TXB2SIDH __attribute__((address(0xF01)));
+[v _TXB2SIDH `Vuc ~T0 @X0 0 e@3841 ]
+"20229
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20229: extern volatile unsigned char TXB2SIDL __attribute__((address(0xF02)));
+[v _TXB2SIDL `Vuc ~T0 @X0 0 e@3842 ]
+"252 ../../../VLCBlib_PIC/ticktime.h
+[; ;../../../VLCBlib_PIC/ticktime.h: 252: uint32_t tickGet(void);
+[v _tickGet `(ul ~T0 @X0 0 ef ]
+"29387 C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29387:     struct {
+[s S1111 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1111 . RXB0IE RXB1IE TXB0IE TXB1IE TXB2IE ERRIE WAKIE IRXIE ]
+"29397
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29397:     struct {
+[s S1112 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S1112 . FIFOWMIE RXBnIE . TXBnIE ]
+"29386
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29386: typedef union {
+[u S1110 `S1111 1 `S1112 1 ]
+[n S1110 . . . ]
+"29404
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29404: extern volatile PIE5bits_t PIE5bits __attribute__((address(0xF76)));
+[v _PIE5bits `VS1110 ~T0 @X0 0 e@3958 ]
+"141 ../../../VLCBlib_PIC/vlcb.h
+[; ;../../../VLCBlib_PIC/vlcb.h: 141:     struct {
+[s S1553 `uc 1 `uc 1 ]
+[n S1553 . lo hi ]
+"140
+[; ;../../../VLCBlib_PIC/vlcb.h: 140: typedef union Word {
+[u S1552 `S1553 1 `us 1 ]
+[n S1552 Word bytes word ]
+"126 ../../../VLCBlib_PIC/mns.h
+[; ;../../../VLCBlib_PIC/mns.h: 126: extern Word nn;
+[v _nn `S1552 ~T0 @X0 0 e ]
+"271 ../../../VLCBlib_PIC/vlcb.h
+[; ;../../../VLCBlib_PIC/vlcb.h: 271: void sendMessage5(VlcbOpCodes opc, uint8_t data1, uint8_t data2, uint8_t data3, uint8_t data4, uint8_t data5);
+[v _sendMessage5 `(v ~T0 @X0 0 ef6`E12671`uc`uc`uc`uc`uc ]
+"394 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 394:                 sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_CANID, SERVICE_ID_MNS, CMDERR_INV_CMD);
+[c E12840 1 2 3 4 5 6 7 8 9 10 11 12 13 .. ]
+[n E12840 VlcbCmdErrs CMDERR_INV_CMD CMDERR_NOT_LRN CMDERR_NOT_SETUP CMDERR_TOO_MANY_EVENTS CMDERR_NO_EV CMDERR_INV_EV_IDX CMDERR_INVALID_EVENT CMDERR_INV_EN_IDX CMDERR_INV_PARAM_IDX CMDERR_INV_NV_IDX CMDERR_INV_EV_VALUE CMDERR_INV_NV_VALUE CMDERR_LRN_OTHER  ]
+"29470 C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29470:     struct {
+[s S1114 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1114 . RXB0IF RXB1IF TXB0IF TXB1IF TXB2IF ERRIF WAKIF IRXIF ]
+"29480
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29480:     struct {
+[s S1115 :1 `uc 1 :1 `uc 1 :2 `uc 1 :1 `uc 1 ]
+[n S1115 . FIFOWMIF RXBnIF . TXBnIF ]
+"29469
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29469: typedef union {
+[u S1113 `S1114 1 `S1115 1 ]
+[n S1113 . . . ]
+"29487
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29487: extern volatile PIR5bits_t PIR5bits __attribute__((address(0xF77)));
+[v _PIR5bits `VS1113 ~T0 @X0 0 e@3959 ]
+[v F13344 `(v ~T0 @X0 1 tf ]
+"185 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 185: static void canFillRxFifo(void) __attribute__((reentrant));
+[v _canFillRxFifo `RF13344 ~T0 @X0 0 s ]
+[v F13289 `(v ~T0 @X0 1 tf ]
+"97
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 97: static void canTxError(void) __attribute__((reentrant));
+[v _canTxError `RF13289 ~T0 @X0 0 s ]
+[v F13291 `(v ~T0 @X0 1 tf ]
+"98
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 98: static void checkTxFifo(void) __attribute__((reentrant));
+[v _checkTxFifo `RF13291 ~T0 @X0 0 s ]
+[v F13293 `(v ~T0 @X0 1 tf ]
+"99
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 99: static void checkCANTimeout(void) __attribute__((reentrant));
+[v _checkCANTimeout `RF13293 ~T0 @X0 0 s ]
+"432
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 432:             return CAN_HW_PIC_ECAN;
+[c E12992 0 1 2 3 4 5 6 7 8 .. ]
+[n E12992 VlcbCanHardware CAN_HW_NOT_SPECIFIED CAN_HW_PIC_ECAN CAN_HW_PIC_CAN_2_0 CAN_HW_PIC_CAN_FD CAN_HW_MCP2515 CAN_HW_MCP2518 CAN_HW_ESP32_TWAI CAN_HW_SAM3X8E CAN_HW_PICO_PIO  ]
+"29149 C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29149: extern volatile unsigned char COMSTAT __attribute__((address(0xF71)));
+[v _COMSTAT `Vuc ~T0 @X0 0 e@3953 ]
+"187 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 187: static uint8_t getNumTxBuffersInUse(void);
+[v _getNumTxBuffersInUse `(uc ~T0 @X0 0 sf ]
+"188
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 188: static uint8_t getNumRxBuffersInUse(void);
+[v _getNumRxBuffersInUse `(uc ~T0 @X0 0 sf ]
+"74 ../../../VLCBlib_PIC/messageQueue.h
+[; ;../../../VLCBlib_PIC/messageQueue.h: 74: uint8_t quantity(MessageQueue * q);
+[v _quantity `(uc ~T0 @X0 0 ef1`*S1561 ]
+"181 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 181: static uint8_t * getBufferPointer(uint8_t b);
+[v _getBufferPointer `(*uc ~T0 @X0 0 sf1`uc ]
+"522
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 522:             TXB0SIDH = canPri[priorities[mp->opc]] | ((canId & 0x78) >> 3);
+[c E13050 0 1 2 3 .. ]
+[n E13050 Priority pLOW pNORMAL pABOVE pHIGH  ]
+"200 ../../../VLCBlib_PIC/vlcb.h
+[; ;../../../VLCBlib_PIC/vlcb.h: 200: extern const Priority priorities[256];
+[v _priorities `CE13050 ~T0 @X0 -> 0 `x e ]
+"23529 C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23529: extern volatile unsigned char TXB0D0 __attribute__((address(0xF26)));
+[v _TXB0D0 `Vuc ~T0 @X0 0 e@3878 ]
+"23599
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23599: extern volatile unsigned char TXB0D1 __attribute__((address(0xF27)));
+[v _TXB0D1 `Vuc ~T0 @X0 0 e@3879 ]
+"23669
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23669: extern volatile unsigned char TXB0D2 __attribute__((address(0xF28)));
+[v _TXB0D2 `Vuc ~T0 @X0 0 e@3880 ]
+"23739
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23739: extern volatile unsigned char TXB0D3 __attribute__((address(0xF29)));
+[v _TXB0D3 `Vuc ~T0 @X0 0 e@3881 ]
+"23809
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23809: extern volatile unsigned char TXB0D4 __attribute__((address(0xF2A)));
+[v _TXB0D4 `Vuc ~T0 @X0 0 e@3882 ]
+"23879
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23879: extern volatile unsigned char TXB0D5 __attribute__((address(0xF2B)));
+[v _TXB0D5 `Vuc ~T0 @X0 0 e@3883 ]
+"23949
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23949: extern volatile unsigned char TXB0D6 __attribute__((address(0xF2C)));
+[v _TXB0D6 `Vuc ~T0 @X0 0 e@3884 ]
+"24019
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24019: extern volatile unsigned char TXB0D7 __attribute__((address(0xF2D)));
+[v _TXB0D7 `Vuc ~T0 @X0 0 e@3885 ]
+"569 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 569:     if (push(&txQueue, mp) == QUEUE_FAIL) {
+[c E13266 0 1 .. ]
+[n E13266 Qresult QUEUE_FAIL QUEUE_SUCCESS  ]
+"82 ../../../VLCBlib_PIC/messageQueue.h
+[; ;../../../VLCBlib_PIC/messageQueue.h: 82: Qresult push(MessageQueue * q, Message * m);
+[v _push `(E13266 ~T0 @X0 0 ef2`*S1561`*S1551 ]
+"142 ../../../VLCBlib_PIC/mns.h
+[; ;../../../VLCBlib_PIC/mns.h: 142: extern void updateModuleErrorStatus(void);
+[v _updateModuleErrorStatus `(v ~T0 @X0 0 ef ]
+"183 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 183: static void processEnumeration(void);
+[v _processEnumeration `(v ~T0 @X0 0 sf ]
+"90 ../../../VLCBlib_PIC/messageQueue.h
+[; ;../../../VLCBlib_PIC/messageQueue.h: 90: Message * pop(MessageQueue * q);
+[v _pop `(*S1551 ~T0 @X0 0 ef1`*S1561 ]
+"27 C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/string.h
+[; ;C:\Program Files\Microchip\xc8\v3.10\pic\include\c99/string.h: 27: void *memcpy (void *restrict, const void *restrict, size_t);
+[v _memcpy `(*v ~T0 @X0 0 ef3`*v`*Cv`ui ]
+"29155 C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29155:     struct {
+[s S1097 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1097 . EWARN RXWARN TXWARN RXBP TXBP TXBO RXB1OVFL RXB0OVFL ]
+"29165
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29165:     struct {
+[s S1098 :7 `uc 1 :1 `uc 1 ]
+[n S1098 . . NOT_FIFOEMPTY ]
+"29169
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29169:     struct {
+[s S1099 :7 `uc 1 :1 `uc 1 ]
+[n S1099 . . nFIFOEMPTY ]
+"29173
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29173:     struct {
+[s S1100 :6 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S1100 . . RXBNOVFL FIFOEMPTY ]
+"29154
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29154: typedef union {
+[u S1096 `S1097 1 `S1098 1 `S1099 1 `S1100 1 ]
+[n S1096 . . . . . ]
+"29179
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29179: extern volatile COMSTATbits_t COMSTATbits __attribute__((address(0xF71)));
+[v _COMSTATbits `VS1096 ~T0 @X0 0 e@3953 ]
+"184 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 184: static MessageReceived handleSelfEnumeration(uint8_t * p);
+[v _handleSelfEnumeration `(E13200 ~T0 @X0 0 sf1`*uc ]
+"98 ../../../VLCBlib_PIC/messageQueue.h
+[; ;../../../VLCBlib_PIC/messageQueue.h: 98: extern Message * getNextWriteMessage(MessageQueue * q);
+[v _getNextWriteMessage `(*S1551 ~T0 @X0 0 ef1`*S1561 ]
+"964 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 964:                         setNewCanId(canId);
+[c E13249 0 1 .. ]
+[n E13249 CanidResult CANID_FAIL CANID_OK  ]
+"180
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 180: static CanidResult setNewCanId(uint8_t newCanId);
+[v _setNewCanId `(E13249 ~T0 @X0 0 sf1`uc ]
+"38 C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 38: __asm("RXERRCNT equ 0E41h");
+[; <" RXERRCNT equ 0E41h ;# ">
+"108
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 108: __asm("TXERRCNT equ 0E42h");
+[; <" TXERRCNT equ 0E42h ;# ">
+"178
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 178: __asm("BRGCON1 equ 0E43h");
+[; <" BRGCON1 equ 0E43h ;# ">
+"254
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 254: __asm("BRGCON2 equ 0E44h");
+[; <" BRGCON2 equ 0E44h ;# ">
+"339
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 339: __asm("BRGCON3 equ 0E45h");
+[; <" BRGCON3 equ 0E45h ;# ">
+"392
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 392: __asm("RXFCON0 equ 0E46h");
+[; <" RXFCON0 equ 0E46h ;# ">
+"454
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 454: __asm("RXFCON1 equ 0E47h");
+[; <" RXFCON1 equ 0E47h ;# ">
+"516
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 516: __asm("RXF6SIDH equ 0E48h");
+[; <" RXF6SIDH equ 0E48h ;# ">
+"636
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 636: __asm("RXF6SIDL equ 0E49h");
+[; <" RXF6SIDL equ 0E49h ;# ">
+"743
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 743: __asm("RXF6EIDH equ 0E4Ah");
+[; <" RXF6EIDH equ 0E4Ah ;# ">
+"863
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 863: __asm("RXF6EIDL equ 0E4Bh");
+[; <" RXF6EIDL equ 0E4Bh ;# ">
+"983
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 983: __asm("RXF7SIDH equ 0E4Ch");
+[; <" RXF7SIDH equ 0E4Ch ;# ">
+"1103
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1103: __asm("RXF7SIDL equ 0E4Dh");
+[; <" RXF7SIDL equ 0E4Dh ;# ">
+"1210
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1210: __asm("RXF7EIDH equ 0E4Eh");
+[; <" RXF7EIDH equ 0E4Eh ;# ">
+"1330
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1330: __asm("RXF7EIDL equ 0E4Fh");
+[; <" RXF7EIDL equ 0E4Fh ;# ">
+"1450
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1450: __asm("RXF8SIDH equ 0E50h");
+[; <" RXF8SIDH equ 0E50h ;# ">
+"1570
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1570: __asm("RXF8SIDL equ 0E51h");
+[; <" RXF8SIDL equ 0E51h ;# ">
+"1677
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1677: __asm("RXF8EIDH equ 0E52h");
+[; <" RXF8EIDH equ 0E52h ;# ">
+"1797
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1797: __asm("RXF8EIDL equ 0E53h");
+[; <" RXF8EIDL equ 0E53h ;# ">
+"1917
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 1917: __asm("RXF9SIDH equ 0E54h");
+[; <" RXF9SIDH equ 0E54h ;# ">
+"2037
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2037: __asm("RXF9SIDL equ 0E55h");
+[; <" RXF9SIDL equ 0E55h ;# ">
+"2144
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2144: __asm("RXF9EIDH equ 0E56h");
+[; <" RXF9EIDH equ 0E56h ;# ">
+"2264
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2264: __asm("RXF9EIDL equ 0E57h");
+[; <" RXF9EIDL equ 0E57h ;# ">
+"2384
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2384: __asm("RXF10SIDH equ 0E58h");
+[; <" RXF10SIDH equ 0E58h ;# ">
+"2504
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2504: __asm("RXF10SIDL equ 0E59h");
+[; <" RXF10SIDL equ 0E59h ;# ">
+"2611
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2611: __asm("RXF10EIDH equ 0E5Ah");
+[; <" RXF10EIDH equ 0E5Ah ;# ">
+"2731
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2731: __asm("RXF10EIDL equ 0E5Bh");
+[; <" RXF10EIDL equ 0E5Bh ;# ">
+"2851
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2851: __asm("RXF11SIDH equ 0E5Ch");
+[; <" RXF11SIDH equ 0E5Ch ;# ">
+"2971
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 2971: __asm("RXF11SIDL equ 0E5Dh");
+[; <" RXF11SIDL equ 0E5Dh ;# ">
+"3078
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3078: __asm("RXF11EIDH equ 0E5Eh");
+[; <" RXF11EIDH equ 0E5Eh ;# ">
+"3198
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3198: __asm("RXF11EIDL equ 0E5Fh");
+[; <" RXF11EIDL equ 0E5Fh ;# ">
+"3318
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3318: __asm("RXF12SIDH equ 0E60h");
+[; <" RXF12SIDH equ 0E60h ;# ">
+"3438
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3438: __asm("RXF12SIDL equ 0E61h");
+[; <" RXF12SIDL equ 0E61h ;# ">
+"3545
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3545: __asm("RXF12EIDH equ 0E62h");
+[; <" RXF12EIDH equ 0E62h ;# ">
+"3665
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3665: __asm("RXF12EIDL equ 0E63h");
+[; <" RXF12EIDL equ 0E63h ;# ">
+"3785
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3785: __asm("RXF13SIDH equ 0E64h");
+[; <" RXF13SIDH equ 0E64h ;# ">
+"3905
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 3905: __asm("RXF13SIDL equ 0E65h");
+[; <" RXF13SIDL equ 0E65h ;# ">
+"4012
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4012: __asm("RXF13EIDH equ 0E66h");
+[; <" RXF13EIDH equ 0E66h ;# ">
+"4132
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4132: __asm("RXF13EIDL equ 0E67h");
+[; <" RXF13EIDL equ 0E67h ;# ">
+"4252
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4252: __asm("RXF14SIDH equ 0E68h");
+[; <" RXF14SIDH equ 0E68h ;# ">
+"4372
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4372: __asm("RXF14SIDL equ 0E69h");
+[; <" RXF14SIDL equ 0E69h ;# ">
+"4479
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4479: __asm("RXF14EIDH equ 0E6Ah");
+[; <" RXF14EIDH equ 0E6Ah ;# ">
+"4599
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4599: __asm("RXF14EIDL equ 0E6Bh");
+[; <" RXF14EIDL equ 0E6Bh ;# ">
+"4719
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4719: __asm("RXF15SIDH equ 0E6Ch");
+[; <" RXF15SIDH equ 0E6Ch ;# ">
+"4839
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4839: __asm("RXF15SIDL equ 0E6Dh");
+[; <" RXF15SIDL equ 0E6Dh ;# ">
+"4946
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 4946: __asm("RXF15EIDH equ 0E6Eh");
+[; <" RXF15EIDH equ 0E6Eh ;# ">
+"5066
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5066: __asm("RXF15EIDL equ 0E6Fh");
+[; <" RXF15EIDL equ 0E6Fh ;# ">
+"5186
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5186: __asm("SDFLC equ 0E70h");
+[; <" SDFLC equ 0E70h ;# ">
+"5238
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5238: __asm("RXFBCON0 equ 0E71h");
+[; <" RXFBCON0 equ 0E71h ;# ">
+"5322
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5322: __asm("RXFBCON1 equ 0E72h");
+[; <" RXFBCON1 equ 0E72h ;# ">
+"5406
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5406: __asm("RXFBCON2 equ 0E73h");
+[; <" RXFBCON2 equ 0E73h ;# ">
+"5490
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5490: __asm("RXFBCON3 equ 0E74h");
+[; <" RXFBCON3 equ 0E74h ;# ">
+"5574
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5574: __asm("RXFBCON4 equ 0E75h");
+[; <" RXFBCON4 equ 0E75h ;# ">
+"5658
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5658: __asm("RXFBCON5 equ 0E76h");
+[; <" RXFBCON5 equ 0E76h ;# ">
+"5742
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5742: __asm("RXFBCON6 equ 0E77h");
+[; <" RXFBCON6 equ 0E77h ;# ">
+"5826
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5826: __asm("RXFBCON7 equ 0E78h");
+[; <" RXFBCON7 equ 0E78h ;# ">
+"5910
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5910: __asm("MSEL0 equ 0E79h");
+[; <" MSEL0 equ 0E79h ;# ">
+"5998
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 5998: __asm("MSEL1 equ 0E7Ah");
+[; <" MSEL1 equ 0E7Ah ;# ">
+"6086
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6086: __asm("MSEL2 equ 0E7Bh");
+[; <" MSEL2 equ 0E7Bh ;# ">
+"6174
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6174: __asm("MSEL3 equ 0E7Ch");
+[; <" MSEL3 equ 0E7Ch ;# ">
+"6262
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6262: __asm("BSEL0 equ 0E7Dh");
+[; <" BSEL0 equ 0E7Dh ;# ">
+"6313
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6313: __asm("BIE0 equ 0E7Eh");
+[; <" BIE0 equ 0E7Eh ;# ">
+"6389
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6389: __asm("TXBIE equ 0E7Fh");
+[; <" TXBIE equ 0E7Fh ;# ">
+"6443
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6443: __asm("B0CON equ 0E80h");
+[; <" B0CON equ 0E80h ;# ">
+"6705
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6705: __asm("B0SIDH equ 0E81h");
+[; <" B0SIDH equ 0E81h ;# ">
+"6825
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6825: __asm("B0SIDL equ 0E82h");
+[; <" B0SIDL equ 0E82h ;# ">
+"6942
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 6942: __asm("B0EIDH equ 0E83h");
+[; <" B0EIDH equ 0E83h ;# ">
+"7062
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7062: __asm("B0EIDL equ 0E84h");
+[; <" B0EIDL equ 0E84h ;# ">
+"7182
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7182: __asm("B0DLC equ 0E85h");
+[; <" B0DLC equ 0E85h ;# ">
+"7311
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7311: __asm("B0D0 equ 0E86h");
+[; <" B0D0 equ 0E86h ;# ">
+"7381
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7381: __asm("B0D1 equ 0E87h");
+[; <" B0D1 equ 0E87h ;# ">
+"7451
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7451: __asm("B0D2 equ 0E88h");
+[; <" B0D2 equ 0E88h ;# ">
+"7521
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7521: __asm("B0D3 equ 0E89h");
+[; <" B0D3 equ 0E89h ;# ">
+"7591
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7591: __asm("B0D4 equ 0E8Ah");
+[; <" B0D4 equ 0E8Ah ;# ">
+"7661
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7661: __asm("B0D5 equ 0E8Bh");
+[; <" B0D5 equ 0E8Bh ;# ">
+"7731
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7731: __asm("B0D6 equ 0E8Ch");
+[; <" B0D6 equ 0E8Ch ;# ">
+"7801
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7801: __asm("B0D7 equ 0E8Dh");
+[; <" B0D7 equ 0E8Dh ;# ">
+"7871
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7871: __asm("CANSTAT_RO9 equ 0E8Eh");
+[; <" CANSTAT_RO9 equ 0E8Eh ;# ">
+"7982
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 7982: __asm("CANCON_RO9 equ 0E8Fh");
+[; <" CANCON_RO9 equ 0E8Fh ;# ">
+"8074
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8074: __asm("B1CON equ 0E90h");
+[; <" B1CON equ 0E90h ;# ">
+"8336
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8336: __asm("B1SIDH equ 0E91h");
+[; <" B1SIDH equ 0E91h ;# ">
+"8456
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8456: __asm("B1SIDL equ 0E92h");
+[; <" B1SIDL equ 0E92h ;# ">
+"8573
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8573: __asm("B1EIDH equ 0E93h");
+[; <" B1EIDH equ 0E93h ;# ">
+"8693
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8693: __asm("B1EIDL equ 0E94h");
+[; <" B1EIDL equ 0E94h ;# ">
+"8813
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8813: __asm("B1DLC equ 0E95h");
+[; <" B1DLC equ 0E95h ;# ">
+"8942
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 8942: __asm("B1D0 equ 0E96h");
+[; <" B1D0 equ 0E96h ;# ">
+"9012
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9012: __asm("B1D1 equ 0E97h");
+[; <" B1D1 equ 0E97h ;# ">
+"9082
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9082: __asm("B1D2 equ 0E98h");
+[; <" B1D2 equ 0E98h ;# ">
+"9152
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9152: __asm("B1D3 equ 0E99h");
+[; <" B1D3 equ 0E99h ;# ">
+"9222
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9222: __asm("B1D4 equ 0E9Ah");
+[; <" B1D4 equ 0E9Ah ;# ">
+"9292
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9292: __asm("B1D5 equ 0E9Bh");
+[; <" B1D5 equ 0E9Bh ;# ">
+"9362
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9362: __asm("B1D6 equ 0E9Ch");
+[; <" B1D6 equ 0E9Ch ;# ">
+"9432
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9432: __asm("B1D7 equ 0E9Dh");
+[; <" B1D7 equ 0E9Dh ;# ">
+"9502
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9502: __asm("CANSTAT_RO8 equ 0E9Eh");
+[; <" CANSTAT_RO8 equ 0E9Eh ;# ">
+"9613
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9613: __asm("CANCON_RO8 equ 0E9Fh");
+[; <" CANCON_RO8 equ 0E9Fh ;# ">
+"9705
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9705: __asm("B2CON equ 0EA0h");
+[; <" B2CON equ 0EA0h ;# ">
+"9967
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 9967: __asm("B2SIDH equ 0EA1h");
+[; <" B2SIDH equ 0EA1h ;# ">
+"10087
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10087: __asm("B2SIDL equ 0EA2h");
+[; <" B2SIDL equ 0EA2h ;# ">
+"10213
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10213: __asm("B2EIDH equ 0EA3h");
+[; <" B2EIDH equ 0EA3h ;# ">
+"10333
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10333: __asm("B2EIDL equ 0EA4h");
+[; <" B2EIDL equ 0EA4h ;# ">
+"10453
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10453: __asm("B2DLC equ 0EA5h");
+[; <" B2DLC equ 0EA5h ;# ">
+"10582
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10582: __asm("B2D0 equ 0EA6h");
+[; <" B2D0 equ 0EA6h ;# ">
+"10652
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10652: __asm("B2D1 equ 0EA7h");
+[; <" B2D1 equ 0EA7h ;# ">
+"10722
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10722: __asm("B2D2 equ 0EA8h");
+[; <" B2D2 equ 0EA8h ;# ">
+"10792
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10792: __asm("B2D3 equ 0EA9h");
+[; <" B2D3 equ 0EA9h ;# ">
+"10862
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10862: __asm("B2D4 equ 0EAAh");
+[; <" B2D4 equ 0EAAh ;# ">
+"10932
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 10932: __asm("B2D5 equ 0EABh");
+[; <" B2D5 equ 0EABh ;# ">
+"11002
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11002: __asm("B2D6 equ 0EACh");
+[; <" B2D6 equ 0EACh ;# ">
+"11072
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11072: __asm("B2D7 equ 0EADh");
+[; <" B2D7 equ 0EADh ;# ">
+"11142
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11142: __asm("CANSTAT_RO7 equ 0EAEh");
+[; <" CANSTAT_RO7 equ 0EAEh ;# ">
+"11253
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11253: __asm("CANCON_RO7 equ 0EAFh");
+[; <" CANCON_RO7 equ 0EAFh ;# ">
+"11345
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11345: __asm("B3CON equ 0EB0h");
+[; <" B3CON equ 0EB0h ;# ">
+"11607
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11607: __asm("B3SIDH equ 0EB1h");
+[; <" B3SIDH equ 0EB1h ;# ">
+"11727
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11727: __asm("B3SIDL equ 0EB2h");
+[; <" B3SIDL equ 0EB2h ;# ">
+"11853
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11853: __asm("B3EIDH equ 0EB3h");
+[; <" B3EIDH equ 0EB3h ;# ">
+"11973
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 11973: __asm("B3EIDL equ 0EB4h");
+[; <" B3EIDL equ 0EB4h ;# ">
+"12093
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12093: __asm("B3DLC equ 0EB5h");
+[; <" B3DLC equ 0EB5h ;# ">
+"12222
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12222: __asm("B3D0 equ 0EB6h");
+[; <" B3D0 equ 0EB6h ;# ">
+"12292
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12292: __asm("B3D1 equ 0EB7h");
+[; <" B3D1 equ 0EB7h ;# ">
+"12362
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12362: __asm("B3D2 equ 0EB8h");
+[; <" B3D2 equ 0EB8h ;# ">
+"12432
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12432: __asm("B3D3 equ 0EB9h");
+[; <" B3D3 equ 0EB9h ;# ">
+"12502
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12502: __asm("B3D4 equ 0EBAh");
+[; <" B3D4 equ 0EBAh ;# ">
+"12572
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12572: __asm("B3D5 equ 0EBBh");
+[; <" B3D5 equ 0EBBh ;# ">
+"12642
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12642: __asm("B3D6 equ 0EBCh");
+[; <" B3D6 equ 0EBCh ;# ">
+"12712
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12712: __asm("B3D7 equ 0EBDh");
+[; <" B3D7 equ 0EBDh ;# ">
+"12782
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12782: __asm("CANSTAT_RO6 equ 0EBEh");
+[; <" CANSTAT_RO6 equ 0EBEh ;# ">
+"12893
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12893: __asm("CANCON_RO6 equ 0EBFh");
+[; <" CANCON_RO6 equ 0EBFh ;# ">
+"12985
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 12985: __asm("B4CON equ 0EC0h");
+[; <" B4CON equ 0EC0h ;# ">
+"13247
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 13247: __asm("B4SIDH equ 0EC1h");
+[; <" B4SIDH equ 0EC1h ;# ">
+"13367
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 13367: __asm("B4SIDL equ 0EC2h");
+[; <" B4SIDL equ 0EC2h ;# ">
+"13493
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 13493: __asm("B4EIDH equ 0EC3h");
+[; <" B4EIDH equ 0EC3h ;# ">
+"13613
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 13613: __asm("B4EIDL equ 0EC4h");
+[; <" B4EIDL equ 0EC4h ;# ">
+"13733
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 13733: __asm("B4DLC equ 0EC5h");
+[; <" B4DLC equ 0EC5h ;# ">
+"13862
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 13862: __asm("B4D0 equ 0EC6h");
+[; <" B4D0 equ 0EC6h ;# ">
+"13932
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 13932: __asm("B4D1 equ 0EC7h");
+[; <" B4D1 equ 0EC7h ;# ">
+"14002
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14002: __asm("B4D2 equ 0EC8h");
+[; <" B4D2 equ 0EC8h ;# ">
+"14072
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14072: __asm("B4D3 equ 0EC9h");
+[; <" B4D3 equ 0EC9h ;# ">
+"14142
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14142: __asm("B4D4 equ 0ECAh");
+[; <" B4D4 equ 0ECAh ;# ">
+"14212
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14212: __asm("B4D5 equ 0ECBh");
+[; <" B4D5 equ 0ECBh ;# ">
+"14282
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14282: __asm("B4D6 equ 0ECCh");
+[; <" B4D6 equ 0ECCh ;# ">
+"14352
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14352: __asm("B4D7 equ 0ECDh");
+[; <" B4D7 equ 0ECDh ;# ">
+"14422
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14422: __asm("CANSTAT_RO5 equ 0ECEh");
+[; <" CANSTAT_RO5 equ 0ECEh ;# ">
+"14533
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14533: __asm("CANCON_RO5 equ 0ECFh");
+[; <" CANCON_RO5 equ 0ECFh ;# ">
+"14625
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14625: __asm("B5CON equ 0ED0h");
+[; <" B5CON equ 0ED0h ;# ">
+"14887
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 14887: __asm("B5SIDH equ 0ED1h");
+[; <" B5SIDH equ 0ED1h ;# ">
+"15007
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15007: __asm("B5SIDL equ 0ED2h");
+[; <" B5SIDL equ 0ED2h ;# ">
+"15133
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15133: __asm("B5EIDH equ 0ED3h");
+[; <" B5EIDH equ 0ED3h ;# ">
+"15253
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15253: __asm("B5EIDL equ 0ED4h");
+[; <" B5EIDL equ 0ED4h ;# ">
+"15373
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15373: __asm("B5DLC equ 0ED5h");
+[; <" B5DLC equ 0ED5h ;# ">
+"15502
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15502: __asm("B5D0 equ 0ED6h");
+[; <" B5D0 equ 0ED6h ;# ">
+"15572
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15572: __asm("B5D1 equ 0ED7h");
+[; <" B5D1 equ 0ED7h ;# ">
+"15642
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15642: __asm("B5D2 equ 0ED8h");
+[; <" B5D2 equ 0ED8h ;# ">
+"15712
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15712: __asm("B5D3 equ 0ED9h");
+[; <" B5D3 equ 0ED9h ;# ">
+"15782
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15782: __asm("B5D4 equ 0EDAh");
+[; <" B5D4 equ 0EDAh ;# ">
+"15852
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15852: __asm("B5D5 equ 0EDBh");
+[; <" B5D5 equ 0EDBh ;# ">
+"15922
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15922: __asm("B5D6 equ 0EDCh");
+[; <" B5D6 equ 0EDCh ;# ">
+"15992
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 15992: __asm("B5D7 equ 0EDDh");
+[; <" B5D7 equ 0EDDh ;# ">
+"16062
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16062: __asm("CANSTAT_RO4 equ 0EDEh");
+[; <" CANSTAT_RO4 equ 0EDEh ;# ">
+"16173
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16173: __asm("CANCON_RO4 equ 0EDFh");
+[; <" CANCON_RO4 equ 0EDFh ;# ">
+"16265
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16265: __asm("RXF0SIDH equ 0EE0h");
+[; <" RXF0SIDH equ 0EE0h ;# ">
+"16385
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16385: __asm("RXF0SIDL equ 0EE1h");
+[; <" RXF0SIDL equ 0EE1h ;# ">
+"16492
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16492: __asm("RXF0EIDH equ 0EE2h");
+[; <" RXF0EIDH equ 0EE2h ;# ">
+"16612
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16612: __asm("RXF0EIDL equ 0EE3h");
+[; <" RXF0EIDL equ 0EE3h ;# ">
+"16732
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16732: __asm("RXF1SIDH equ 0EE4h");
+[; <" RXF1SIDH equ 0EE4h ;# ">
+"16852
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16852: __asm("RXF1SIDL equ 0EE5h");
+[; <" RXF1SIDL equ 0EE5h ;# ">
+"16959
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 16959: __asm("RXF1EIDH equ 0EE6h");
+[; <" RXF1EIDH equ 0EE6h ;# ">
+"17079
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17079: __asm("RXF1EIDL equ 0EE7h");
+[; <" RXF1EIDL equ 0EE7h ;# ">
+"17199
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17199: __asm("RXF2SIDH equ 0EE8h");
+[; <" RXF2SIDH equ 0EE8h ;# ">
+"17319
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17319: __asm("RXF2SIDL equ 0EE9h");
+[; <" RXF2SIDL equ 0EE9h ;# ">
+"17426
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17426: __asm("RXF2EIDH equ 0EEAh");
+[; <" RXF2EIDH equ 0EEAh ;# ">
+"17546
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17546: __asm("RXF2EIDL equ 0EEBh");
+[; <" RXF2EIDL equ 0EEBh ;# ">
+"17666
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17666: __asm("RXF3SIDH equ 0EECh");
+[; <" RXF3SIDH equ 0EECh ;# ">
+"17786
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17786: __asm("RXF3SIDL equ 0EEDh");
+[; <" RXF3SIDL equ 0EEDh ;# ">
+"17893
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 17893: __asm("RXF3EIDH equ 0EEEh");
+[; <" RXF3EIDH equ 0EEEh ;# ">
+"18013
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18013: __asm("RXF3EIDL equ 0EEFh");
+[; <" RXF3EIDL equ 0EEFh ;# ">
+"18133
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18133: __asm("RXF4SIDH equ 0EF0h");
+[; <" RXF4SIDH equ 0EF0h ;# ">
+"18253
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18253: __asm("RXF4SIDL equ 0EF1h");
+[; <" RXF4SIDL equ 0EF1h ;# ">
+"18360
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18360: __asm("RXF4EIDH equ 0EF2h");
+[; <" RXF4EIDH equ 0EF2h ;# ">
+"18480
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18480: __asm("RXF4EIDL equ 0EF3h");
+[; <" RXF4EIDL equ 0EF3h ;# ">
+"18600
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18600: __asm("RXF5SIDH equ 0EF4h");
+[; <" RXF5SIDH equ 0EF4h ;# ">
+"18720
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18720: __asm("RXF5SIDL equ 0EF5h");
+[; <" RXF5SIDL equ 0EF5h ;# ">
+"18827
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18827: __asm("RXF5EIDH equ 0EF6h");
+[; <" RXF5EIDH equ 0EF6h ;# ">
+"18947
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 18947: __asm("RXF5EIDL equ 0EF7h");
+[; <" RXF5EIDL equ 0EF7h ;# ">
+"19067
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19067: __asm("RXM0SIDH equ 0EF8h");
+[; <" RXM0SIDH equ 0EF8h ;# ">
+"19187
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19187: __asm("RXM0SIDL equ 0EF9h");
+[; <" RXM0SIDL equ 0EF9h ;# ">
+"19294
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19294: __asm("RXM0EIDH equ 0EFAh");
+[; <" RXM0EIDH equ 0EFAh ;# ">
+"19414
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19414: __asm("RXM0EIDL equ 0EFBh");
+[; <" RXM0EIDL equ 0EFBh ;# ">
+"19534
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19534: __asm("RXM1SIDH equ 0EFCh");
+[; <" RXM1SIDH equ 0EFCh ;# ">
+"19654
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19654: __asm("RXM1SIDL equ 0EFDh");
+[; <" RXM1SIDL equ 0EFDh ;# ">
+"19761
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19761: __asm("RXM1EIDH equ 0EFEh");
+[; <" RXM1EIDH equ 0EFEh ;# ">
+"19881
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 19881: __asm("RXM1EIDL equ 0EFFh");
+[; <" RXM1EIDL equ 0EFFh ;# ">
+"20001
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20001: __asm("TXB2CON equ 0F00h");
+[; <" TXB2CON equ 0F00h ;# ">
+"20111
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20111: __asm("TXB2SIDH equ 0F01h");
+[; <" TXB2SIDH equ 0F01h ;# ">
+"20231
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20231: __asm("TXB2SIDL equ 0F02h");
+[; <" TXB2SIDL equ 0F02h ;# ">
+"20343
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20343: __asm("TXB2EIDH equ 0F03h");
+[; <" TXB2EIDH equ 0F03h ;# ">
+"20463
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20463: __asm("TXB2EIDL equ 0F04h");
+[; <" TXB2EIDL equ 0F04h ;# ">
+"20583
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20583: __asm("TXB2DLC equ 0F05h");
+[; <" TXB2DLC equ 0F05h ;# ">
+"20669
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20669: __asm("TXB2D0 equ 0F06h");
+[; <" TXB2D0 equ 0F06h ;# ">
+"20739
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20739: __asm("TXB2D1 equ 0F07h");
+[; <" TXB2D1 equ 0F07h ;# ">
+"20809
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20809: __asm("TXB2D2 equ 0F08h");
+[; <" TXB2D2 equ 0F08h ;# ">
+"20879
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20879: __asm("TXB2D3 equ 0F09h");
+[; <" TXB2D3 equ 0F09h ;# ">
+"20949
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 20949: __asm("TXB2D4 equ 0F0Ah");
+[; <" TXB2D4 equ 0F0Ah ;# ">
+"21019
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21019: __asm("TXB2D5 equ 0F0Bh");
+[; <" TXB2D5 equ 0F0Bh ;# ">
+"21089
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21089: __asm("TXB2D6 equ 0F0Ch");
+[; <" TXB2D6 equ 0F0Ch ;# ">
+"21159
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21159: __asm("TXB2D7 equ 0F0Dh");
+[; <" TXB2D7 equ 0F0Dh ;# ">
+"21229
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21229: __asm("CANSTAT_RO3 equ 0F0Eh");
+[; <" CANSTAT_RO3 equ 0F0Eh ;# ">
+"21340
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21340: __asm("CANCON_RO3 equ 0F0Fh");
+[; <" CANCON_RO3 equ 0F0Fh ;# ">
+"21432
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21432: __asm("TXB1CON equ 0F10h");
+[; <" TXB1CON equ 0F10h ;# ">
+"21542
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21542: __asm("TXB1SIDH equ 0F11h");
+[; <" TXB1SIDH equ 0F11h ;# ">
+"21662
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21662: __asm("TXB1SIDL equ 0F12h");
+[; <" TXB1SIDL equ 0F12h ;# ">
+"21774
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21774: __asm("TXB1EIDH equ 0F13h");
+[; <" TXB1EIDH equ 0F13h ;# ">
+"21894
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 21894: __asm("TXB1EIDL equ 0F14h");
+[; <" TXB1EIDL equ 0F14h ;# ">
+"22014
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22014: __asm("TXB1DLC equ 0F15h");
+[; <" TXB1DLC equ 0F15h ;# ">
+"22100
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22100: __asm("TXB1D0 equ 0F16h");
+[; <" TXB1D0 equ 0F16h ;# ">
+"22170
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22170: __asm("TXB1D1 equ 0F17h");
+[; <" TXB1D1 equ 0F17h ;# ">
+"22240
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22240: __asm("TXB1D2 equ 0F18h");
+[; <" TXB1D2 equ 0F18h ;# ">
+"22310
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22310: __asm("TXB1D3 equ 0F19h");
+[; <" TXB1D3 equ 0F19h ;# ">
+"22380
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22380: __asm("TXB1D4 equ 0F1Ah");
+[; <" TXB1D4 equ 0F1Ah ;# ">
+"22450
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22450: __asm("TXB1D5 equ 0F1Bh");
+[; <" TXB1D5 equ 0F1Bh ;# ">
+"22520
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22520: __asm("TXB1D6 equ 0F1Ch");
+[; <" TXB1D6 equ 0F1Ch ;# ">
+"22590
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22590: __asm("TXB1D7 equ 0F1Dh");
+[; <" TXB1D7 equ 0F1Dh ;# ">
+"22660
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22660: __asm("CANSTAT_RO2 equ 0F1Eh");
+[; <" CANSTAT_RO2 equ 0F1Eh ;# ">
+"22771
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22771: __asm("CANCON_RO2 equ 0F1Fh");
+[; <" CANCON_RO2 equ 0F1Fh ;# ">
+"22863
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22863: __asm("TXB0CON equ 0F20h");
+[; <" TXB0CON equ 0F20h ;# ">
+"22973
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 22973: __asm("TXB0SIDH equ 0F21h");
+[; <" TXB0SIDH equ 0F21h ;# ">
+"23093
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23093: __asm("TXB0SIDL equ 0F22h");
+[; <" TXB0SIDL equ 0F22h ;# ">
+"23205
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23205: __asm("TXB0EIDH equ 0F23h");
+[; <" TXB0EIDH equ 0F23h ;# ">
+"23325
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23325: __asm("TXB0EIDL equ 0F24h");
+[; <" TXB0EIDL equ 0F24h ;# ">
+"23445
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23445: __asm("TXB0DLC equ 0F25h");
+[; <" TXB0DLC equ 0F25h ;# ">
+"23531
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23531: __asm("TXB0D0 equ 0F26h");
+[; <" TXB0D0 equ 0F26h ;# ">
+"23601
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23601: __asm("TXB0D1 equ 0F27h");
+[; <" TXB0D1 equ 0F27h ;# ">
+"23671
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23671: __asm("TXB0D2 equ 0F28h");
+[; <" TXB0D2 equ 0F28h ;# ">
+"23741
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23741: __asm("TXB0D3 equ 0F29h");
+[; <" TXB0D3 equ 0F29h ;# ">
+"23811
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23811: __asm("TXB0D4 equ 0F2Ah");
+[; <" TXB0D4 equ 0F2Ah ;# ">
+"23881
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23881: __asm("TXB0D5 equ 0F2Bh");
+[; <" TXB0D5 equ 0F2Bh ;# ">
+"23951
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 23951: __asm("TXB0D6 equ 0F2Ch");
+[; <" TXB0D6 equ 0F2Ch ;# ">
+"24021
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24021: __asm("TXB0D7 equ 0F2Dh");
+[; <" TXB0D7 equ 0F2Dh ;# ">
+"24091
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24091: __asm("CANSTAT_RO1 equ 0F2Eh");
+[; <" CANSTAT_RO1 equ 0F2Eh ;# ">
+"24202
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24202: __asm("CANCON_RO1 equ 0F2Fh");
+[; <" CANCON_RO1 equ 0F2Fh ;# ">
+"24294
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24294: __asm("RXB1CON equ 0F30h");
+[; <" RXB1CON equ 0F30h ;# ">
+"24454
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24454: __asm("RXB1SIDH equ 0F31h");
+[; <" RXB1SIDH equ 0F31h ;# ">
+"24574
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24574: __asm("RXB1SIDL equ 0F32h");
+[; <" RXB1SIDL equ 0F32h ;# ">
+"24691
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24691: __asm("RXB1EIDH equ 0F33h");
+[; <" RXB1EIDH equ 0F33h ;# ">
+"24811
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24811: __asm("RXB1EIDL equ 0F34h");
+[; <" RXB1EIDL equ 0F34h ;# ">
+"24931
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 24931: __asm("RXB1DLC equ 0F35h");
+[; <" RXB1DLC equ 0F35h ;# ">
+"25045
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25045: __asm("RXB1D0 equ 0F36h");
+[; <" RXB1D0 equ 0F36h ;# ">
+"25115
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25115: __asm("RXB1D1 equ 0F37h");
+[; <" RXB1D1 equ 0F37h ;# ">
+"25185
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25185: __asm("RXB1D2 equ 0F38h");
+[; <" RXB1D2 equ 0F38h ;# ">
+"25255
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25255: __asm("RXB1D3 equ 0F39h");
+[; <" RXB1D3 equ 0F39h ;# ">
+"25325
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25325: __asm("RXB1D4 equ 0F3Ah");
+[; <" RXB1D4 equ 0F3Ah ;# ">
+"25395
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25395: __asm("RXB1D5 equ 0F3Bh");
+[; <" RXB1D5 equ 0F3Bh ;# ">
+"25465
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25465: __asm("RXB1D6 equ 0F3Ch");
+[; <" RXB1D6 equ 0F3Ch ;# ">
+"25535
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25535: __asm("RXB1D7 equ 0F3Dh");
+[; <" RXB1D7 equ 0F3Dh ;# ">
+"25605
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25605: __asm("CANSTAT_RO0 equ 0F3Eh");
+[; <" CANSTAT_RO0 equ 0F3Eh ;# ">
+"25716
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25716: __asm("CANCON_RO0 equ 0F3Fh");
+[; <" CANCON_RO0 equ 0F3Fh ;# ">
+"25808
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25808: __asm("CCP5CON equ 0F47h");
+[; <" CCP5CON equ 0F47h ;# ">
+"25887
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25887: __asm("CCPR5 equ 0F48h");
+[; <" CCPR5 equ 0F48h ;# ">
+"25894
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25894: __asm("CCPR5L equ 0F48h");
+[; <" CCPR5L equ 0F48h ;# ">
+"25914
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25914: __asm("CCPR5H equ 0F49h");
+[; <" CCPR5H equ 0F49h ;# ">
+"25934
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 25934: __asm("CCP4CON equ 0F4Ah");
+[; <" CCP4CON equ 0F4Ah ;# ">
+"26013
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26013: __asm("CCPR4 equ 0F4Bh");
+[; <" CCPR4 equ 0F4Bh ;# ">
+"26020
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26020: __asm("CCPR4L equ 0F4Bh");
+[; <" CCPR4L equ 0F4Bh ;# ">
+"26040
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26040: __asm("CCPR4H equ 0F4Ch");
+[; <" CCPR4H equ 0F4Ch ;# ">
+"26060
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26060: __asm("CCP3CON equ 0F4Dh");
+[; <" CCP3CON equ 0F4Dh ;# ">
+"26139
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26139: __asm("CCPR3 equ 0F4Eh");
+[; <" CCPR3 equ 0F4Eh ;# ">
+"26146
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26146: __asm("CCPR3L equ 0F4Eh");
+[; <" CCPR3L equ 0F4Eh ;# ">
+"26166
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26166: __asm("CCPR3H equ 0F4Fh");
+[; <" CCPR3H equ 0F4Fh ;# ">
+"26186
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26186: __asm("CCP2CON equ 0F50h");
+[; <" CCP2CON equ 0F50h ;# ">
+"26191
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26191: __asm("ECCP2CON equ 0F50h");
+[; <" ECCP2CON equ 0F50h ;# ">
+"26342
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26342: __asm("CCPR2 equ 0F51h");
+[; <" CCPR2 equ 0F51h ;# ">
+"26349
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26349: __asm("CCPR2L equ 0F51h");
+[; <" CCPR2L equ 0F51h ;# ">
+"26369
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26369: __asm("CCPR2H equ 0F52h");
+[; <" CCPR2H equ 0F52h ;# ">
+"26389
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26389: __asm("CTMUICON equ 0F53h");
+[; <" CTMUICON equ 0F53h ;# ">
+"26465
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26465: __asm("CTMUCONL equ 0F54h");
+[; <" CTMUCONL equ 0F54h ;# ">
+"26543
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26543: __asm("CTMUCONH equ 0F55h");
+[; <" CTMUCONH equ 0F55h ;# ">
+"26600
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26600: __asm("PADCFG1 equ 0F56h");
+[; <" PADCFG1 equ 0F56h ;# ">
+"26628
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26628: __asm("PMD2 equ 0F57h");
+[; <" PMD2 equ 0F57h ;# ">
+"26660
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26660: __asm("PMD1 equ 0F58h");
+[; <" PMD1 equ 0F58h ;# ">
+"26730
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26730: __asm("PMD0 equ 0F59h");
+[; <" PMD0 equ 0F59h ;# ">
+"26807
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26807: __asm("IOCB equ 0F5Ah");
+[; <" IOCB equ 0F5Ah ;# ">
+"26846
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26846: __asm("WPUB equ 0F5Bh");
+[; <" WPUB equ 0F5Bh ;# ">
+"26908
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26908: __asm("ANCON1 equ 0F5Ch");
+[; <" ANCON1 equ 0F5Ch ;# ">
+"26960
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 26960: __asm("ANCON0 equ 0F5Dh");
+[; <" ANCON0 equ 0F5Dh ;# ">
+"27036
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27036: __asm("CM2CON equ 0F5Eh");
+[; <" CM2CON equ 0F5Eh ;# ">
+"27041
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27041: __asm("CM2CON1 equ 0F5Eh");
+[; <" CM2CON1 equ 0F5Eh ;# ">
+"27288
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27288: __asm("CM1CON equ 0F5Fh");
+[; <" CM1CON equ 0F5Fh ;# ">
+"27293
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27293: __asm("CM1CON1 equ 0F5Fh");
+[; <" CM1CON1 equ 0F5Fh ;# ">
+"27568
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27568: __asm("RXB0CON equ 0F60h");
+[; <" RXB0CON equ 0F60h ;# ">
+"27752
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27752: __asm("RXB0SIDH equ 0F61h");
+[; <" RXB0SIDH equ 0F61h ;# ">
+"27872
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27872: __asm("RXB0SIDL equ 0F62h");
+[; <" RXB0SIDL equ 0F62h ;# ">
+"27989
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 27989: __asm("RXB0EIDH equ 0F63h");
+[; <" RXB0EIDH equ 0F63h ;# ">
+"28109
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28109: __asm("RXB0EIDL equ 0F64h");
+[; <" RXB0EIDL equ 0F64h ;# ">
+"28229
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28229: __asm("RXB0DLC equ 0F65h");
+[; <" RXB0DLC equ 0F65h ;# ">
+"28343
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28343: __asm("RXB0D0 equ 0F66h");
+[; <" RXB0D0 equ 0F66h ;# ">
+"28413
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28413: __asm("RXB0D1 equ 0F67h");
+[; <" RXB0D1 equ 0F67h ;# ">
+"28483
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28483: __asm("RXB0D2 equ 0F68h");
+[; <" RXB0D2 equ 0F68h ;# ">
+"28553
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28553: __asm("RXB0D3 equ 0F69h");
+[; <" RXB0D3 equ 0F69h ;# ">
+"28623
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28623: __asm("RXB0D4 equ 0F6Ah");
+[; <" RXB0D4 equ 0F6Ah ;# ">
+"28693
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28693: __asm("RXB0D5 equ 0F6Bh");
+[; <" RXB0D5 equ 0F6Bh ;# ">
+"28763
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28763: __asm("RXB0D6 equ 0F6Ch");
+[; <" RXB0D6 equ 0F6Ch ;# ">
+"28833
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28833: __asm("RXB0D7 equ 0F6Dh");
+[; <" RXB0D7 equ 0F6Dh ;# ">
+"28903
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 28903: __asm("CANSTAT equ 0F6Eh");
+[; <" CANSTAT equ 0F6Eh ;# ">
+"29014
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29014: __asm("CANCON equ 0F6Fh");
+[; <" CANCON equ 0F6Fh ;# ">
+"29106
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29106: __asm("CIOCON equ 0F70h");
+[; <" CIOCON equ 0F70h ;# ">
+"29151
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29151: __asm("COMSTAT equ 0F71h");
+[; <" COMSTAT equ 0F71h ;# ">
+"29246
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29246: __asm("ECANCON equ 0F72h");
+[; <" ECANCON equ 0F72h ;# ">
+"29323
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29323: __asm("EEDATA equ 0F73h");
+[; <" EEDATA equ 0F73h ;# ">
+"29343
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29343: __asm("EEADR equ 0F74h");
+[; <" EEADR equ 0F74h ;# ">
+"29363
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29363: __asm("EEADRH equ 0F75h");
+[; <" EEADRH equ 0F75h ;# ">
+"29383
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29383: __asm("PIE5 equ 0F76h");
+[; <" PIE5 equ 0F76h ;# ">
+"29466
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29466: __asm("PIR5 equ 0F77h");
+[; <" PIR5 equ 0F77h ;# ">
+"29549
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29549: __asm("IPR5 equ 0F78h");
+[; <" IPR5 equ 0F78h ;# ">
+"29659
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29659: __asm("TXREG2 equ 0F79h");
+[; <" TXREG2 equ 0F79h ;# ">
+"29679
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29679: __asm("RCREG2 equ 0F7Ah");
+[; <" RCREG2 equ 0F7Ah ;# ">
+"29699
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29699: __asm("SPBRG2 equ 0F7Bh");
+[; <" SPBRG2 equ 0F7Bh ;# ">
+"29719
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29719: __asm("SPBRGH2 equ 0F7Ch");
+[; <" SPBRGH2 equ 0F7Ch ;# ">
+"29739
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29739: __asm("SPBRGH1 equ 0F7Dh");
+[; <" SPBRGH1 equ 0F7Dh ;# ">
+"29759
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29759: __asm("EECON2 equ 0F7Eh");
+[; <" EECON2 equ 0F7Eh ;# ">
+"29779
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29779: __asm("EECON1 equ 0F7Fh");
+[; <" EECON1 equ 0F7Fh ;# ">
+"29845
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29845: __asm("PORTA equ 0F80h");
+[; <" PORTA equ 0F80h ;# ">
+"29924
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29924: __asm("PORTB equ 0F81h");
+[; <" PORTB equ 0F81h ;# ">
+"29995
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 29995: __asm("PORTC equ 0F82h");
+[; <" PORTC equ 0F82h ;# ">
+"30081
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30081: __asm("PORTE equ 0F84h");
+[; <" PORTE equ 0F84h ;# ">
+"30120
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30120: __asm("TMR4 equ 0F87h");
+[; <" TMR4 equ 0F87h ;# ">
+"30140
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30140: __asm("T4CON equ 0F88h");
+[; <" T4CON equ 0F88h ;# ">
+"30211
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30211: __asm("LATA equ 0F89h");
+[; <" LATA equ 0F89h ;# ">
+"30313
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30313: __asm("LATB equ 0F8Ah");
+[; <" LATB equ 0F8Ah ;# ">
+"30425
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30425: __asm("LATC equ 0F8Bh");
+[; <" LATC equ 0F8Bh ;# ">
+"30537
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30537: __asm("SLRCON equ 0F90h");
+[; <" SLRCON equ 0F90h ;# ">
+"30569
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30569: __asm("ODCON equ 0F91h");
+[; <" ODCON equ 0F91h ;# ">
+"30631
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30631: __asm("TRISA equ 0F92h");
+[; <" TRISA equ 0F92h ;# ">
+"30688
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30688: __asm("TRISB equ 0F93h");
+[; <" TRISB equ 0F93h ;# ">
+"30750
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30750: __asm("TRISC equ 0F94h");
+[; <" TRISC equ 0F94h ;# ">
+"30812
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30812: __asm("CCPTMRS equ 0F99h");
+[; <" CCPTMRS equ 0F99h ;# ">
+"30856
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30856: __asm("REFOCON equ 0F9Ah");
+[; <" REFOCON equ 0F9Ah ;# ">
+"30921
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30921: __asm("OSCTUNE equ 0F9Bh");
+[; <" OSCTUNE equ 0F9Bh ;# ">
+"30991
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 30991: __asm("PSTR1CON equ 0F9Ch");
+[; <" PSTR1CON equ 0F9Ch ;# ">
+"31057
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31057: __asm("PIE1 equ 0F9Dh");
+[; <" PIE1 equ 0F9Dh ;# ">
+"31128
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31128: __asm("PIR1 equ 0F9Eh");
+[; <" PIR1 equ 0F9Eh ;# ">
+"31199
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31199: __asm("IPR1 equ 0F9Fh");
+[; <" IPR1 equ 0F9Fh ;# ">
+"31270
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31270: __asm("PIE2 equ 0FA0h");
+[; <" PIE2 equ 0FA0h ;# ">
+"31324
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31324: __asm("PIR2 equ 0FA1h");
+[; <" PIR2 equ 0FA1h ;# ">
+"31378
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31378: __asm("IPR2 equ 0FA2h");
+[; <" IPR2 equ 0FA2h ;# ">
+"31432
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31432: __asm("PIE3 equ 0FA3h");
+[; <" PIE3 equ 0FA3h ;# ">
+"31520
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31520: __asm("PIR3 equ 0FA4h");
+[; <" PIR3 equ 0FA4h ;# ">
+"31581
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31581: __asm("IPR3 equ 0FA5h");
+[; <" IPR3 equ 0FA5h ;# ">
+"31642
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31642: __asm("RCSTA2 equ 0FA6h");
+[; <" RCSTA2 equ 0FA6h ;# ">
+"31778
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31778: __asm("BAUDCON1 equ 0FA7h");
+[; <" BAUDCON1 equ 0FA7h ;# ">
+"31934
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 31934: __asm("HLVDCON equ 0FA8h");
+[; <" HLVDCON equ 0FA8h ;# ">
+"32004
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32004: __asm("PR4 equ 0FA9h");
+[; <" PR4 equ 0FA9h ;# ">
+"32024
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32024: __asm("T1GCON equ 0FAAh");
+[; <" T1GCON equ 0FAAh ;# ">
+"32128
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32128: __asm("RCSTA1 equ 0FABh");
+[; <" RCSTA1 equ 0FABh ;# ">
+"32133
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32133: __asm("RCSTA equ 0FABh");
+[; <" RCSTA equ 0FABh ;# ">
+"32466
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32466: __asm("TXSTA1 equ 0FACh");
+[; <" TXSTA1 equ 0FACh ;# ">
+"32471
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32471: __asm("TXSTA equ 0FACh");
+[; <" TXSTA equ 0FACh ;# ">
+"32754
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32754: __asm("TXREG1 equ 0FADh");
+[; <" TXREG1 equ 0FADh ;# ">
+"32759
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32759: __asm("TXREG equ 0FADh");
+[; <" TXREG equ 0FADh ;# ">
+"32792
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32792: __asm("RCREG1 equ 0FAEh");
+[; <" RCREG1 equ 0FAEh ;# ">
+"32797
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32797: __asm("RCREG equ 0FAEh");
+[; <" RCREG equ 0FAEh ;# ">
+"32830
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32830: __asm("SPBRG1 equ 0FAFh");
+[; <" SPBRG1 equ 0FAFh ;# ">
+"32835
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32835: __asm("SPBRG equ 0FAFh");
+[; <" SPBRG equ 0FAFh ;# ">
+"32868
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32868: __asm("T3GCON equ 0FB0h");
+[; <" T3GCON equ 0FB0h ;# ">
+"32972
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 32972: __asm("T3CON equ 0FB1h");
+[; <" T3CON equ 0FB1h ;# ">
+"33083
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33083: __asm("TMR3 equ 0FB2h");
+[; <" TMR3 equ 0FB2h ;# ">
+"33090
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33090: __asm("TMR3L equ 0FB2h");
+[; <" TMR3L equ 0FB2h ;# ">
+"33110
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33110: __asm("TMR3H equ 0FB3h");
+[; <" TMR3H equ 0FB3h ;# ">
+"33130
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33130: __asm("CMSTAT equ 0FB4h");
+[; <" CMSTAT equ 0FB4h ;# ">
+"33135
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33135: __asm("CMSTATUS equ 0FB4h");
+[; <" CMSTATUS equ 0FB4h ;# ">
+"33212
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33212: __asm("CVRCON equ 0FB5h");
+[; <" CVRCON equ 0FB5h ;# ">
+"33297
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33297: __asm("PIE4 equ 0FB6h");
+[; <" PIE4 equ 0FB6h ;# ">
+"33354
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33354: __asm("PIR4 equ 0FB7h");
+[; <" PIR4 equ 0FB7h ;# ">
+"33411
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33411: __asm("IPR4 equ 0FB8h");
+[; <" IPR4 equ 0FB8h ;# ">
+"33476
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33476: __asm("BAUDCON2 equ 0FB9h");
+[; <" BAUDCON2 equ 0FB9h ;# ">
+"33608
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33608: __asm("TXSTA2 equ 0FBAh");
+[; <" TXSTA2 equ 0FBAh ;# ">
+"33735
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33735: __asm("CCP1CON equ 0FBBh");
+[; <" CCP1CON equ 0FBBh ;# ">
+"33740
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33740: __asm("ECCP1CON equ 0FBBh");
+[; <" ECCP1CON equ 0FBBh ;# ">
+"33927
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33927: __asm("CCPR1 equ 0FBCh");
+[; <" CCPR1 equ 0FBCh ;# ">
+"33934
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33934: __asm("CCPR1L equ 0FBCh");
+[; <" CCPR1L equ 0FBCh ;# ">
+"33954
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33954: __asm("CCPR1H equ 0FBDh");
+[; <" CCPR1H equ 0FBDh ;# ">
+"33974
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33974: __asm("ECCP1DEL equ 0FBEh");
+[; <" ECCP1DEL equ 0FBEh ;# ">
+"33979
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 33979: __asm("PWM1CON equ 0FBEh");
+[; <" PWM1CON equ 0FBEh ;# ">
+"34112
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34112: __asm("ECCP1AS equ 0FBFh");
+[; <" ECCP1AS equ 0FBFh ;# ">
+"34194
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34194: __asm("ADCON2 equ 0FC0h");
+[; <" ADCON2 equ 0FC0h ;# ">
+"34265
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34265: __asm("ADCON1 equ 0FC1h");
+[; <" ADCON1 equ 0FC1h ;# ">
+"34369
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34369: __asm("ADCON0 equ 0FC2h");
+[; <" ADCON0 equ 0FC2h ;# ">
+"34494
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34494: __asm("ADRES equ 0FC3h");
+[; <" ADRES equ 0FC3h ;# ">
+"34501
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34501: __asm("ADRESL equ 0FC3h");
+[; <" ADRESL equ 0FC3h ;# ">
+"34521
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34521: __asm("ADRESH equ 0FC4h");
+[; <" ADRESH equ 0FC4h ;# ">
+"34541
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34541: __asm("SSPCON2 equ 0FC5h");
+[; <" SSPCON2 equ 0FC5h ;# ">
+"34636
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34636: __asm("SSPCON1 equ 0FC6h");
+[; <" SSPCON1 equ 0FC6h ;# ">
+"34706
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34706: __asm("SSPSTAT equ 0FC7h");
+[; <" SSPSTAT equ 0FC7h ;# ">
+"34938
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 34938: __asm("SSPADD equ 0FC8h");
+[; <" SSPADD equ 0FC8h ;# ">
+"35008
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35008: __asm("SSPBUF equ 0FC9h");
+[; <" SSPBUF equ 0FC9h ;# ">
+"35028
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35028: __asm("T2CON equ 0FCAh");
+[; <" T2CON equ 0FCAh ;# ">
+"35099
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35099: __asm("PR2 equ 0FCBh");
+[; <" PR2 equ 0FCBh ;# ">
+"35104
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35104: __asm("MEMCON equ 0FCBh");
+[; <" MEMCON equ 0FCBh ;# ">
+"35225
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35225: __asm("TMR2 equ 0FCCh");
+[; <" TMR2 equ 0FCCh ;# ">
+"35245
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35245: __asm("T1CON equ 0FCDh");
+[; <" T1CON equ 0FCDh ;# ">
+"35347
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35347: __asm("TMR1 equ 0FCEh");
+[; <" TMR1 equ 0FCEh ;# ">
+"35354
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35354: __asm("TMR1L equ 0FCEh");
+[; <" TMR1L equ 0FCEh ;# ">
+"35374
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35374: __asm("TMR1H equ 0FCFh");
+[; <" TMR1H equ 0FCFh ;# ">
+"35394
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35394: __asm("RCON equ 0FD0h");
+[; <" RCON equ 0FD0h ;# ">
+"35547
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35547: __asm("WDTCON equ 0FD1h");
+[; <" WDTCON equ 0FD1h ;# ">
+"35607
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35607: __asm("OSCCON2 equ 0FD2h");
+[; <" OSCCON2 equ 0FD2h ;# ">
+"35679
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35679: __asm("OSCCON equ 0FD3h");
+[; <" OSCCON equ 0FD3h ;# ">
+"35756
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35756: __asm("T0CON equ 0FD5h");
+[; <" T0CON equ 0FD5h ;# ">
+"35826
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35826: __asm("TMR0 equ 0FD6h");
+[; <" TMR0 equ 0FD6h ;# ">
+"35833
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35833: __asm("TMR0L equ 0FD6h");
+[; <" TMR0L equ 0FD6h ;# ">
+"35853
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35853: __asm("TMR0H equ 0FD7h");
+[; <" TMR0H equ 0FD7h ;# ">
+"35873
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35873: __asm("STATUS equ 0FD8h");
+[; <" STATUS equ 0FD8h ;# ">
+"35944
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35944: __asm("FSR2 equ 0FD9h");
+[; <" FSR2 equ 0FD9h ;# ">
+"35951
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35951: __asm("FSR2L equ 0FD9h");
+[; <" FSR2L equ 0FD9h ;# ">
+"35971
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35971: __asm("FSR2H equ 0FDAh");
+[; <" FSR2H equ 0FDAh ;# ">
+"35991
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 35991: __asm("PLUSW2 equ 0FDBh");
+[; <" PLUSW2 equ 0FDBh ;# ">
+"36011
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36011: __asm("PREINC2 equ 0FDCh");
+[; <" PREINC2 equ 0FDCh ;# ">
+"36031
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36031: __asm("POSTDEC2 equ 0FDDh");
+[; <" POSTDEC2 equ 0FDDh ;# ">
+"36051
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36051: __asm("POSTINC2 equ 0FDEh");
+[; <" POSTINC2 equ 0FDEh ;# ">
+"36071
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36071: __asm("INDF2 equ 0FDFh");
+[; <" INDF2 equ 0FDFh ;# ">
+"36091
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36091: __asm("BSR equ 0FE0h");
+[; <" BSR equ 0FE0h ;# ">
+"36111
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36111: __asm("FSR1 equ 0FE1h");
+[; <" FSR1 equ 0FE1h ;# ">
+"36118
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36118: __asm("FSR1L equ 0FE1h");
+[; <" FSR1L equ 0FE1h ;# ">
+"36138
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36138: __asm("FSR1H equ 0FE2h");
+[; <" FSR1H equ 0FE2h ;# ">
+"36158
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36158: __asm("PLUSW1 equ 0FE3h");
+[; <" PLUSW1 equ 0FE3h ;# ">
+"36178
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36178: __asm("PREINC1 equ 0FE4h");
+[; <" PREINC1 equ 0FE4h ;# ">
+"36198
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36198: __asm("POSTDEC1 equ 0FE5h");
+[; <" POSTDEC1 equ 0FE5h ;# ">
+"36218
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36218: __asm("POSTINC1 equ 0FE6h");
+[; <" POSTINC1 equ 0FE6h ;# ">
+"36238
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36238: __asm("INDF1 equ 0FE7h");
+[; <" INDF1 equ 0FE7h ;# ">
+"36258
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36258: __asm("WREG equ 0FE8h");
+[; <" WREG equ 0FE8h ;# ">
+"36278
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36278: __asm("FSR0 equ 0FE9h");
+[; <" FSR0 equ 0FE9h ;# ">
+"36285
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36285: __asm("FSR0L equ 0FE9h");
+[; <" FSR0L equ 0FE9h ;# ">
+"36305
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36305: __asm("FSR0H equ 0FEAh");
+[; <" FSR0H equ 0FEAh ;# ">
+"36325
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36325: __asm("PLUSW0 equ 0FEBh");
+[; <" PLUSW0 equ 0FEBh ;# ">
+"36345
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36345: __asm("PREINC0 equ 0FECh");
+[; <" PREINC0 equ 0FECh ;# ">
+"36365
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36365: __asm("POSTDEC0 equ 0FEDh");
+[; <" POSTDEC0 equ 0FEDh ;# ">
+"36385
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36385: __asm("POSTINC0 equ 0FEEh");
+[; <" POSTINC0 equ 0FEEh ;# ">
+"36405
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36405: __asm("INDF0 equ 0FEFh");
+[; <" INDF0 equ 0FEFh ;# ">
+"36425
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36425: __asm("INTCON3 equ 0FF0h");
+[; <" INTCON3 equ 0FF0h ;# ">
+"36537
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36537: __asm("INTCON2 equ 0FF1h");
+[; <" INTCON2 equ 0FF1h ;# ">
+"36630
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36630: __asm("INTCON equ 0FF2h");
+[; <" INTCON equ 0FF2h ;# ">
+"36635
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36635: __asm("INTCON1 equ 0FF2h");
+[; <" INTCON1 equ 0FF2h ;# ">
+"36862
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36862: __asm("PROD equ 0FF3h");
+[; <" PROD equ 0FF3h ;# ">
+"36869
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36869: __asm("PRODL equ 0FF3h");
+[; <" PRODL equ 0FF3h ;# ">
+"36889
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36889: __asm("PRODH equ 0FF4h");
+[; <" PRODH equ 0FF4h ;# ">
+"36909
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36909: __asm("TABLAT equ 0FF5h");
+[; <" TABLAT equ 0FF5h ;# ">
+"36931
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36931: __asm("TBLPTR equ 0FF6h");
+[; <" TBLPTR equ 0FF6h ;# ">
+"36938
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36938: __asm("TBLPTRL equ 0FF6h");
+[; <" TBLPTRL equ 0FF6h ;# ">
+"36958
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36958: __asm("TBLPTRH equ 0FF7h");
+[; <" TBLPTRH equ 0FF7h ;# ">
+"36978
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 36978: __asm("TBLPTRU equ 0FF8h");
+[; <" TBLPTRU equ 0FF8h ;# ">
+"37000
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37000: __asm("PCLAT equ 0FF9h");
+[; <" PCLAT equ 0FF9h ;# ">
+"37007
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37007: __asm("PC equ 0FF9h");
+[; <" PC equ 0FF9h ;# ">
+"37014
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37014: __asm("PCL equ 0FF9h");
+[; <" PCL equ 0FF9h ;# ">
+"37034
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37034: __asm("PCLATH equ 0FFAh");
+[; <" PCLATH equ 0FFAh ;# ">
+"37054
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37054: __asm("PCLATU equ 0FFBh");
+[; <" PCLATU equ 0FFBh ;# ">
+"37074
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37074: __asm("STKPTR equ 0FFCh");
+[; <" STKPTR equ 0FFCh ;# ">
+"37148
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37148: __asm("TOS equ 0FFDh");
+[; <" TOS equ 0FFDh ;# ">
+"37155
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37155: __asm("TOSL equ 0FFDh");
+[; <" TOSL equ 0FFDh ;# ">
+"37175
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37175: __asm("TOSH equ 0FFEh");
+[; <" TOSH equ 0FFEh ;# ">
+"37195
+[; ;C:/Users/ianwh/.mchp_packs/Microchip/PIC18F-K_DFP/1.17.312/xc8\pic\include\proc/pic18f26k80.h: 37195: __asm("TOSU equ 0FFFh");
+[; <" TOSU equ 0FFFh ;# ">
+"106 ../../../VLCBlib_PIC/can18_ecan.c
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 106: static DiagnosticVal canDiagnostics[18 +1];
+[v _canDiagnostics `S1554 ~T0 @X0 -> 19 `i s ]
+"115
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 115: const Service canService = {
+[v _canService `CS1556 ~T0 @X0 1 e ]
+[i _canService
+:U ..
+:U ..
+-> . `E12878 3 `uc
+-> -> 2 `i `uc
+&U _canFactoryReset
+&U _canPowerUp
+&U _canProcessMessage
+-> -> -> 0 `i `*v `*F13302
+&U _canIsr
+&U _canIsr
+&U _canEsdData
+&U _canGetDiagnostic
+..
+..
+]
+"143
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 143: const Transport canTransport = {
+[v _canTransport `CS1557 ~T0 @X0 1 e ]
+[i _canTransport
+:U ..
+:U ..
+&U _canSendMessage
+&U _canReceiveMessage
+&U _canWaitForTxQueueToDrain
+..
+..
+]
+"152
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 152: static uint8_t canId;
+[v _canId `uc ~T0 @X0 1 s ]
+"155
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 155: static TickValue canTransmitTimeout;
+[v _canTransmitTimeout `S1558 ~T0 @X0 1 s ]
+"156
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 156: static uint8_t canTransmitFailed;
+[v _canTransmitFailed `uc ~T0 @X0 1 s ]
+"160
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 160: static Message rxBuffers[32];
+[v _rxBuffers `S1551 ~T0 @X0 -> 32 `i s ]
+"161
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 161: static MessageQueue rxQueue;
+[v _rxQueue `S1561 ~T0 @X0 1 s ]
+"162
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 162: static Message txBuffers[8];
+[v _txBuffers `S1551 ~T0 @X0 -> 8 `i s ]
+"163
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 163: static MessageQueue txQueue;
+[v _txQueue `S1561 ~T0 @X0 1 s ]
+"173
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 173: } EnumerationState;
+[v _EnumerationState `E13327 ~T0 @X0 1 e ]
+"174
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 174: static TickValue enumerationStartTime;
+[v _enumerationStartTime `S1558 ~T0 @X0 1 s ]
+"175
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 175: static enum EnumerationState enumerationState;
+[v _enumerationState `E13327 ~T0 @X0 1 s ]
+"176
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 176: static uint8_t enumerationResults[(0x7F/8)+1];
+[v _enumerationResults `uc ~T0 @X0 -> 16 `i s ]
+"196
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 196: static const uint8_t canPri[] = {
+[v _canPri `Cuc ~T0 @X0 -> 5 `i s ]
+[i _canPri
+:U ..
+-> -> 176 `i `uc
+-> -> 160 `i `uc
+-> -> 144 `i `uc
+-> -> 128 `i `uc
+-> -> 0 `i `uc
+..
+]
+"211
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 211: static void canFactoryReset(void) {
+[v _canFactoryReset `(v ~T0 @X0 1 sf ]
+{
+[e :U _canFactoryReset ]
+[f ]
+"212
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 212:     canId = 0;
+[e = _canId -> -> 0 `i `uc ]
+"213
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 213:     writeNVM(EEPROM_NVM_TYPE, 0x3FE, canId);
+[e ( _writeNVM (3 , , . `E13019 0 -> -> -> 1022 `i `m `um _canId ]
+"214
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 214: }
+[e :UE 1562 ]
+}
+"224
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 224: static void canPowerUp(void) {
+[v _canPowerUp `(v ~T0 @X0 1 sf ]
+{
+[e :U _canPowerUp ]
+[f ]
+"225
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 225:     int temp;
+[v _temp `i ~T0 @X0 1 a ]
+"228
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 228:     rxQueue.readIndex = 0;
+[e = . _rxQueue 1 -> -> 0 `i `uc ]
+"229
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 229:     rxQueue.writeIndex = 0;
+[e = . _rxQueue 2 -> -> 0 `i `uc ]
+"230
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 230:     rxQueue.messages = rxBuffers;
+[e = . _rxQueue 0 &U _rxBuffers ]
+"231
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 231:     rxQueue.size = 32;
+[e = . _rxQueue 3 -> -> 32 `i `uc ]
+"233
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 233:     txQueue.readIndex = 0;
+[e = . _txQueue 1 -> -> 0 `i `uc ]
+"234
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 234:     txQueue.writeIndex = 0;
+[e = . _txQueue 2 -> -> 0 `i `uc ]
+"235
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 235:     txQueue.messages = txBuffers;
+[e = . _txQueue 0 &U _txBuffers ]
+"236
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 236:     txQueue.size = 8;
+[e = . _txQueue 3 -> -> 8 `i `uc ]
+"240
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 240:     temp = readNVM(EEPROM_NVM_TYPE, 0x3FE);
+[e = _temp -> ( _readNVM (2 , . `E13019 0 -> -> -> 1022 `i `m `um `i ]
+"241
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 241:     if (temp < 0) {
+[e $ ! < _temp -> 0 `i 1564  ]
+{
+"243
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 243:         canId = 0;
+[e = _canId -> -> 0 `i `uc ]
+"244
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 244:     } else {
+}
+[e $U 1565  ]
+[e :U 1564 ]
+{
+"245
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 245:         canId = (uint8_t)temp;
+[e = _canId -> _temp `uc ]
+"246
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 246:     }
+}
+[e :U 1565 ]
+"249
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 249:     for (temp=1; temp <= 18; temp++) {
+{
+[e = _temp -> 1 `i ]
+[e $ <= _temp -> 18 `i 1566  ]
+[e $U 1567  ]
+[e :U 1566 ]
+{
+"250
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 250:         canDiagnostics[temp].asUint = 0;
+[e = . *U + &U _canDiagnostics * -> -> _temp `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 0 `i `us ]
+"251
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 251:     }
+}
+[e ++ _temp -> 1 `i ]
+[e $ <= _temp -> 18 `i 1566  ]
+[e :U 1567 ]
+}
+"252
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 252:     canDiagnostics[0x00].asUint = 18;
+[e = . *U + &U _canDiagnostics * -> -> -> 0 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 18 `i `us ]
+"255
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 255:     canTransmitFailed=0;
+[e = _canTransmitFailed -> -> 0 `i `uc ]
+"256
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 256:     IPR5 = 0;
+[e = _IPR5 -> -> 0 `i `uc ]
+"259
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 259:     CANCON = 0b10000000;
+[e = _CANCON -> -> 128 `i `uc ]
+"261
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 261:     while (CANSTATbits.OPMODE2 == 0);
+[e $U 1569  ]
+[e :U 1570 ]
+[e :U 1569 ]
+[e $ == -> . . _CANSTATbits 1 7 `i -> 0 `i 1570  ]
+[e :U 1571 ]
+"263
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 263:     ECANCON = 0b10110000;
+[e = _ECANCON -> -> 176 `i `uc ]
+"264
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 264:     BSEL0 = 0;
+[e = _BSEL0 -> -> 0 `i `uc ]
+"288
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 288:       BRGCON1 = 0b00001111;
+[e = _BRGCON1 -> -> 15 `i `uc ]
+"291
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 291:     BRGCON2 = 0b10011110;
+[e = _BRGCON2 -> -> 158 `i `uc ]
+"292
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 292:     BRGCON3 = 0b00000011;
+[e = _BRGCON3 -> -> 3 `i `uc ]
+"293
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 293:     CIOCON = 0b00100000;
+[e = _CIOCON -> -> 32 `i `uc ]
+"297
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 297:     RXM0SIDH = 0;
+[e = _RXM0SIDH -> -> 0 `i `uc ]
+"298
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 298:     RXM0SIDL = 0x08;
+[e = _RXM0SIDL -> -> 8 `i `uc ]
+"299
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 299:     RXM0EIDH = 0;
+[e = _RXM0EIDH -> -> 0 `i `uc ]
+"300
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 300:     RXM0EIDL = 0;
+[e = _RXM0EIDL -> -> 0 `i `uc ]
+"302
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 302:     RXF0SIDL = 0x00;
+[e = _RXF0SIDL -> -> 0 `i `uc ]
+"304
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 304:     RXFBCON0 = 0;
+[e = _RXFBCON0 -> -> 0 `i `uc ]
+"306
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 306:     MSEL0 = 0;
+[e = _MSEL0 -> -> 0 `i `uc ]
+"308
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 308:     RXFCON0 = 1;
+[e = _RXFCON0 -> -> 1 `i `uc ]
+"315
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 315:     RXB0CON = 0x00;
+[e = _RXB0CON -> -> 0 `i `uc ]
+"316
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 316:     RXB1CON = 0x00;
+[e = _RXB1CON -> -> 0 `i `uc ]
+"317
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 317:     B0CON = 0;
+[e = _B0CON -> -> 0 `i `uc ]
+"318
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 318:     B1CON = 0;
+[e = _B1CON -> -> 0 `i `uc ]
+"319
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 319:     B2CON = 0;
+[e = _B2CON -> -> 0 `i `uc ]
+"320
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 320:     B3CON = 0;
+[e = _B3CON -> -> 0 `i `uc ]
+"321
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 321:     B4CON = 0;
+[e = _B4CON -> -> 0 `i `uc ]
+"322
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 322:     B5CON = 0;
+[e = _B5CON -> -> 0 `i `uc ]
+"324
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 324:     BIE0 = 0;
+[e = _BIE0 -> -> 0 `i `uc ]
+"325
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 325:     TXBIEbits.TXB0IE = 1;
+[e = . . _TXBIEbits 0 1 -> -> 1 `i `uc ]
+"326
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 326:     TXBIEbits.TXB1IE = 0;
+[e = . . _TXBIEbits 0 2 -> -> 0 `i `uc ]
+"327
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 327:     TXBIEbits.TXB2IE = 0;
+[e = . . _TXBIEbits 0 3 -> -> 0 `i `uc ]
+"329
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 329:     CANCON = 0;
+[e = _CANCON -> -> 0 `i `uc ]
+"331
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 331:     while (CANSTATbits.OPMODE2 != 0);
+[e $U 1572  ]
+[e :U 1573 ]
+[e :U 1572 ]
+[e $ != -> . . _CANSTATbits 1 7 `i -> 0 `i 1573  ]
+[e :U 1574 ]
+"334
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 334:     TXB0CON = 0;
+[e = _TXB0CON -> -> 0 `i `uc ]
+"335
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 335:     TXB0CONbits.TXPRI0 = 0;
+[e = . . _TXB0CONbits 1 0 -> -> 0 `i `uc ]
+"336
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 336:     TXB0CONbits.TXPRI1 = 0;
+[e = . . _TXB0CONbits 1 1 -> -> 0 `i `uc ]
+"337
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 337:     TXB0DLC = 0;
+[e = _TXB0DLC -> -> 0 `i `uc ]
+"339
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 339:     TXB0SIDH = 0;
+[e = _TXB0SIDH -> -> 0 `i `uc ]
+"340
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 340:     TXB0SIDL = 0;
+[e = _TXB0SIDL -> -> 0 `i `uc ]
+"344
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 344:     TXB1CON = 0;
+[e = _TXB1CON -> -> 0 `i `uc ]
+"345
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 345:     TXB1CONbits.TXPRI0 = 0;
+[e = . . _TXB1CONbits 1 0 -> -> 0 `i `uc ]
+"346
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 346:     TXB1CONbits.TXPRI1 = 1;
+[e = . . _TXB1CONbits 1 1 -> -> 1 `i `uc ]
+"347
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 347:     TXB1DLC = 0x40;
+[e = _TXB1DLC -> -> 64 `i `uc ]
+"348
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 348:     TXB1SIDH = canPri[4] | ((canId & 0x78) >> 3);
+[e = _TXB1SIDH -> | -> *U + &U _canPri * -> -> -> 4 `i `ui `ux -> -> # *U &U _canPri `ui `ux `i >> & -> _canId `i -> 120 `i -> 3 `i `uc ]
+"349
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 349:     TXB1SIDL = TXB0SIDL;
+[e = _TXB1SIDL _TXB0SIDL ]
+"353
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 353:     TXB2CON = 0;
+[e = _TXB2CON -> -> 0 `i `uc ]
+"354
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 354:     TXB2CONbits.TXPRI0 = 1;
+[e = . . _TXB2CONbits 1 0 -> -> 1 `i `uc ]
+"355
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 355:     TXB2CONbits.TXPRI1 = 1;
+[e = . . _TXB2CONbits 1 1 -> -> 1 `i `uc ]
+"356
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 356:     TXB2DLC = 0;
+[e = _TXB2DLC -> -> 0 `i `uc ]
+"357
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 357:     TXB2SIDH = canPri[4] | ((canId & 0x78) >> 3);
+[e = _TXB2SIDH -> | -> *U + &U _canPri * -> -> -> 4 `i `ui `ux -> -> # *U &U _canPri `ui `ux `i >> & -> _canId `i -> 120 `i -> 3 `i `uc ]
+"358
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 358:     TXB2SIDL = TXB0SIDL;
+[e = _TXB2SIDL _TXB0SIDL ]
+"362
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 362:     enumerationState = NO_ENUMERATION;
+[e = _enumerationState . `E13327 0 ]
+"363
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 363:     enumerationStartTime.val = tickGet();
+[e = . _enumerationStartTime 0 ( _tickGet ..  ]
+"366
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 366:     canTransmitTimeout.val = enumerationStartTime.val;
+[e = . _canTransmitTimeout 0 . _enumerationStartTime 0 ]
+"368
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 368:     PIE5bits.FIFOWMIE = 1;
+[e = . . _PIE5bits 1 0 -> -> 1 `i `uc ]
+"369
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 369:     PIE5bits.TXBnIE = 1;
+[e = . . _PIE5bits 1 3 -> -> 1 `i `uc ]
+"370
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 370:     PIE5bits.ERRIE = 1;
+[e = . . _PIE5bits 0 5 -> -> 1 `i `uc ]
+"371
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 371: }
+[e :UE 1563 ]
+}
+[v F13352 `(E13089 ~T0 @X0 1 tf1`*S1551 ]
+"380
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 380: static Processed canProcessMessage(Message * m) {
+[v _canProcessMessage `RF13352 ~T0 @X0 1 s ]
+{
+[e :U _canProcessMessage ]
+[v _m `*S1551 ~T0 @X0 1 r1 ]
+[f ]
+"382
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 382:     if (m->len < 3) return NOT_PROCESSED;
+[e $ ! < -> . *U _m 0 `i -> 3 `i 1576  ]
+[e ) . `E13089 0 ]
+[e $UE 1575  ]
+[e :U 1576 ]
+"383
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 383:     if (m->bytes[0] != nn.bytes.hi) return NOT_PROCESSED;
+[e $ ! != -> *U + &U . *U _m 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux `i -> . . _nn 0 1 `i 1577  ]
+[e ) . `E13089 0 ]
+[e $UE 1575  ]
+[e :U 1577 ]
+"384
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 384:     if (m->bytes[1] != nn.bytes.lo) return NOT_PROCESSED;
+[e $ ! != -> *U + &U . *U _m 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux `i -> . . _nn 0 0 `i 1578  ]
+[e ) . `E13089 0 ]
+[e $UE 1575  ]
+[e :U 1578 ]
+"387
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 387:     switch (m->opc) {
+[e $U 1580  ]
+{
+"388
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 388:         case OPC_ENUM:
+[e :U 1581 ]
+"390
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 390:             return PROCESSED;
+[e ) . `E13089 1 ]
+[e $UE 1575  ]
+"391
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 391:         case OPC_CANID:
+[e :U 1582 ]
+"392
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 392:             if (m->len < 4) {
+[e $ ! < -> . *U _m 0 `i -> 4 `i 1583  ]
+{
+"394
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 394:                 sendMessage5(OPC_GRSP, nn.bytes.hi, nn.bytes.lo, OPC_CANID, SERVICE_ID_MNS, CMDERR_INV_CMD);
+[e ( _sendMessage5 (4 , , , , , . `E12671 89 . . _nn 0 1 . . _nn 0 0 -> . `E12671 58 `uc -> . `E12878 1 `uc -> . `E12840 0 `uc ]
+"396
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 396:                 return PROCESSED;
+[e ) . `E13089 1 ]
+[e $UE 1575  ]
+"397
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 397:             }
+}
+[e :U 1583 ]
+"399
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 399:             return PROCESSED;
+[e ) . `E13089 1 ]
+[e $UE 1575  ]
+"400
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 400:         default:
+[e :U 1584 ]
+"401
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 401:             break;
+[e $U 1579  ]
+"402
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 402:     }
+}
+[e $U 1579  ]
+[e :U 1580 ]
+[e [\ -> . *U _m 1 `ui , $ -> . `E12671 46 `ui 1581
+ , $ -> . `E12671 58 `ui 1582
+ 1584 ]
+[e :U 1579 ]
+"403
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 403:     return NOT_PROCESSED;
+[e ) . `E13089 0 ]
+[e $UE 1575  ]
+"404
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 404: }
+[e :UE 1575 ]
+}
+"409
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 409: static void canIsr(void) {
+[v _canIsr `(v ~T0 @X0 1 sf ]
+{
+[e :U _canIsr ]
+[f ]
+"411
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 411:     if (PIR5bits.FIFOWMIF) {
+[e $ ! != -> . . _PIR5bits 1 0 `i -> 0 `i 1586  ]
+{
+"412
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 412:         canFillRxFifo();
+[e ( _canFillRxFifo ..  ]
+"413
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 413:     }
+}
+[e :U 1586 ]
+"414
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 414:     if (PIR5bits.ERRIF) {
+[e $ ! != -> . . _PIR5bits 0 5 `i -> 0 `i 1587  ]
+{
+"415
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 415:         canTxError();
+[e ( _canTxError ..  ]
+"416
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 416:     }
+}
+[e :U 1587 ]
+"417
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 417:     if (PIR5bits.TXBnIF) {
+[e $ ! != -> . . _PIR5bits 1 3 `i -> 0 `i 1588  ]
+{
+"418
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 418:         checkTxFifo();
+[e ( _checkTxFifo ..  ]
+"419
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 419:     }
+}
+[e :U 1588 ]
+"420
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 420:     checkCANTimeout();
+[e ( _checkCANTimeout ..  ]
+"421
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 421: }
+[e :UE 1585 ]
+}
+"429
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 429: uint8_t canEsdData(uint8_t id) {
+[v _canEsdData `(uc ~T0 @X0 1 ef1`uc ]
+{
+[e :U _canEsdData ]
+[v _id `uc ~T0 @X0 1 r1 ]
+[f ]
+"430
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 430:     switch(id) {
+[e $U 1591  ]
+{
+"431
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 431:         case 1:
+[e :U 1592 ]
+"432
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 432:             return CAN_HW_PIC_ECAN;
+[e ) -> . `E12992 1 `uc ]
+[e $UE 1589  ]
+"433
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 433:         default:
+[e :U 1593 ]
+"434
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 434:             return 0;
+[e ) -> -> 0 `i `uc ]
+[e $UE 1589  ]
+"435
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 435:     }
+}
+[e $U 1590  ]
+[e :U 1591 ]
+[e [\ _id , $ -> 1 `i 1592
+ 1593 ]
+[e :U 1590 ]
+"436
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 436: }
+[e :UE 1589 ]
+}
+"445
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 445: static DiagnosticVal * canGetDiagnostic(uint8_t index) {
+[v _canGetDiagnostic `(*S1554 ~T0 @X0 1 sf1`uc ]
+{
+[e :U _canGetDiagnostic ]
+[v _index `uc ~T0 @X0 1 r1 ]
+[f ]
+"446
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 446:     if (index > 18) {
+[e $ ! > -> _index `i -> 18 `i 1595  ]
+{
+"447
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 447:         return ((void*)0);
+[e ) -> -> -> 0 `i `*v `*S1554 ]
+[e $UE 1594  ]
+"448
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 448:     }
+}
+[e :U 1595 ]
+"449
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 449:     switch (index) {
+[e $U 1597  ]
+{
+"450
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 450:         case 0x03:
+[e :U 1598 ]
+"451
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 451:             canDiagnostics[0x03].asUint = COMSTAT;
+[e = . *U + &U _canDiagnostics * -> -> -> 3 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> _COMSTAT `us ]
+"452
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 452:             break;
+[e $U 1596  ]
+"453
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 453:         case 0x04:
+[e :U 1599 ]
+"454
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 454:             canDiagnostics[0x04].asUint = getNumTxBuffersInUse();
+[e = . *U + &U _canDiagnostics * -> -> -> 4 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> ( _getNumTxBuffersInUse ..  `us ]
+"455
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 455:             break;
+[e $U 1596  ]
+"456
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 456:         case 0x07:
+[e :U 1600 ]
+"457
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 457:             canDiagnostics[0x07].asUint = getNumRxBuffersInUse();
+[e = . *U + &U _canDiagnostics * -> -> -> 7 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> ( _getNumRxBuffersInUse ..  `us ]
+"458
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 458:             break;
+[e $U 1596  ]
+"459
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 459:     }
+}
+[e $U 1596  ]
+[e :U 1597 ]
+[e [\ _index , $ -> 3 `i 1598
+ , $ -> 4 `i 1599
+ , $ -> 7 `i 1600
+ 1596 ]
+[e :U 1596 ]
+"460
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 460:     return &(canDiagnostics[index]);
+[e ) &U *U + &U _canDiagnostics * -> _index `ux -> -> # *U &U _canDiagnostics `ui `ux ]
+[e $UE 1594  ]
+"461
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 461: }
+[e :UE 1594 ]
+}
+"468
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 468: static uint8_t getNumTxBuffersInUse(void) {
+[v _getNumTxBuffersInUse `(uc ~T0 @X0 1 sf ]
+{
+[e :U _getNumTxBuffersInUse ]
+[f ]
+"469
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 469:     return quantity(&txQueue);
+[e ) ( _quantity (1 &U _txQueue ]
+[e $UE 1601  ]
+"470
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 470: }
+[e :UE 1601 ]
+}
+"477
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 477: static uint8_t getNumRxBuffersInUse(void) {
+[v _getNumRxBuffersInUse `(uc ~T0 @X0 1 sf ]
+{
+[e :U _getNumRxBuffersInUse ]
+[f ]
+"478
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 478:     uint8_t no;
+[v _no `uc ~T0 @X0 1 a ]
+"479
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 479:     uint8_t i;
+[v _i `uc ~T0 @X0 1 a ]
+"480
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 480:     uint8_t * ptr;
+[v _ptr `*uc ~T0 @X0 1 a ]
+"482
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 482:     no = quantity(&rxQueue);
+[e = _no ( _quantity (1 &U _rxQueue ]
+"483
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 483:     for (i=0; i<8; i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $ < -> _i `i -> 8 `i 1603  ]
+[e $U 1604  ]
+[e :U 1603 ]
+{
+"484
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 484:         ptr = getBufferPointer(i);
+[e = _ptr ( _getBufferPointer (1 _i ]
+"485
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 485:         if (ptr[0] & 0x80) {
+[e $ ! != & -> *U + _ptr * -> -> 0 `i `x -> -> # *U _ptr `i `x `i -> 128 `i -> 0 `i 1606  ]
+{
+"486
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 486:             no++;
+[e ++ _no -> -> 1 `i `uc ]
+"487
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 487:         }
+}
+[e :U 1606 ]
+"488
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 488:     }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i -> 8 `i 1603  ]
+[e :U 1604 ]
+}
+"489
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 489:     return no;
+[e ) _no ]
+[e $UE 1602  ]
+"490
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 490: }
+[e :UE 1602 ]
+}
+"500
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 500: static SendResult canSendMessage(Message * mp) {
+[v _canSendMessage `(E13204 ~T0 @X0 1 sf1`*S1551 ]
+{
+[e :U _canSendMessage ]
+[v _mp `*S1551 ~T0 @X0 1 r1 ]
+[f ]
+"505
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 505:     uint8_t no;
+[v _no `uc ~T0 @X0 1 a ]
+"509
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 509:     PIE5bits.TXBnIE = 0;
+[e = . . _PIE5bits 1 3 -> -> 0 `i `uc ]
+"510
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 510:     if (quantity(&txQueue) == 0) {
+[e $ ! == -> ( _quantity (1 &U _txQueue `i -> 0 `i 1608  ]
+{
+"512
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 512:         if (TXB0CONbits.TXREQ == 0) {
+[e $ ! == -> . . _TXB0CONbits 0 2 `i -> 0 `i 1609  ]
+{
+"514
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 514:             if ((canId == 0) && (enumerationState == NO_ENUMERATION)) {
+[e $ ! && == -> _canId `i -> 0 `i == -> _enumerationState `ui -> . `E13327 0 `ui 1610  ]
+{
+"515
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 515:                 enumerationState = ENUMERATION_REQUIRED;
+[e = _enumerationState . `E13327 1 ]
+"516
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 516:                 canId = 1;
+[e = _canId -> -> 1 `i `uc ]
+"517
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 517:             }
+}
+[e :U 1610 ]
+"518
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 518:             PIE5bits.TXBnIE = 1;
+[e = . . _PIE5bits 1 3 -> -> 1 `i `uc ]
+"520
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 520:             if (mp->len >8) mp->len = 8;
+[e $ ! > -> . *U _mp 0 `i -> 8 `i 1611  ]
+[e = . *U _mp 0 -> -> 8 `i `uc ]
+[e :U 1611 ]
+"522
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 522:             TXB0SIDH = canPri[priorities[mp->opc]] | ((canId & 0x78) >> 3);
+[e = _TXB0SIDH -> | -> *U + &U _canPri * -> *U + &U _priorities * -> . *U _mp 1 `ux -> -> # *U &U _priorities `ui `ux `ux -> -> # *U &U _canPri `ui `ux `i >> & -> _canId `i -> 120 `i -> 3 `i `uc ]
+"523
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 523:             TXB0SIDL = (uint8_t)((canId & 0x07) << 5);
+[e = _TXB0SIDL -> << & -> _canId `i -> 7 `i -> 5 `i `uc ]
+"524
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 524:             TXB0D0 = mp->opc;
+[e = _TXB0D0 -> . *U _mp 1 `uc ]
+"525
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 525:             TXB0D1 = mp->bytes[0];
+[e = _TXB0D1 *U + &U . *U _mp 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"526
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 526:             TXB0D2 = mp->bytes[1];
+[e = _TXB0D2 *U + &U . *U _mp 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"527
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 527:             TXB0D3 = mp->bytes[2];
+[e = _TXB0D3 *U + &U . *U _mp 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"528
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 528:             TXB0D4 = mp->bytes[3];
+[e = _TXB0D4 *U + &U . *U _mp 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"529
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 529:             TXB0D5 = mp->bytes[4];
+[e = _TXB0D5 *U + &U . *U _mp 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"530
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 530:             TXB0D6 = mp->bytes[5];
+[e = _TXB0D6 *U + &U . *U _mp 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"531
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 531:             TXB0D7 = mp->bytes[6];
+[e = _TXB0D7 *U + &U . *U _mp 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"532
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 532:             TXB0DLC = mp->len & 0x0F;
+[e = _TXB0DLC -> & -> . *U _mp 0 `i -> 15 `i `uc ]
+"534
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 534:             TXB0CONbits.TXREQ = 1;
+[e = . . _TXB0CONbits 0 2 -> -> 1 `i `uc ]
+"536
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 536:             canDiagnostics[0x06].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 6 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"565
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 565:             return SEND_OK;
+[e ) . `E13204 1 ]
+[e $UE 1607  ]
+"566
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 566:         }
+}
+[e :U 1609 ]
+"567
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 567:     }
+}
+[e :U 1608 ]
+"569
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 569:     if (push(&txQueue, mp) == QUEUE_FAIL) {
+[e $ ! == -> ( _push (2 , &U _txQueue _mp `ui -> . `E13266 0 `ui 1612  ]
+{
+"571
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 571:         canDiagnostics[0x05].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 5 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"572
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 572:         updateModuleErrorStatus();
+[e ( _updateModuleErrorStatus ..  ]
+"574
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 574:         PIE5bits.TXBnIE = 1;
+[e = . . _PIE5bits 1 3 -> -> 1 `i `uc ]
+"575
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 575:         return SEND_FAILED;
+[e ) . `E13204 0 ]
+[e $UE 1607  ]
+"576
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 576:     }
+}
+[e :U 1612 ]
+"578
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 578:     no = getNumTxBuffersInUse();
+[e = _no ( _getNumTxBuffersInUse ..  ]
+"579
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 579:     if (canDiagnostics[0x11].asUint < no) {
+[e $ ! < -> . *U + &U _canDiagnostics * -> -> -> 17 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 `ui -> _no `ui 1613  ]
+{
+"580
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 580:         canDiagnostics[0x11].asUint = no;
+[e = . *U + &U _canDiagnostics * -> -> -> 17 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> _no `us ]
+"581
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 581:     }
+}
+[e :U 1613 ]
+"583
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 583:     PIE5bits.TXBnIE = 1;
+[e = . . _PIE5bits 1 3 -> -> 1 `i `uc ]
+"584
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 584:     return SEND_OK;
+[e ) . `E13204 1 ]
+[e $UE 1607  ]
+"585
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 585: }
+[e :UE 1607 ]
+}
+"595
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 595: static TxDrainResult canWaitForTxQueueToDrain(void) {
+[v _canWaitForTxQueueToDrain `(E13208 ~T0 @X0 1 sf ]
+{
+[e :U _canWaitForTxQueueToDrain ]
+[f ]
+"596
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 596:     TickValue start;
+[v _start `S1558 ~T0 @X0 1 a ]
+"597
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 597:     start.val = tickGet();
+[e = . _start 0 ( _tickGet ..  ]
+"599
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 599:     while ((TXB0CONbits.TXREQ != 0) || (quantity(&txQueue) > 0)) {
+[e $U 1615  ]
+[e :U 1616 ]
+{
+"601
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 601:         if ((tickGet() - start.val) > 500 * (62500/1000)) return OVERALL_TIMEOUT;
+[e $ ! > - ( _tickGet ..  . _start 0 -> * -> -> 500 `i `l / -> 62500 `l -> -> 1000 `i `l `ul 1618  ]
+[e ) . `E13208 1 ]
+[e $UE 1614  ]
+[e :U 1618 ]
+"602
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 602:     }
+}
+[e :U 1615 ]
+"599
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 599:     while ((TXB0CONbits.TXREQ != 0) || (quantity(&txQueue) > 0)) {
+[e $ || != -> . . _TXB0CONbits 0 2 `i -> 0 `i > -> ( _quantity (1 &U _txQueue `i -> 0 `i 1616  ]
+[e :U 1617 ]
+"603
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 603:     return DRAIN_OK;
+[e ) . `E13208 0 ]
+[e $UE 1614  ]
+"604
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 604: }
+[e :UE 1614 ]
+}
+"615
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 615: static MessageReceived canReceiveMessage(Message * m){
+[v _canReceiveMessage `(E13200 ~T0 @X0 1 sf1`*S1551 ]
+{
+[e :U _canReceiveMessage ]
+[v _m `*S1551 ~T0 @X0 1 r1 ]
+[f ]
+"616
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 616:     Message * mp;
+[v _mp `*S1551 ~T0 @X0 1 a ]
+"617
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 617:     uint8_t * p;
+[v _p `*uc ~T0 @X0 1 a ]
+"618
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 618:     MessageReceived messageAvailable;
+[v _messageAvailable `E13200 ~T0 @X0 1 a ]
+"619
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 619:     uint8_t incomingCanId;
+[v _incomingCanId `uc ~T0 @X0 1 a ]
+"621
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 621:     uint8_t no;
+[v _no `uc ~T0 @X0 1 a ]
+"624
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 624:     PIE5bits.FIFOWMIE = 0;
+[e = . . _PIE5bits 1 0 -> -> 0 `i `uc ]
+"625
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 625:     processEnumeration();
+[e ( _processEnumeration ..  ]
+"629
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 629:     no = getNumRxBuffersInUse();
+[e = _no ( _getNumRxBuffersInUse ..  ]
+"630
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 630:     if (canDiagnostics[0x12].asUint < no) {
+[e $ ! < -> . *U + &U _canDiagnostics * -> -> -> 18 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 `ui -> _no `ui 1620  ]
+{
+"631
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 631:         canDiagnostics[0x12].asUint = no;
+[e = . *U + &U _canDiagnostics * -> -> -> 18 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> _no `us ]
+"632
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 632:     }
+}
+[e :U 1620 ]
+"634
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 634:     mp = pop(&rxQueue);
+[e = _mp ( _pop (1 &U _rxQueue ]
+"635
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 635:     if (mp != ((void*)0)) {
+[e $ ! != _mp -> -> -> 0 `i `*v `*S1551 1621  ]
+{
+"636
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 636:         memcpy(m, mp, sizeof(Message));
+[e ( _memcpy (3 , , -> _m `*v -> _mp `*Cv -> # `S1551 `ui ]
+"637
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 637:         PIE5bits.FIFOWMIE = 1;
+[e = . . _PIE5bits 1 0 -> -> 1 `i `uc ]
+"638
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 638:         return RECEIVED;
+[e ) . `E13200 1 ]
+[e $UE 1619  ]
+"639
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 639:     } else {
+}
+[e $U 1622  ]
+[e :U 1621 ]
+{
+"640
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 640:         if (COMSTATbits.NOT_FIFOEMPTY) {
+[e $ ! != -> . . _COMSTATbits 1 1 `i -> 0 `i 1623  ]
+{
+"641
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 641:             p = getBufferPointer(CANCON & 0x07);
+[e = _p ( _getBufferPointer (1 -> & -> _CANCON `i -> 7 `i `uc ]
+"642
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 642:             if (p == ((void*)0)) {
+[e $ ! == _p -> -> -> 0 `i `*v `*uc 1624  ]
+{
+"644
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 644:                 PIE5bits.FIFOWMIE = 1;
+[e = . . _PIE5bits 1 0 -> -> 1 `i `uc ]
+"645
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 645:                 return NOT_RECEIVED;
+[e ) . `E13200 0 ]
+[e $UE 1619  ]
+"646
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 646:             }
+}
+[e :U 1624 ]
+"647
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 647:             PIR5bits.RXBnIF = 0;
+[e = . . _PIR5bits 1 1 -> -> 0 `i `uc ]
+"649
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 649:             if (p[2] & 0x08) return NOT_RECEIVED;
+[e $ ! != & -> *U + _p * -> -> 2 `i `x -> -> # *U _p `i `x `i -> 8 `i -> 0 `i 1625  ]
+[e ) . `E13200 0 ]
+[e $UE 1619  ]
+[e :U 1625 ]
+"651
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 651:             if (handleSelfEnumeration(p) == RECEIVED) {
+[e $ ! == -> ( _handleSelfEnumeration (1 _p `ui -> . `E13200 1 `ui 1626  ]
+{
+"654
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 654:                 canDiagnostics[0x09].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 9 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"659
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 659:                     m->opc = p[6];
+[e = . *U _m 1 -> *U + _p * -> -> 6 `i `x -> -> # *U _p `i `x `E12671 ]
+"660
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 660:                     m->len = p[5] & 0xF;
+[e = . *U _m 0 -> & -> *U + _p * -> -> 5 `i `x -> -> # *U _p `i `x `i -> 15 `i `uc ]
+"661
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 661:                     if (m->len > 8) {
+[e $ ! > -> . *U _m 0 `i -> 8 `i 1627  ]
+{
+"662
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 662:                         m->len = 8;
+[e = . *U _m 0 -> -> 8 `i `uc ]
+"663
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 663:                     }
+}
+[e :U 1627 ]
+"664
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 664:                     m->bytes[0] = p[7];
+[e = *U + &U . *U _m 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _p * -> -> 7 `i `x -> -> # *U _p `i `x ]
+"665
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 665:                     m->bytes[1] = p[8];
+[e = *U + &U . *U _m 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _p * -> -> 8 `i `x -> -> # *U _p `i `x ]
+"666
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 666:                     m->bytes[2] = p[9];
+[e = *U + &U . *U _m 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _p * -> -> 9 `i `x -> -> # *U _p `i `x ]
+"667
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 667:                     m->bytes[3] = p[10];
+[e = *U + &U . *U _m 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _p * -> -> 10 `i `x -> -> # *U _p `i `x ]
+"668
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 668:                     m->bytes[4] = p[11];
+[e = *U + &U . *U _m 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _p * -> -> 11 `i `x -> -> # *U _p `i `x ]
+"669
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 669:                     m->bytes[5] = p[12];
+[e = *U + &U . *U _m 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _p * -> -> 12 `i `x -> -> # *U _p `i `x ]
+"670
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 670:                     m->bytes[6] = p[13];
+[e = *U + &U . *U _m 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _p * -> -> 13 `i `x -> -> # *U _p `i `x ]
+"671
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 671:                     messageAvailable = RECEIVED;
+[e = _messageAvailable . `E13200 1 ]
+"672
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 672:             }
+}
+[e :U 1626 ]
+"674
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 674:             if (PIR5bits.IRXIF) {
+[e $ ! != -> . . _PIR5bits 0 7 `i -> 0 `i 1628  ]
+{
+"675
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 675:                 canDiagnostics[0x01].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 1 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"676
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 676:                 PIR5bits.IRXIF = 0;
+[e = . . _PIR5bits 0 7 -> -> 0 `i `uc ]
+"677
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 677:             }
+}
+[e :U 1628 ]
+"679
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 679:             p[0] &= 0x7f;
+[e =& *U + _p * -> -> 0 `i `x -> -> # *U _p `i `x -> -> 127 `i `uc ]
+"680
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 680:             PIE5bits.FIFOWMIE = 1;
+[e = . . _PIE5bits 1 0 -> -> 1 `i `uc ]
+"681
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 681:             return messageAvailable;
+[e ) _messageAvailable ]
+[e $UE 1619  ]
+"682
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 682:         } else {
+}
+[e $U 1629  ]
+[e :U 1623 ]
+{
+"684
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 684:             PIE5bits.FIFOWMIE = 1;
+[e = . . _PIE5bits 1 0 -> -> 1 `i `uc ]
+"685
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 685:             return NOT_RECEIVED;
+[e ) . `E13200 0 ]
+[e $UE 1619  ]
+"686
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 686:         }
+}
+[e :U 1629 ]
+"687
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 687:     }
+}
+[e :U 1622 ]
+"688
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 688: }
+[e :UE 1619 ]
+}
+"693
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 693: static uint8_t * getBufferPointer(uint8_t b) {
+[v _getBufferPointer `(*uc ~T0 @X0 1 sf1`uc ]
+{
+[e :U _getBufferPointer ]
+[v _b `uc ~T0 @X0 1 r1 ]
+[f ]
+"694
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 694:     switch (b) {
+[e $U 1632  ]
+{
+"695
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 695:         case 0:
+[e :U 1633 ]
+"696
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 696:             return (uint8_t*) & RXB0CON;
+[e ) &U _RXB0CON ]
+[e $UE 1630  ]
+"697
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 697:         case 1:
+[e :U 1634 ]
+"698
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 698:             return (uint8_t*) & RXB1CON;
+[e ) &U _RXB1CON ]
+[e $UE 1630  ]
+"699
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 699:         case 2:
+[e :U 1635 ]
+"700
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 700:             return (uint8_t*) & B0CON;
+[e ) &U _B0CON ]
+[e $UE 1630  ]
+"701
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 701:         case 3:
+[e :U 1636 ]
+"702
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 702:             return (uint8_t*) & B1CON;
+[e ) &U _B1CON ]
+[e $UE 1630  ]
+"703
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 703:         case 4:
+[e :U 1637 ]
+"704
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 704:             return (uint8_t*) & B2CON;
+[e ) &U _B2CON ]
+[e $UE 1630  ]
+"705
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 705:         case 5:
+[e :U 1638 ]
+"706
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 706:             return (uint8_t*) & B3CON;
+[e ) &U _B3CON ]
+[e $UE 1630  ]
+"707
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 707:         case 6:
+[e :U 1639 ]
+"708
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 708:             return (uint8_t*) & B4CON;
+[e ) &U _B4CON ]
+[e $UE 1630  ]
+"709
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 709:         case 7:
+[e :U 1640 ]
+"710
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 710:             return (uint8_t*) & B5CON;
+[e ) &U _B5CON ]
+[e $UE 1630  ]
+"711
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 711:         default:
+[e :U 1641 ]
+"712
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 712:             return ((void*)0);
+[e ) -> -> -> 0 `i `*v `*uc ]
+[e $UE 1630  ]
+"713
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 713:     }
+}
+[e $U 1631  ]
+[e :U 1632 ]
+[e [\ _b , $ -> 0 `i 1633
+ , $ -> 1 `i 1634
+ , $ -> 2 `i 1635
+ , $ -> 3 `i 1636
+ , $ -> 4 `i 1637
+ , $ -> 5 `i 1638
+ , $ -> 6 `i 1639
+ , $ -> 7 `i 1640
+ 1641 ]
+[e :U 1631 ]
+"714
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 714: }
+[e :UE 1630 ]
+}
+[v F13379 `(v ~T0 @X0 1 tf ]
+"721
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 721: static void checkTxFifo( void ) {
+[v _checkTxFifo `RF13379 ~T0 @X0 1 s ]
+{
+[e :U _checkTxFifo ]
+[f ]
+"722
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 722:     Message * mp;
+[v _mp `*S1551 ~T0 @X0 1 a ]
+"727
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 727:     PIR5bits.TXBnIF = 0;
+[e = . . _PIR5bits 1 3 -> -> 0 `i `uc ]
+"728
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 728:     if (!TXB0CONbits.TXREQ) {
+[e $ ! ! != -> . . _TXB0CONbits 0 2 `i -> 0 `i 1643  ]
+{
+"729
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 729:         mp = pop(&txQueue);
+[e = _mp ( _pop (1 &U _txQueue ]
+"730
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 730:         if (mp != ((void*)0)) {
+[e $ ! != _mp -> -> -> 0 `i `*v `*S1551 1644  ]
+{
+"732
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 732:             TXB0SIDH = canPri[priorities[mp->opc]] | ((canId & 0x78) >> 3);
+[e = _TXB0SIDH -> | -> *U + &U _canPri * -> *U + &U _priorities * -> . *U _mp 1 `ux -> -> # *U &U _priorities `ui `ux `ux -> -> # *U &U _canPri `ui `ux `i >> & -> _canId `i -> 120 `i -> 3 `i `uc ]
+"733
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 733:             TXB0SIDL = (uint8_t)((canId & 0x07) << 5);
+[e = _TXB0SIDL -> << & -> _canId `i -> 7 `i -> 5 `i `uc ]
+"734
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 734:             TXB0D0 = mp->opc;
+[e = _TXB0D0 -> . *U _mp 1 `uc ]
+"735
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 735:             TXB0D1 = mp->bytes[0];
+[e = _TXB0D1 *U + &U . *U _mp 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"736
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 736:             TXB0D2 = mp->bytes[1];
+[e = _TXB0D2 *U + &U . *U _mp 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"737
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 737:             TXB0D3 = mp->bytes[2];
+[e = _TXB0D3 *U + &U . *U _mp 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"738
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 738:             TXB0D4 = mp->bytes[3];
+[e = _TXB0D4 *U + &U . *U _mp 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"739
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 739:             TXB0D5 = mp->bytes[4];
+[e = _TXB0D5 *U + &U . *U _mp 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"740
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 740:             TXB0D6 = mp->bytes[5];
+[e = _TXB0D6 *U + &U . *U _mp 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"741
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 741:             TXB0D7 = mp->bytes[6];
+[e = _TXB0D7 *U + &U . *U _mp 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U _mp 2 `ui `ux ]
+"742
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 742:             TXB0DLC = mp->len;
+[e = _TXB0DLC . *U _mp 0 ]
+"744
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 744:             canTransmitTimeout.val = tickGet();
+[e = . _canTransmitTimeout 0 ( _tickGet ..  ]
+"745
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 745:             canTransmitFailed = 0;
+[e = _canTransmitFailed -> -> 0 `i `uc ]
+"746
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 746:             TXB0CONbits.TXREQ = 1;
+[e = . . _TXB0CONbits 0 2 -> -> 1 `i `uc ]
+"747
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 747:             PIE5bits.TXBnIE = 1;
+[e = . . _PIE5bits 1 3 -> -> 1 `i `uc ]
+"748
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 748:             canDiagnostics[0x06].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 6 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"775
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 775:         } else {
+}
+[e $U 1645  ]
+[e :U 1644 ]
+{
+"777
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 777:             canTransmitTimeout.val = 0;
+[e = . _canTransmitTimeout 0 -> -> -> 0 `i `l `ul ]
+"778
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 778:             TXB0CON = 0;
+[e = _TXB0CON -> -> 0 `i `uc ]
+"779
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 779:             PIR5bits.TXBnIF = 0;
+[e = . . _PIR5bits 1 3 -> -> 0 `i `uc ]
+"780
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 780:             PIE5bits.TXBnIE = 0;
+[e = . . _PIE5bits 1 3 -> -> 0 `i `uc ]
+"781
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 781:         }
+}
+[e :U 1645 ]
+"782
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 782:     } else {
+}
+[e $U 1646  ]
+[e :U 1643 ]
+{
+"784
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 784:         PIR5bits.TXBnIF = 0;
+[e = . . _PIR5bits 1 3 -> -> 0 `i `uc ]
+"785
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 785:         PIE5bits.TXBnIE = 1;
+[e = . . _PIE5bits 1 3 -> -> 1 `i `uc ]
+"786
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 786:     }
+}
+[e :U 1646 ]
+"787
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 787: }
+[e :UE 1642 ]
+}
+[v F13382 `(v ~T0 @X0 1 tf ]
+"794
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 794: static void checkCANTimeout(void) {
+[v _checkCANTimeout `RF13382 ~T0 @X0 1 s ]
+{
+[e :U _checkCANTimeout ]
+[f ]
+"795
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 795:     if (canTransmitTimeout.val != 0) {
+[e $ ! != . _canTransmitTimeout 0 -> -> -> 0 `i `l `ul 1648  ]
+{
+"796
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 796:         if ((tickGet() - canTransmitTimeout.val) > 62500) {
+[e $ ! > - ( _tickGet ..  . _canTransmitTimeout 0 -> -> 62500 `l `ul 1649  ]
+{
+"797
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 797:             canTransmitFailed = 1;
+[e = _canTransmitFailed -> -> 1 `i `uc ]
+"798
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 798:             TXB0CONbits.TXREQ = 0;
+[e = . . _TXB0CONbits 0 2 -> -> 0 `i `uc ]
+"799
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 799:             checkTxFifo();
+[e ( _checkTxFifo ..  ]
+"801
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 801:             canDiagnostics[0x02].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 2 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"802
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 802:             updateModuleErrorStatus();
+[e ( _updateModuleErrorStatus ..  ]
+"804
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 804:         }
+}
+[e :U 1649 ]
+"805
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 805:     }
+}
+[e :U 1648 ]
+"806
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 806: }
+[e :UE 1647 ]
+}
+[v F13384 `(v ~T0 @X0 1 tf ]
+"813
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 813: static void canTxError(void) {
+[v _canTxError `RF13384 ~T0 @X0 1 s ]
+{
+[e :U _canTxError ]
+[f ]
+"814
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 814:     if (TXB0CONbits.TXLARB) {
+[e $ ! != -> . . _TXB0CONbits 0 4 `i -> 0 `i 1651  ]
+{
+"815
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 815:         canTransmitFailed = 1;
+[e = _canTransmitFailed -> -> 1 `i `uc ]
+"816
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 816:         canTransmitTimeout.val = 0;
+[e = . _canTransmitTimeout 0 -> -> -> 0 `i `l `ul ]
+"817
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 817:         TXB0CONbits.TXREQ = 0;
+[e = . . _TXB0CONbits 0 2 -> -> 0 `i `uc ]
+"819
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 819:         canDiagnostics[0x0C].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 12 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"820
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 820:         updateModuleErrorStatus();
+[e ( _updateModuleErrorStatus ..  ]
+"822
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 822:     }
+}
+[e :U 1651 ]
+"823
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 823:     if (TXB0CONbits.TXERR) {
+[e $ ! != -> . . _TXB0CONbits 0 3 `i -> 0 `i 1652  ]
+{
+"824
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 824:         canTransmitFailed = 1;
+[e = _canTransmitFailed -> -> 1 `i `uc ]
+"825
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 825:         canTransmitTimeout.val = 0;
+[e = . _canTransmitTimeout 0 -> -> -> 0 `i `l `ul ]
+"826
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 826:         TXB0CONbits.TXREQ = 0;
+[e = . . _TXB0CONbits 0 2 -> -> 0 `i `uc ]
+"828
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 828:         canDiagnostics[0x02].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 2 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"829
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 829:         updateModuleErrorStatus();
+[e ( _updateModuleErrorStatus ..  ]
+"831
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 831:     }
+}
+[e :U 1652 ]
+"832
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 832:     if (canTransmitFailed) {
+[e $ ! != -> _canTransmitFailed `i -> 0 `i 1653  ]
+{
+"833
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 833:         checkTxFifo();
+[e ( _checkTxFifo ..  ]
+"834
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 834:     }
+}
+[e :U 1653 ]
+"835
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 835:     PIR5bits.ERRIF = 0;
+[e = . . _PIR5bits 0 5 -> -> 0 `i `uc ]
+"836
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 836: }
+[e :UE 1650 ]
+}
+"844
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 844: static MessageReceived handleSelfEnumeration(uint8_t * p) {
+[v _handleSelfEnumeration `(E13200 ~T0 @X0 1 sf1`*uc ]
+{
+[e :U _handleSelfEnumeration ]
+[v _p `*uc ~T0 @X0 1 r1 ]
+[f ]
+"845
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 845:     uint8_t incomingCanId;
+[v _incomingCanId `uc ~T0 @X0 1 a ]
+"849
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 849:     if (p[5] & 0x40 ) {
+[e $ ! != & -> *U + _p * -> -> 5 `i `x -> -> # *U _p `i `x `i -> 64 `i -> 0 `i 1655  ]
+{
+"851
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 851:         TXB2CONbits.TXREQ = 1;
+[e = . . _TXB2CONbits 0 2 -> -> 1 `i `uc ]
+"852
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 852:         enumerationStartTime.val = tickGet();
+[e = . _enumerationStartTime 0 ( _tickGet ..  ]
+"853
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 853:         return NOT_RECEIVED;
+[e ) . `E13200 0 ]
+[e $UE 1654  ]
+"854
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 854:     }
+}
+[e :U 1655 ]
+"855
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 855:     incomingCanId = (p[1] << 3) + (p[2] >> 5) & 0x7f;
+[e = _incomingCanId -> & + << -> *U + _p * -> -> 1 `i `x -> -> # *U _p `i `x `i -> 3 `i >> -> *U + _p * -> -> 2 `i `x -> -> # *U _p `i `x `i -> 5 `i -> 127 `i `uc ]
+"857
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 857:     if ((enumerationState == ENUMERATION_IN_PROGRESS) || ((p[5]&0x0F) == 0)) {
+[e $ ! || == -> _enumerationState `ui -> . `E13327 2 `ui == & -> *U + _p * -> -> 5 `i `x -> -> # *U _p `i `x `i -> 15 `i -> 0 `i 1656  ]
+{
+"858
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 858:         ( enumerationResults[incomingCanId>>3] |= ( 1<<(incomingCanId & 0x07) ) );
+[e =| *U + &U _enumerationResults * -> -> >> -> _incomingCanId `i -> 3 `i `ui `ux -> -> # *U &U _enumerationResults `ui `ux -> << -> 1 `i & -> _incomingCanId `i -> 7 `i `uc ]
+"859
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 859:     } else {
+}
+[e $U 1657  ]
+[e :U 1656 ]
+{
+"860
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 860:         if ((enumerationState == NO_ENUMERATION) && (incomingCanId == canId)) {
+[e $ ! && == -> _enumerationState `ui -> . `E13327 0 `ui == -> _incomingCanId `i -> _canId `i 1658  ]
+{
+"863
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 863:             enumerationState = ENUMERATION_REQUIRED;
+[e = _enumerationState . `E13327 1 ]
+"864
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 864:             canDiagnostics[0x0E].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 14 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"865
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 865:             enumerationStartTime.val = tickGet();
+[e = . _enumerationStartTime 0 ( _tickGet ..  ]
+"866
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 866:         }
+}
+[e :U 1658 ]
+"867
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 867:     }
+}
+[e :U 1657 ]
+"869
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 869:     return (p[5] & 0x0F) ? RECEIVED:NOT_RECEIVED;
+[e ) -> ? != & -> *U + _p * -> -> 5 `i `x -> -> # *U _p `i `x `i -> 15 `i -> 0 `i : . `E13200 1 . `E13200 0 `E13200 ]
+[e $UE 1654  ]
+"870
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 870: }
+[e :UE 1654 ]
+}
+[v F13389 `(v ~T0 @X0 1 tf ]
+"876
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 876: static void canFillRxFifo(void) {
+[v _canFillRxFifo `RF13389 ~T0 @X0 1 s ]
+{
+[e :U _canFillRxFifo ]
+[f ]
+"877
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 877:     uint8_t *ptr;
+[v _ptr `*uc ~T0 @X0 1 a ]
+"878
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 878:     Message * m;
+[v _m `*S1551 ~T0 @X0 1 a ]
+"880
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 880:     while (COMSTATbits.NOT_FIFOEMPTY) {
+[e $U 1660  ]
+[e :U 1661 ]
+{
+"881
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 881:         ptr = getBufferPointer(CANCON & 0x07U);
+[e = _ptr ( _getBufferPointer (1 -> & -> _CANCON `ui -> 7 `ui `uc ]
+"882
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 882:         PIR5bits.RXBnIF = 0;
+[e = . . _PIR5bits 1 1 -> -> 0 `i `uc ]
+"883
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 883:         if (COMSTATbits.RXB1OVFL) {
+[e $ ! != -> . . _COMSTATbits 0 6 `i -> 0 `i 1663  ]
+{
+"884
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 884:             COMSTATbits.RXB1OVFL = 0;
+[e = . . _COMSTATbits 0 6 -> -> 0 `i `uc ]
+"885
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 885:         }
+}
+[e :U 1663 ]
+"886
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 886:         if ((ptr[2] & 0x08) == 0) {
+[e $ ! == & -> *U + _ptr * -> -> 2 `i `x -> -> # *U _ptr `i `x `i -> 8 `i -> 0 `i 1664  ]
+{
+"889
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 889:             m = getNextWriteMessage(&rxQueue);
+[e = _m ( _getNextWriteMessage (1 &U _rxQueue ]
+"890
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 890:             if (m == ((void*)0)) {
+[e $ ! == _m -> -> -> 0 `i `*v `*S1551 1665  ]
+{
+"892
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 892:                 canDiagnostics[0x08].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 8 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"893
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 893:                 updateModuleErrorStatus();
+[e ( _updateModuleErrorStatus ..  ]
+"896
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 896:                 if (PIR5bits.IRXIF) {
+[e $ ! != -> . . _PIR5bits 0 7 `i -> 0 `i 1666  ]
+{
+"897
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 897:                     PIR5bits.IRXIF = 0;
+[e = . . _PIR5bits 0 7 -> -> 0 `i `uc ]
+"898
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 898:                 }
+}
+[e :U 1666 ]
+"899
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 899:                 return;
+[e $UE 1659  ]
+"900
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 900:             } else {
+}
+[e $U 1667  ]
+[e :U 1665 ]
+{
+"902
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 902:                 m->opc = ptr[6];
+[e = . *U _m 1 -> *U + _ptr * -> -> 6 `i `x -> -> # *U _ptr `i `x `E12671 ]
+"903
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 903:                 m->bytes[0] = ptr[7];
+[e = *U + &U . *U _m 2 * -> -> -> 0 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _ptr * -> -> 7 `i `x -> -> # *U _ptr `i `x ]
+"904
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 904:                 m->bytes[1] = ptr[8];
+[e = *U + &U . *U _m 2 * -> -> -> 1 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _ptr * -> -> 8 `i `x -> -> # *U _ptr `i `x ]
+"905
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 905:                 m->bytes[2] = ptr[9];
+[e = *U + &U . *U _m 2 * -> -> -> 2 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _ptr * -> -> 9 `i `x -> -> # *U _ptr `i `x ]
+"906
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 906:                 m->bytes[3] = ptr[10];
+[e = *U + &U . *U _m 2 * -> -> -> 3 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _ptr * -> -> 10 `i `x -> -> # *U _ptr `i `x ]
+"907
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 907:                 m->bytes[4] = ptr[11];
+[e = *U + &U . *U _m 2 * -> -> -> 4 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _ptr * -> -> 11 `i `x -> -> # *U _ptr `i `x ]
+"908
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 908:                 m->bytes[5] = ptr[12];
+[e = *U + &U . *U _m 2 * -> -> -> 5 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _ptr * -> -> 12 `i `x -> -> # *U _ptr `i `x ]
+"909
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 909:                 m->bytes[6] = ptr[13];
+[e = *U + &U . *U _m 2 * -> -> -> 6 `i `ui `ux -> -> # *U &U . *U _m 2 `ui `ux *U + _ptr * -> -> 13 `i `x -> -> # *U _ptr `i `x ]
+"910
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 910:                 m->len = ptr[5]&0xF;
+[e = . *U _m 0 -> & -> *U + _ptr * -> -> 5 `i `x -> -> # *U _ptr `i `x `i -> 15 `i `uc ]
+"911
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 911:             }
+}
+[e :U 1667 ]
+"912
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 912:         }
+}
+[e :U 1664 ]
+"914
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 914:         if (PIR5bits.IRXIF) {
+[e $ ! != -> . . _PIR5bits 0 7 `i -> 0 `i 1668  ]
+{
+"916
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 916:             canDiagnostics[0x01].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 1 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"918
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 918:             PIR5bits.IRXIF = 0;
+[e = . . _PIR5bits 0 7 -> -> 0 `i `uc ]
+"919
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 919:         }
+}
+[e :U 1668 ]
+"921
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 921:         ptr[0] &= 0x7f;
+[e =& *U + _ptr * -> -> 0 `i `x -> -> # *U _ptr `i `x -> -> 127 `i `uc ]
+"922
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 922:         PIR5bits.FIFOWMIF = 0;
+[e = . . _PIR5bits 1 0 -> -> 0 `i `uc ]
+"923
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 923:     }
+}
+[e :U 1660 ]
+"880
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 880:     while (COMSTATbits.NOT_FIFOEMPTY) {
+[e $ != -> . . _COMSTATbits 1 1 `i -> 0 `i 1661  ]
+[e :U 1662 ]
+"924
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 924: }
+[e :UE 1659 ]
+}
+"930
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 930: static void processEnumeration(void) {
+[v _processEnumeration `(v ~T0 @X0 1 sf ]
+{
+[e :U _processEnumeration ]
+[f ]
+"931
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 931:     uint8_t i, newCanId, enumResult;
+[v _i `uc ~T0 @X0 1 a ]
+[v _newCanId `uc ~T0 @X0 1 a ]
+[v _enumResult `uc ~T0 @X0 1 a ]
+"933
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 933:     switch (enumerationState) {
+[e $U 1671  ]
+{
+"934
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 934:         case ENUMERATION_REQUIRED:
+[e :U 1672 ]
+"935
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 935:             if (((tickGet() - enumerationStartTime.val) > 2 * (62500/10) )) {
+[e $ ! > - ( _tickGet ..  . _enumerationStartTime 0 -> * -> -> 2 `i `l / -> 62500 `l -> -> 10 `i `l `ul 1673  ]
+{
+"937
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 937:                 for (i=1; i< (0x7F/8)+1; i++) {
+{
+[e = _i -> -> 1 `i `uc ]
+[e $ < -> _i `i + / -> 127 `i -> 8 `i -> 1 `i 1674  ]
+[e $U 1675  ]
+[e :U 1674 ]
+{
+"938
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 938:                     enumerationResults[i] = 0;
+[e = *U + &U _enumerationResults * -> _i `ux -> -> # *U &U _enumerationResults `ui `ux -> -> 0 `i `uc ]
+"939
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 939:                 }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e $ < -> _i `i + / -> 127 `i -> 8 `i -> 1 `i 1674  ]
+[e :U 1675 ]
+}
+"940
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 940:                 enumerationResults[0] = 1;
+[e = *U + &U _enumerationResults * -> -> -> 0 `i `ui `ux -> -> # *U &U _enumerationResults `ui `ux -> -> 1 `i `uc ]
+"942
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 942:                 enumerationState = ENUMERATION_IN_PROGRESS;
+[e = _enumerationState . `E13327 2 ]
+"943
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 943:                 enumerationStartTime.val = tickGet();
+[e = . _enumerationStartTime 0 ( _tickGet ..  ]
+"945
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 945:                 canDiagnostics[0x0D].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 13 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"947
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 947:                 TXB1CONbits.TXREQ = 1;
+[e = . . _TXB1CONbits 0 2 -> -> 1 `i `uc ]
+"948
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 948:             }
+}
+[e :U 1673 ]
+"949
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 949:             break;
+[e $U 1670  ]
+"950
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 950:         case ENUMERATION_IN_PROGRESS:
+[e :U 1677 ]
+"951
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 951:             if ((tickGet() - enumerationStartTime.val) > (62500/10) ) {
+[e $ ! > - ( _tickGet ..  . _enumerationStartTime 0 -> / -> 62500 `l -> -> 10 `i `l `ul 1678  ]
+{
+"955
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 955:                 for (i=0; (i < (0x7F/8)+1) && (enumerationResults[i] == 0xFF); i++) {
+{
+[e = _i -> -> 0 `i `uc ]
+[e $U 1682  ]
+[e :U 1679 ]
+{
+"957
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 957:                 }
+}
+[e ++ _i -> -> 1 `i `uc ]
+[e :U 1682 ]
+[e $ && < -> _i `i + / -> 127 `i -> 8 `i -> 1 `i == -> *U + &U _enumerationResults * -> _i `ux -> -> # *U &U _enumerationResults `ui `ux `i -> 255 `i 1679  ]
+[e :U 1680 ]
+}
+"958
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 958:                 if ((i < (0x7F/8)+1) && (enumResult = enumerationResults[i]) != 0xFF) {
+[e $ ! && < -> _i `i + / -> 127 `i -> 8 `i -> 1 `i != -> = _enumResult *U + &U _enumerationResults * -> _i `ux -> -> # *U &U _enumerationResults `ui `ux `i -> 255 `i 1683  ]
+{
+"959
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 959:                     for (newCanId = i*8; (enumResult & 0x01); newCanId++) {
+{
+[e = _newCanId -> * -> _i `i -> 8 `i `uc ]
+[e $U 1687  ]
+[e :U 1684 ]
+{
+"960
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 960:                         enumResult >>= 1;
+[e =>> _enumResult -> -> 1 `i `uc ]
+"961
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 961:                     }
+}
+[e ++ _newCanId -> -> 1 `i `uc ]
+[e :U 1687 ]
+[e $ != & -> _enumResult `i -> 1 `i -> 0 `i 1684  ]
+[e :U 1685 ]
+}
+"962
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 962:                     if ((newCanId >= 1) && (newCanId <= 99)) {
+[e $ ! && >= -> _newCanId `i -> 1 `i <= -> _newCanId `i -> 99 `i 1688  ]
+{
+"963
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 963:                         canId = newCanId;
+[e = _canId _newCanId ]
+"964
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 964:                         setNewCanId(canId);
+[e ( _setNewCanId (1 _canId ]
+"965
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 965:                     } else {
+}
+[e $U 1689  ]
+[e :U 1688 ]
+{
+"967
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 967:                         canDiagnostics[0x10].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 16 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"968
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 968:                         updateModuleErrorStatus();
+[e ( _updateModuleErrorStatus ..  ]
+"970
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 970:                     }
+}
+[e :U 1689 ]
+"971
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 971:                 } else {
+}
+[e $U 1690  ]
+[e :U 1683 ]
+{
+"973
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 973:                     canDiagnostics[0x10].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 16 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"974
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 974:                     updateModuleErrorStatus();
+[e ( _updateModuleErrorStatus ..  ]
+"979
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 979:                 }
+}
+[e :U 1690 ]
+"980
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 980:                 enumerationState = NO_ENUMERATION;
+[e = _enumerationState . `E13327 0 ]
+"981
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 981:             }
+}
+[e :U 1678 ]
+"982
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 982:             break;
+[e $U 1670  ]
+"983
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 983:         default:
+[e :U 1691 ]
+"984
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 984:             break;
+[e $U 1670  ]
+"985
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 985:     }
+}
+[e $U 1670  ]
+[e :U 1671 ]
+[e [\ -> _enumerationState `ui , $ -> . `E13327 1 `ui 1672
+ , $ -> . `E13327 2 `ui 1677
+ 1691 ]
+[e :U 1670 ]
+"986
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 986: }
+[e :UE 1669 ]
+}
+"993
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 993: static CanidResult setNewCanId(uint8_t newCanId) {
+[v _setNewCanId `(E13249 ~T0 @X0 1 sf1`uc ]
+{
+[e :U _setNewCanId ]
+[v _newCanId `uc ~T0 @X0 1 r1 ]
+[f ]
+"994
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 994:     if ((newCanId >= 1) && (newCanId <= 99)) {
+[e $ ! && >= -> _newCanId `i -> 1 `i <= -> _newCanId `i -> 99 `i 1693  ]
+{
+"995
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 995:         canId = newCanId;
+[e = _canId _newCanId ]
+"998
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 998:         TXB1SIDH &= 0b11110000;
+[e =& _TXB1SIDH -> -> 240 `i `Vuc ]
+"999
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 999:         TXB1SIDH |= ((newCanId & 0x78) >>3);
+[e =| _TXB1SIDH -> >> & -> _newCanId `i -> 120 `i -> 3 `i `Vuc ]
+"1000
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1000:         TXB1SIDL = TXB0SIDL;
+[e = _TXB1SIDL _TXB0SIDL ]
+"1002
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1002:         TXB2SIDH &= 0b11110000;
+[e =& _TXB2SIDH -> -> 240 `i `Vuc ]
+"1003
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1003:         TXB2SIDH |= ((newCanId & 0x78) >>3);
+[e =| _TXB2SIDH -> >> & -> _newCanId `i -> 120 `i -> 3 `i `Vuc ]
+"1004
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1004:         TXB2SIDL = TXB0SIDL;
+[e = _TXB2SIDL _TXB0SIDL ]
+"1006
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1006:         writeNVM(EEPROM_NVM_TYPE, 0x3FE, newCanId );
+[e ( _writeNVM (3 , , . `E13019 0 -> -> -> 1022 `i `m `um _newCanId ]
+"1008
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1008:         canDiagnostics[0x0F].asUint++;
+[e ++ . *U + &U _canDiagnostics * -> -> -> 15 `i `ui `ux -> -> # *U &U _canDiagnostics `ui `ux 0 -> -> 1 `i `us ]
+"1010
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1010:         return CANID_OK;
+[e ) . `E13249 1 ]
+[e $UE 1692  ]
+"1011
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1011:     } else {
+}
+[e $U 1694  ]
+[e :U 1693 ]
+{
+"1012
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1012:         return CANID_FAIL;
+[e ) . `E13249 0 ]
+[e $UE 1692  ]
+"1013
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1013:     }
+}
+[e :U 1694 ]
+"1014
+[; ;../../../VLCBlib_PIC/can18_ecan.c: 1014: }
+[e :UE 1692 ]
+}
